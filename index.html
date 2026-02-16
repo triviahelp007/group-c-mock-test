@@ -7,17 +7,29 @@
 <body>
 
 <div class="container">
-    <h2>WBSSC Group C Mock Test</h2>
-    <p>Total Questions: 60 | Time: 1 Hour | No Negative Marking</p>
-    <div id="timer">Time Left: 60:00</div>
 
-    <div id="questionBox">Loading questions...</div>
+    <div id="startSection">
+        <h2>WBSSC Group C Mock Test</h2>
+        <p>Total Questions: 60 | Time: 1 Hour | No Negative Marking</p>
 
-    <div class="buttons">
-        <button onclick="prevQuestion()">Previous</button>
-        <button onclick="nextQuestion()">Next</button>
-        <button onclick="submitTest()">Submit</button>
+        <label>Enter Your Name:</label><br><br>
+        <input type="text" id="candidateName" placeholder="Your Full Name" style="padding:8px; width:250px;">
+        <br><br>
+        <button onclick="beginTest()">Start Test</button>
     </div>
+
+    <div id="examSection" style="display:none;">
+        <h3 id="examHeader"></h3>
+        <div id="timer">Time Left: 60:00</div>
+        <div id="questionBox"></div>
+
+        <div class="buttons">
+            <button onclick="prevQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+            <button onclick="submitTest()">Submit</button>
+        </div>
+    </div>
+
 </div>
 
 <script src="script.js"></script>
