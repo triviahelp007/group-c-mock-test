@@ -4,6 +4,8 @@ let score = 0;
 let questions = [];
 let timeLeft = 3600;
 let fullDatabase = {};
+let candidateName = "";
+let mockID = "";
 
 function shuffle(array) {
     return array.sort(() => 0.5 - Math.random());
@@ -12,6 +14,28 @@ function shuffle(array) {
 async function loadDatabase() {
     const response = await fetch("database.json");
     fullDatabase = await response.json();
+}
+
+function generateMockID() {
+    return "WBSSC-" + Math.floor(Math.random() * 100000);
+}
+
+function beginTest() {
+    candidateName = document.getElementById("candidateName").value.trim();
+
+    if (candidateName === "") {
+        alert("Please enter your name to start the test.");
+        return;
+    }
+
+    mockID = generateMockID();
+
+    document.getElementById("startSection").style.display = "none";
+    document.getElementById("examSection").style.display = "block";
+
+    document.getElementById("examHeader").innerHTML =
+        "Candidate: " + candidateName + " | Mock ID: " + mockID;
+
     startTest();
 }
 
@@ -22,22 +46,15 @@ function pickQuestions(sectionArray, count) {
 
 function startTest() {
 
-    if (sessionStorage.getItem("mockQuestions")) {
-        questions = JSON.parse(sessionStorage.getItem("mockQuestions"));
-    } else {
+    questions = [
+        ...pickQuestions(fullDatabase.gk, 15),
+        ...pickQuestions(fullDatabase.currentAffairs, 15),
+        ...pickQuestions(fullDatabase.english, 10),
+        ...pickQuestions(fullDatabase.arithmetic, 15),
+        ...pickQuestions(fullDatabase.reasoning, 5)
+    ];
 
-        questions = [
-            ...pickQuestions(fullDatabase.gk, 15),
-            ...pickQuestions(fullDatabase.currentAffairs, 15),
-            ...pickQuestions(fullDatabase.english, 10),
-            ...pickQuestions(fullDatabase.arithmetic, 15),
-            ...pickQuestions(fullDatabase.reasoning, 5)
-        ];
-
-        questions = shuffle(questions);
-
-        sessionStorage.setItem("mockQuestions", JSON.stringify(questions));
-    }
+    questions = shuffle(questions);
 
     loadQuestion();
 }
@@ -45,7 +62,7 @@ function startTest() {
 function loadQuestion() {
     let q = questions[current];
 
-    let html = `<h3>Q${current+1}. ${q.question}</h3>`;
+    let html = `<h4>Question ${current+1} of 60</h4><p>${q.question}</p>`;
 
     q.options.forEach((opt, i) => {
         let checked = answers[current] === i ? "checked" : "";
@@ -83,6 +100,11 @@ function saveAnswer() {
 }
 
 function submitTest() {
+
+    if (!confirm("Are you sure you want to submit the test?")) {
+        return;
+    }
+
     saveAnswer();
     score = 0;
 
@@ -92,12 +114,12 @@ function submitTest() {
         }
     });
 
-    sessionStorage.removeItem("mockQuestions");
-
     document.body.innerHTML = `
         <div style="text-align:center; margin-top:50px;">
             <h2>Test Completed</h2>
-            <h3>Your Score: ${score}/60</h3>
+            <h3>Candidate: ${candidateName}</h3>
+            <h3>Mock ID: ${mockID}</h3>
+            <h2>Your Score: ${score}/60</h2>
             <button onclick="location.reload()">Start New Test</button>
         </div>
     `;
@@ -107,8 +129,11 @@ setInterval(function () {
     let minutes = Math.floor(timeLeft / 60);
     let seconds = timeLeft % 60;
 
-    document.getElementById("timer").innerText =
-        "Time Left: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    let timerElement = document.getElementById("timer");
+    if (timerElement) {
+        timerElement.innerText =
+            "Time Left: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    }
 
     timeLeft--;
 
