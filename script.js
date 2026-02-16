@@ -2,7 +2,9 @@ let current = 0;
 let answers = [];
 let score = 0;
 let TOTAL_QUESTIONS = 60;
+let TEST_DURATION = 3600; // 60 minutes
 let questions = [];
+let timeLeft = TEST_DURATION;
 
 function shuffle(array) {
     return array.sort(() => 0.5 - Math.random());
@@ -10,7 +12,6 @@ function shuffle(array) {
 
 function startTest() {
 
-    // If session exists, load it
     if (sessionStorage.getItem("mockQuestions")) {
         questions = JSON.parse(sessionStorage.getItem("mockQuestions"));
     } else {
@@ -84,18 +85,19 @@ function submitTest() {
 
 startTest();
 
-let time = 3600;
+let timerInterval = setInterval(function () {
 
-setInterval(function () {
-    let m = Math.floor(time / 60);
-    let s = time % 60;
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
 
     document.getElementById("timer").innerText =
-        "Time Left: " + m + ":" + (s < 10 ? "0" : "") + s;
+        "Time Left: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 
-    time--;
+    timeLeft--;
 
-    if (time <= 0) {
+    if (timeLeft < 0) {
+        clearInterval(timerInterval);
         submitTest();
     }
+
 }, 1000);
