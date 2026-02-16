@@ -51,18 +51,27 @@ function beginTest() {
 }
 
 function loadQuestion() {
+
     let q = questions[current];
 
-    let html = `<h4>Question ${current+1} of 60</h4><p>${q.question}</p>`;
+    let html = `
+        <div class="questionContainer">
+            <h4>Question ${current+1} of 60</h4>
+            <p class="questionText">${q.question}</p>
+            <div class="options">
+    `;
 
     q.options.forEach((opt, i) => {
         html += `
-        <div>
-            <input type="radio" name="option" value="${i}" 
-            ${answers[current] === i ? "checked" : ""}>
-            ${opt}
-        </div>`;
+            <div class="optionRow">
+                <input type="radio" name="option" value="${i}"
+                ${answers[current] === i ? "checked" : ""}>
+                <span>${opt}</span>
+            </div>
+        `;
     });
+
+    html += `</div></div>`;
 
     document.getElementById("questionBox").innerHTML = html;
 }
@@ -105,20 +114,21 @@ function submitTest() {
 
     document.body.innerHTML = `
         <div class="certificate">
-            <img src="logo.png" class="watermark">
             <h1>Certificate of Completion</h1>
             <h2>WBSSC Group C Mock Examination</h2>
             <hr>
+
             <p>This is to certify that</p>
             <h2>${candidateName}</h2>
             <p>Mock ID: ${mockID}</p>
             <p>has successfully completed the examination.</p>
+
             <h2>Score: ${score} / 60</h2>
             <p>Date: ${today}</p>
 
-            <div class="signature">
-                _________________________<br>
-                Examination Authority
+            <div class="signatureBlock">
+                <img src="authority.png" class="signatureImage">
+                <p><strong>Examination Authority</strong></p>
             </div>
 
             <br><br>
@@ -129,6 +139,7 @@ function submitTest() {
 }
 
 setInterval(() => {
+
     let minutes = Math.floor(timeLeft / 60);
     let seconds = timeLeft % 60;
 
@@ -141,6 +152,7 @@ setInterval(() => {
     timeLeft--;
 
     if (timeLeft < 0) submitTest();
+
 }, 1000);
 
 loadDatabase();
