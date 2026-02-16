@@ -36,7 +36,7 @@ body {
 
 /* INPUT */
 
-input {
+input[type="text"] {
     width: 100%;
     max-width: 300px;
     padding: 10px;
@@ -101,11 +101,17 @@ button:hover {
 .optionRow {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    padding: 6px 0;
 }
 
 .optionRow input {
     transform: scale(1.2);
+}
+
+.optionLabel {
+    font-weight: bold;
+    min-width: 22px;
 }
 
 /* CERTIFICATE */
