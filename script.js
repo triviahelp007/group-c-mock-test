@@ -108,24 +108,60 @@ function submitTest() {
     saveAnswer();
     score = 0;
 
+    let letters = ["A", "B", "C", "D"];
+    let answerReview = "";
+
     answers.forEach((ans, i) => {
-        if (ans === questions[i].answer) score++;
+
+        if (ans !== undefined) {
+
+            let correct = questions[i].answer;
+
+            if (ans === correct) score++;
+
+            answerReview += `
+                <div class="reviewItem">
+                    <strong>Question ${i+1}</strong><br>
+                    Your Answer: ${letters[ans]} <br>
+                    Correct Answer: ${letters[correct]} <br>
+                    <span class="${ans === correct ? 'correctText' : 'wrongText'}">
+                        ${ans === correct ? 'Correct' : 'Wrong'}
+                    </span>
+                </div>
+                <hr>
+            `;
+        }
     });
 
     let today = new Date().toLocaleDateString();
+    let percentage = ((score / 60) * 100).toFixed(1);
+
+    let preparationMessage = "";
+
+    if (percentage >= 75) {
+        preparationMessage = "Excellent performance. Minor revision required.";
+    } else if (percentage >= 50) {
+        preparationMessage = "Good attempt. More practice needed to improve accuracy.";
+    } else {
+        preparationMessage = "Significant preparation required. Focus on weak sections.";
+    }
 
     document.body.innerHTML = `
         <div class="certificate">
             <h1>Certificate of Completion</h1>
-            <h2>WBSSC Group C Mock Examination</h2>
+            <h2>WBSSC Group C & D Mock Examination</h2>
             <hr>
 
             <p>This is to certify that</p>
             <h2>${candidateName}</h2>
             <p>Mock ID: ${mockID}</p>
-            <p>has successfully completed the examination.</p>
 
-            <h2>Score: ${score} / 60</h2>
+            <p>has completed the examination.</p>
+
+            <h2>Score: ${score} / 60 (${percentage}%)</h2>
+            <p><strong>Preparation Analysis:</strong></p>
+            <p>${preparationMessage}</p>
+
             <p>Date: ${today}</p>
 
             <div class="signatureBlock">
@@ -136,6 +172,12 @@ function submitTest() {
             <br><br>
             <button onclick="window.print()">Print Certificate</button>
             <button onclick="location.reload()">Start New Test</button>
+
+            <hr>
+            <h3>Answer Key (Attempted Questions Only)</h3>
+            <div class="reviewSection">
+                ${answerReview}
+            </div>
         </div>
     `;
 }
