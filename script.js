@@ -53,6 +53,7 @@ function beginTest() {
 function loadQuestion() {
 
     let q = questions[current];
+    let letters = ["A", "B", "C", "D"];
 
     let html = `
         <div class="questionContainer">
@@ -66,6 +67,7 @@ function loadQuestion() {
             <div class="optionRow">
                 <input type="radio" name="option" value="${i}"
                 ${answers[current] === i ? "checked" : ""}>
+                <span class="optionLabel">${letters[i]}.</span>
                 <span>${opt}</span>
             </div>
         `;
