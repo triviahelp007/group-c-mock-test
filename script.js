@@ -1,13 +1,21 @@
 let current = 0;
 let answers = [];
 let score = 0;
-let TOTAL_QUESTIONS = 60;
-let TEST_DURATION = 3600; // 60 minutes
 let questions = [];
+let TEST_DURATION = 3600;
 let timeLeft = TEST_DURATION;
 
 function shuffle(array) {
     return array.sort(() => 0.5 - Math.random());
+}
+
+function pickQuestions(sectionArray, count) {
+    let shuffled = shuffle([...sectionArray]);
+    let result = [];
+    for (let i = 0; i < count; i++) {
+        result.push(shuffled[i % shuffled.length]);
+    }
+    return result;
 }
 
 function startTest() {
@@ -15,7 +23,17 @@ function startTest() {
     if (sessionStorage.getItem("mockQuestions")) {
         questions = JSON.parse(sessionStorage.getItem("mockQuestions"));
     } else {
-        questions = shuffle([...allQuestions]).slice(0, TOTAL_QUESTIONS);
+
+        questions = [
+            ...pickQuestions(gk, 15),
+            ...pickQuestions(currentAffairs, 15),
+            ...pickQuestions(english, 10),
+            ...pickQuestions(arithmetic, 15),
+            ...pickQuestions(reasoning, 5)
+        ];
+
+        questions = shuffle(questions);
+
         sessionStorage.setItem("mockQuestions", JSON.stringify(questions));
     }
 
@@ -25,7 +43,7 @@ function startTest() {
 function loadQuestion() {
     let q = questions[current];
 
-    let html = `<h3>Q${current+1}. (${q.section}) ${q.question}</h3>`;
+    let html = `<h3>Q${current+1}. ${q.question}</h3>`;
 
     q.options.forEach((opt, i) => {
         let checked = answers[current] === i ? "checked" : "";
@@ -77,7 +95,7 @@ function submitTest() {
     document.body.innerHTML = `
         <div style="text-align:center; margin-top:50px;">
             <h2>Test Completed</h2>
-            <h3>Your Score: ${score}/${questions.length}</h3>
+            <h3>Your Score: ${score}/60</h3>
             <button onclick="location.reload()">Start New Test</button>
         </div>
     `;
