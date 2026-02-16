@@ -1,0 +1,1013 @@
+{
+  "arithmetic": [
+
+{
+"question": "The price of a ball is Rs.13500. It is sold at a discount of 33 1/3%. If the rate of profit is 12.5%, what is the cost price?",
+"options": ["9000", "7500", "8000", "6000"],
+"answer": 2
+},
+
+{
+"question": "Find the value: 88% of 1125 + 20% of 425",
+"options": ["1025", "1125.2", "1075", "1055"],
+"answer": 2
+},
+
+{
+"question": "If the radius of a circle increases by 6 cm and area increases by 264 sq.cm, find the original radius.",
+"options": ["11 cm", "10 cm", "4 cm", "9 cm"],
+"answer": 3
+},
+
+{
+"question": "Divide 150 into two parts such that the difference of their reciprocals is 3/112. Find the parts.",
+"options": ["50 and 90", "70 and 80", "60 and 90", "50 and 100"],
+"answer": 1
+},
+
+{
+"question": "The average of 10 numbers is 14. If each number is multiplied by 6, what will be the new average?",
+"options": ["70", "84", "56", "92"],
+"answer": 1
+},
+
+{
+"question": "The ratio of income of P and Q is 4:7 and their expenditure ratio is 3:7. If P saves Rs.10000 and Q saves Rs.7000, find P’s income.",
+"options": ["28000", "23000", "30000", "19000"],
+"answer": 2
+},
+
+{
+"question": "A mixture contains liquids A and B in ratio 5:4. After adding 2 litres of B, ratio becomes 7:6. Find quantity of A.",
+"options": ["32 litres", "35 litres", "40 litres", "42 litres"],
+"answer": 0
+},
+
+{
+"question": "What is the average of all one-digit numbers?",
+"options": ["4.5", "5", "6", "4"],
+"answer": 0
+},
+
+{
+"question": "A box contains Rs.5, Rs.2 and Rs.1 coins in ratio 15:4:2. Total coins are 112. Find number of Rs.2 coins.",
+"options": ["32", "48", "64", "24"],
+"answer": 0
+},
+
+{
+"question": "Find the volume of a hemisphere of diameter 21 cm.",
+"options": ["2235.5", "2425.5", "2040", "1860"],
+"answer": 0
+},
+
+{
+"question": "A 400 ml solution contains 16% alcohol. How much pure alcohol should be added to make it 40%?",
+"options": ["160 ml", "100 ml", "128 ml", "68 ml"],
+"answer": 2
+},
+
+{
+"question": "How many numbers between 244 and 332 are divisible by 7?",
+"options": ["15", "23", "4", "13"],
+"answer": 1
+},
+
+{
+"question": "If (1+1/2)(1+1/4)(1+1/6)(1+1/8)(1−1/3)(1−1/5)(1−1/7) = 1 + 1/x, find x.",
+"options": ["6", "4", "5", "7"],
+"answer": 2
+},
+
+{
+"question": "Nitin invests Rs.40000 and Nikhil Rs.30000. After 3 months Nitin withdraws Rs.10000. Profit at year end is Rs.10000. Find Nitin’s share.",
+"options": ["4800", "5000", "5200", "5400"],
+"answer": 0
+},
+
+{
+"question": "Jim sells a dress to Sonya at 20% profit. Sonya sells to Rima at 50% profit. If Rima pays Rs.6444, find Jim’s cost price.",
+"options": ["3670", "5560", "5383", "3580"],
+"answer": 3
+},
+
+{
+"question": "Find HCF of 306 and 657.",
+"options": ["9", "3", "27", "6"],
+"answer": 0
+},
+
+{
+"question": "Find simple interest on Rs.8000 at 10% per annum for 3 years.",
+"options": ["2400", "2000", "1800", "2600"],
+"answer": 0
+},
+
+{
+"question": "A train 120m long passes a pole in 6 seconds. Find speed in km/hr.",
+"options": ["72", "60", "80", "90"],
+"answer": 0
+},
+
+{
+"question": "If cost price is increased by 20% and selling price by 10%, what happens to profit?",
+"options": ["Increases", "Decreases", "Remains same", "Cannot determine"],
+"answer": 1
+},
+
+{
+"question": "The ratio of ages of A and B is 3:5. After 6 years it becomes 4:5. Find present age of A.",
+"options": ["18", "24", "30", "36"],
+"answer": 1
+}
+,
+{
+"question": "Find the compound interest on Rs.5000 at 10% per annum for 2 years.",
+"options": ["1050", "1000", "1100", "1200"],
+"answer": 0
+},
+
+{
+"question": "If the ratio of two numbers is 7:9 and their difference is 40, find the larger number.",
+"options": ["140", "180", "160", "200"],
+"answer": 1
+},
+
+{
+"question": "A man buys an article for Rs.2500 and sells it at 20% profit. Find the selling price.",
+"options": ["2800", "3000", "2900", "3200"],
+"answer": 1
+},
+
+{
+"question": "If 15 men can complete a work in 20 days, how many men are required to complete it in 12 days?",
+"options": ["25", "20", "30", "18"],
+"answer": 0
+},
+
+{
+"question": "Find the value of (25 × 16) ÷ 20.",
+"options": ["20", "25", "30", "40"],
+"answer": 0
+},
+
+{
+"question": "The average of 5 consecutive numbers is 42. Find the largest number.",
+"options": ["44", "46", "48", "50"],
+"answer": 0
+},
+
+{
+"question": "Find the LCM of 24 and 36.",
+"options": ["48", "72", "96", "144"],
+"answer": 1
+},
+
+{
+"question": "If a train travels 360 km in 6 hours, find its speed.",
+"options": ["50 km/hr", "60 km/hr", "70 km/hr", "80 km/hr"],
+"answer": 1
+},
+
+{
+"question": "A sum doubles itself in 5 years at simple interest. Find the rate of interest.",
+"options": ["10%", "20%", "15%", "12%"],
+"answer": 1
+},
+
+{
+"question": "Find the value of 3/4 of 160.",
+"options": ["100", "120", "140", "160"],
+"answer": 1
+},
+
+{
+"question": "If 12% of a number is 96, find the number.",
+"options": ["700", "750", "800", "850"],
+"answer": 2
+},
+
+{
+"question": "The perimeter of a rectangle is 80 cm. If length is 25 cm, find breadth.",
+"options": ["10", "15", "20", "25"],
+"answer": 1
+},
+
+{
+"question": "A shopkeeper gives 10% discount and still gains 20%. Find marked price if cost price is Rs.500.",
+"options": ["650", "670", "660", "680"],
+"answer": 2
+},
+
+{
+"question": "Find the HCF of 54 and 90.",
+"options": ["18", "27", "9", "6"],
+"answer": 0
+},
+
+{
+"question": "If the sum of first n natural numbers is 210, find n.",
+"options": ["20", "21", "19", "18"],
+"answer": 1
+},
+
+{
+"question": "Find the simple interest on Rs.6000 at 8% per annum for 2 years.",
+"options": ["960", "860", "880", "920"],
+"answer": 0
+},
+
+{
+"question": "The ratio of boys to girls in a class is 4:5. If total students are 45, find number of boys.",
+"options": ["20", "18", "25", "15"],
+"answer": 0
+},
+
+{
+"question": "If the cost price is Rs.400 and selling price is Rs.360, find loss percent.",
+"options": ["8%", "9%", "10%", "12%"],
+"answer": 2
+},
+
+{
+"question": "Find the value of 7² + 5².",
+"options": ["64", "74", "84", "94"],
+"answer": 1
+},
+
+{
+"question": "If a number is divided by 12, the remainder is 5. What will be the remainder if divided by 3?",
+"options": ["0", "1", "2", "Cannot determine"],
+"answer": 2
+}
+,
+{
+"question": "Find the value of 5% of 2400.",
+"options": ["100", "110", "120", "130"],
+"answer": 2
+},
+
+{
+"question": "If the ratio of two numbers is 5:8 and their sum is 91, find the smaller number.",
+"options": ["35", "30", "40", "25"],
+"answer": 0
+},
+
+{
+"question": "A person purchased an article for Rs.1200 and sold it for Rs.1500. Find profit percent.",
+"options": ["20%", "25%", "30%", "35%"],
+"answer": 1
+},
+
+{
+"question": "If 18 workers can complete a work in 15 days, how many days will 30 workers take?",
+"options": ["9", "10", "8", "12"],
+"answer": 0
+},
+
+{
+"question": "Find the average of first 20 natural numbers.",
+"options": ["10", "10.5", "11", "9.5"],
+"answer": 1
+},
+
+{
+"question": "The area of a square is 256 sq.cm. Find its side.",
+"options": ["14", "15", "16", "18"],
+"answer": 2
+},
+
+{
+"question": "A sum of Rs.2000 amounts to Rs.2420 in 2 years at compound interest. Find the rate.",
+"options": ["10%", "12%", "15%", "8%"],
+"answer": 0
+},
+
+{
+"question": "Find the LCM of 15 and 20.",
+"options": ["30", "40", "60", "80"],
+"answer": 2
+},
+
+{
+"question": "If 25% of a number is 75, find the number.",
+"options": ["200", "250", "300", "350"],
+"answer": 2
+},
+
+{
+"question": "Find the simple interest on Rs.10000 at 6% per annum for 3 years.",
+"options": ["1500", "1600", "1800", "2000"],
+"answer": 2
+},
+
+{
+"question": "If a train travels 90 km in 1.5 hours, find its speed.",
+"options": ["50 km/hr", "55 km/hr", "60 km/hr", "65 km/hr"],
+"answer": 2
+},
+
+{
+"question": "The ratio of ages of A and B is 4:7. If B is 28 years old, find A’s age.",
+"options": ["14", "16", "18", "20"],
+"answer": 1
+},
+
+{
+"question": "Find the HCF of 84 and 126.",
+"options": ["42", "21", "14", "7"],
+"answer": 0
+},
+
+{
+"question": "If cost price is Rs.800 and loss is 5%, find selling price.",
+"options": ["760", "750", "780", "770"],
+"answer": 0
+},
+
+{
+"question": "The perimeter of a square is 64 cm. Find its area.",
+"options": ["256", "144", "196", "324"],
+"answer": 0
+},
+
+{
+"question": "Find the sum of first 30 natural numbers.",
+"options": ["465", "450", "480", "455"],
+"answer": 0
+},
+
+{
+"question": "If a number is increased by 20% and becomes 360, find the original number.",
+"options": ["300", "320", "340", "280"],
+"answer": 0
+},
+
+{
+"question": "A boat goes 30 km upstream in 5 hours. Find speed of boat in still water if speed of stream is 2 km/hr.",
+"options": ["8 km/hr", "7 km/hr", "6 km/hr", "9 km/hr"],
+"answer": 0
+},
+
+{
+"question": "Find the value of 9³.",
+"options": ["729", "656", "512", "900"],
+"answer": 0
+},
+
+{
+"question": "If 3 pencils cost Rs.18, how much will 7 pencils cost?",
+"options": ["40", "42", "45", "36"],
+"answer": 1
+}
+],
+  "reasoning": [
+
+{
+"question": "Find the odd one out: Apple, Mango, Carrot, Banana",
+"options": ["Apple", "Mango", "Carrot", "Banana"],
+"answer": 2
+},
+
+{
+"question": "Laboratory : Germs :: Library : ?",
+"options": ["Students", "Books", "Games", "Planets"],
+"answer": 1
+},
+
+{
+"question": "If CAT = 24, then DOG = ?",
+"options": ["26", "27", "28", "29"],
+"answer": 0
+},
+
+{
+"question": "Find the next number: 2, 6, 12, 20, ?",
+"options": ["28", "30", "32", "34"],
+"answer": 1
+},
+
+{
+"question": "Pointing to a woman, Ravi said: She is the daughter of my grandfather’s only son. Who is she?",
+"options": ["Mother", "Sister", "Daughter", "Cousin"],
+"answer": 1
+},
+
+{
+"question": "Choose the correct mirror image of ‘BIRD’",
+"options": ["DRIB", "BIRD", "Reversed DRIB", "None"],
+"answer": 2
+},
+
+{
+"question": "Find the missing number: 5, 10, 20, 40, ?",
+"options": ["60", "70", "80", "90"],
+"answer": 2
+},
+
+{
+"question": "If in a code, PEN is written as 123 and PENCIL as 123456, how is NIL written?",
+"options": ["345", "456", "356", "654"],
+"answer": 1
+},
+
+{
+"question": "Complete the analogy: Water : Thirst :: Food : ?",
+"options": ["Hunger", "Eat", "Cook", "Rice"],
+"answer": 0
+},
+
+{
+"question": "A clock shows 3:15. What is the angle between hour and minute hands?",
+"options": ["7.5°", "0°", "90°", "45°"],
+"answer": 0
+},
+
+{
+"question": "Find the odd number: 121, 144, 169, 175",
+"options": ["121", "144", "169", "175"],
+"answer": 3
+},
+
+{
+"question": "If SOUTH is written as UQWVJ, how is NORTH written?",
+"options": ["PQTVJ", "PQTVI", "PQTVH", "PQTVK"],
+"answer": 1
+},
+
+{
+"question": "Find the missing term: A, C, F, J, ?",
+"options": ["O", "N", "P", "M"],
+"answer": 0
+},
+
+{
+"question": "Choose the correct option: 3, 9, 27, ?",
+"options": ["54", "72", "81", "90"],
+"answer": 2
+},
+
+{
+"question": "If 8 persons can do a work in 12 days, how many persons are needed to complete in 6 days?",
+"options": ["12", "16", "18", "20"],
+"answer": 1
+},
+{
+"question": "Find the next number in the series: 3, 7, 15, 31, ?",
+"options": ["63", "60", "62", "64"],
+"answer": 0
+},
+
+{
+"question": "Find the odd one out: 4, 9, 16, 25, 30",
+"options": ["4", "9", "16", "30"],
+"answer": 3
+},
+
+{
+"question": "If A = 1, B = 2, C = 3 ... then what is the value of BAD?",
+"options": ["7", "8", "9", "10"],
+"answer": 0
+},
+
+{
+"question": "Pointing to a man, Rita said, 'He is the son of my mother’s sister.' Who is the man?",
+"options": ["Brother", "Cousin", "Uncle", "Nephew"],
+"answer": 1
+},
+
+{
+"question": "Choose the missing term: 2, 5, 10, 17, 26, ?",
+"options": ["35", "36", "37", "38"],
+"answer": 2
+},
+
+{
+"question": "If CLOCK is written as KCOLC, how will TRAIN be written?",
+"options": ["NIART", "NIRAT", "TRIAN", "ARTIN"],
+"answer": 0
+},
+
+{
+"question": "Find the next alphabet in the series: A, C, F, J, O, ?",
+"options": ["U", "V", "W", "X"],
+"answer": 1
+},
+
+{
+"question": "If 12:30 pm is shown in a mirror, what will be the time?",
+"options": ["11:30", "12:30", "6:30", "11:60"],
+"answer": 0
+},
+
+{
+"question": "Choose the correct analogy: Book : Author :: Song : ?",
+"options": ["Singer", "Music", "Dance", "Tune"],
+"answer": 0
+},
+
+{
+"question": "Find the missing number: 1, 4, 9, 16, ?",
+"options": ["20", "24", "25", "30"],
+"answer": 2
+},
+
+{
+"question": "If RED is coded as 27, how is BLUE coded? (A=1, B=2...)",
+"options": ["40", "45", "50", "55"],
+"answer": 1
+},
+
+{
+"question": "Choose the odd pair: 8-64, 6-36, 5-25, 7-42",
+"options": ["8-64", "6-36", "5-25", "7-42"],
+"answer": 3
+},
+
+{
+"question": "If yesterday was Monday, what will be the day after tomorrow?",
+"options": ["Wednesday", "Thursday", "Friday", "Saturday"],
+"answer": 1
+},
+
+{
+"question": "Find the next number: 10, 20, 40, 80, ?",
+"options": ["120", "140", "150", "160"],
+"answer": 3
+},
+
+{
+"question": "Choose the correct Venn diagram relation: Doctors, Surgeons, Cardiologists",
+"options": ["Three separate circles", "All overlapping equally", "One inside another", "Two separate, one overlapping"],
+"answer": 2
+},
+
+{
+"question": "If 5 persons sit in a row, in how many ways can they sit?",
+"options": ["60", "120", "100", "150"],
+"answer": 1
+},
+
+{
+"question": "Find the next number: 1, 1, 2, 3, 5, ?",
+"options": ["6", "7", "8", "9"],
+"answer": 2
+},
+
+{
+"question": "Choose the odd word: Pen, Pencil, Paper, Eraser",
+"options": ["Pen", "Pencil", "Paper", "Eraser"],
+"answer": 2
+},
+
+{
+"question": "If SOUTH is written as UQWVJ, how is EAST written?",
+"options": ["GCWV", "GCWX", "GCWU", "GCWT"],
+"answer": 0
+},
+
+{
+"question": "Find the missing number: 2, 6, 12, 20, 30, ?",
+"options": ["40", "42", "44", "46"],
+"answer": 1
+}
+    
+],
+  "gk": [
+
+{
+"question": "Who is known as the Father of Indian Constitution?",
+"options": ["Jawaharlal Nehru", "B.R. Ambedkar", "Mahatma Gandhi", "Sardar Patel"],
+"answer": 1
+},
+
+{
+"question": "Capital of West Bengal?",
+"options": ["Delhi", "Kolkata", "Mumbai", "Chennai"],
+"answer": 1
+},
+
+{
+"question": "Indian Constitution came into force on?",
+"options": ["15 August 1947", "26 January 1950", "2 October 1948", "1 January 1952"],
+"answer": 1
+},
+
+{
+"question": "Highest civilian award in India?",
+"options": ["Padma Shri", "Bharat Ratna", "Padma Bhushan", "Ashok Chakra"],
+"answer": 1
+},
+
+{
+"question": "Who appoints the Chief Minister of a state?",
+"options": ["Prime Minister", "President", "Governor", "Chief Justice"],
+"answer": 2
+},
+
+{
+"question": "Which river is known as the Sorrow of Bengal?",
+"options": ["Ganga", "Damodar", "Teesta", "Hooghly"],
+"answer": 1
+},
+
+{
+"question": "Number of Fundamental Rights in Indian Constitution?",
+"options": ["4", "5", "6", "7"],
+"answer": 2
+},
+
+{
+"question": "Which Article deals with Right to Equality?",
+"options": ["Article 14", "Article 19", "Article 21", "Article 32"],
+"answer": 0
+},
+
+{
+"question": "Who was the first President of India?",
+"options": ["Rajendra Prasad", "S. Radhakrishnan", "Zakir Hussain", "V.V. Giri"],
+"answer": 0
+},
+
+{
+"question": "Which Schedule of Constitution deals with Panchayats?",
+"options": ["7th", "9th", "11th", "12th"],
+"answer": 2
+},
+
+{
+"question": "Largest state in India by area?",
+"options": ["Uttar Pradesh", "Rajasthan", "Madhya Pradesh", "Maharashtra"],
+"answer": 1
+},
+
+{
+"question": "Which gas is most abundant in Earth’s atmosphere?",
+"options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+"answer": 1
+},
+
+{
+"question": "The Battle of Plassey was fought in which year?",
+"options": ["1757", "1764", "1857", "1773"],
+"answer": 0
+},
+
+{
+"question": "How many Lok Sabha seats are there from West Bengal?",
+"options": ["40", "42", "45", "48"],
+"answer": 1
+},
+
+{
+"question": "Planning Commission was replaced by?",
+"options": ["Finance Commission", "NITI Aayog", "RBI", "SEBI"],
+"answer": 1
+},
+
+{
+"question": "Who wrote 'Gitanjali'?",
+"options": ["Bankim Chandra", "Rabindranath Tagore", "Sarat Chandra", "Vivekananda"],
+"answer": 1
+},
+
+{
+"question": "Which is the longest river in India?",
+"options": ["Yamuna", "Ganga", "Godavari", "Brahmaputra"],
+"answer": 1
+},
+
+{
+"question": "The Indian Parliament consists of?",
+"options": ["President only", "Lok Sabha only", "Rajya Sabha only", "President, Lok Sabha and Rajya Sabha"],
+"answer": 3
+},
+
+{
+"question": "Which planet is known as the Red Planet?",
+"options": ["Mars", "Jupiter", "Venus", "Saturn"],
+"answer": 0
+},
+
+{
+"question": "Who discovered gravity?",
+"options": ["Newton", "Einstein", "Galileo", "Faraday"],
+"answer": 0
+}
+,
+{
+"question": "Who is known as the Iron Man of India?",
+"options": ["Jawaharlal Nehru", "Sardar Patel", "Subhash Chandra Bose", "B.R. Ambedkar"],
+"answer": 1
+},
+
+{
+"question": "How many Fundamental Duties are there in the Indian Constitution?",
+"options": ["10", "11", "12", "9"],
+"answer": 1
+},
+
+{
+"question": "Which part of the Constitution deals with Fundamental Rights?",
+"options": ["Part II", "Part III", "Part IV", "Part V"],
+"answer": 1
+},
+
+{
+"question": "The Battle of Buxar was fought in which year?",
+"options": ["1757", "1764", "1857", "1773"],
+"answer": 1
+},
+
+{
+"question": "Which Mughal emperor built the Red Fort in Delhi?",
+"options": ["Akbar", "Shah Jahan", "Aurangzeb", "Babur"],
+"answer": 1
+},
+
+{
+"question": "Which is the smallest state in India by area?",
+"options": ["Goa", "Sikkim", "Tripura", "Manipur"],
+"answer": 0
+},
+
+{
+"question": "Which vitamin is produced in the human body by sunlight?",
+"options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+"answer": 3
+},
+
+{
+"question": "Which organ purifies blood in the human body?",
+"options": ["Heart", "Kidney", "Liver", "Lungs"],
+"answer": 1
+},
+
+{
+"question": "The Tropic of Cancer passes through how many Indian states?",
+"options": ["6", "7", "8", "9"],
+"answer": 2
+},
+
+{
+"question": "Who was the first Governor-General of independent India?",
+"options": ["Lord Mountbatten", "C. Rajagopalachari", "Dr. Rajendra Prasad", "Jawaharlal Nehru"],
+"answer": 0
+},
+
+{
+"question": "Which Indian state shares the longest international border?",
+"options": ["Punjab", "West Bengal", "Rajasthan", "Arunachal Pradesh"],
+"answer": 2
+},
+
+{
+"question": "Which article of the Constitution deals with Emergency provisions?",
+"options": ["Article 352", "Article 370", "Article 356", "Article 360"],
+"answer": 0
+},
+
+{
+"question": "Who discovered gravity?",
+"options": ["Newton", "Einstein", "Galileo", "Faraday"],
+"answer": 0
+},
+
+{
+"question": "Which is the largest desert in India?",
+"options": ["Thar Desert", "Sahara", "Gobi", "Kalahari"],
+"answer": 0
+},
+
+{
+"question": "Which river originates from the Yamunotri glacier?",
+"options": ["Ganga", "Yamuna", "Brahmaputra", "Godavari"],
+"answer": 1
+},
+
+{
+"question": "Which is the highest peak in India?",
+"options": ["Kanchenjunga", "K2", "Nanda Devi", "Everest"],
+"answer": 0
+},
+
+{
+"question": "Who founded the Brahmo Samaj?",
+"options": ["Raja Ram Mohan Roy", "Vivekananda", "Dayanand Saraswati", "Ishwar Chandra Vidyasagar"],
+"answer": 0
+},
+
+{
+"question": "The headquarters of RBI is located in?",
+"options": ["Delhi", "Mumbai", "Kolkata", "Chennai"],
+"answer": 1
+},
+
+{
+"question": "Which state is known as the Tea Garden of India?",
+"options": ["West Bengal", "Assam", "Kerala", "Tamil Nadu"],
+"answer": 1
+},
+
+{
+"question": "Who is the constitutional head of the state government?",
+"options": ["Chief Minister", "Governor", "President", "Prime Minister"],
+"answer": 1
+},
+
+{
+"question": "Which gas is used in fire extinguishers?",
+"options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+"answer": 2
+},
+
+{
+"question": "Which is the national animal of India?",
+"options": ["Lion", "Tiger", "Elephant", "Leopard"],
+"answer": 1
+},
+
+{
+"question": "The Quit India Movement was launched in which year?",
+"options": ["1930", "1942", "1919", "1920"],
+"answer": 1
+},
+
+{
+"question": "Who wrote the Indian National Anthem?",
+"options": ["Bankim Chandra", "Rabindranath Tagore", "Subhash Bose", "Nehru"],
+"answer": 1
+},
+
+{
+"question": "Which is the longest dam in India?",
+"options": ["Hirakud", "Bhakra Nangal", "Tehri", "Sardar Sarovar"],
+"answer": 0
+},
+
+{
+"question": "The Lok Sabha is also known as?",
+"options": ["Upper House", "Lower House", "Council of States", "Senate"],
+"answer": 1
+},
+
+{
+"question": "Which metal is liquid at room temperature?",
+"options": ["Mercury", "Gold", "Silver", "Copper"],
+"answer": 0
+},
+
+{
+"question": "Which is the smallest continent?",
+"options": ["Australia", "Europe", "Antarctica", "South America"],
+"answer": 0
+},
+
+{
+"question": "Which Indian state has the highest population?",
+"options": ["Bihar", "Maharashtra", "Uttar Pradesh", "West Bengal"],
+"answer": 2
+},
+
+{
+"question": "Which instrument measures atmospheric pressure?",
+"options": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
+"answer": 1
+}
+],
+  "currentAffairs": [
+
+{
+"question": "Where was the G20 Summit 2023 held?",
+"options": ["New Delhi", "Rome", "Tokyo", "Paris"],
+"answer": 0
+},
+
+{
+"question": "Chandrayaan-3 landed near which region of the Moon?",
+"options": ["North Pole", "South Pole", "Equator", "Far Side"],
+"answer": 1
+},
+
+{
+"question": "India’s first solar mission is called?",
+"options": ["Chandrayaan", "Aditya-L1", "Gaganyaan", "Mangalyaan"],
+"answer": 1
+},
+
+{
+"question": "Which banknote was withdrawn by RBI recently?",
+"options": ["₹100", "₹500", "₹2000", "₹200"],
+"answer": 2
+},
+
+{
+"question": "India became the world’s most populous country in which year?",
+"options": ["2021", "2022", "2023", "2024"],
+"answer": 2
+},
+
+{
+"question": "Who is the current President of India?",
+"options": ["Ram Nath Kovind", "Droupadi Murmu", "Pranab Mukherjee", "None"],
+"answer": 1
+},
+
+{
+"question": "The Gaganyaan mission is related to?",
+"options": ["Mars Mission", "Human Spaceflight", "Lunar Rover", "Satellite"],
+"answer": 1
+},
+
+{
+"question": "Which state launched Lakshmir Bhandar scheme?",
+"options": ["Assam", "West Bengal", "Odisha", "Bihar"],
+"answer": 1
+},
+
+{
+"question": "Who won ICC Cricket World Cup 2023?",
+"options": ["India", "Australia", "England", "New Zealand"],
+"answer": 1
+},
+
+{
+"question": "Women’s Reservation Bill provides how much reservation?",
+"options": ["25%", "30%", "33%", "50%"],
+"answer": 2
+}
+
+],
+  "english": [
+
+{
+"question": "Choose the correct spelling:",
+"options": ["Definately", "Definitely", "Definatly", "Definitly"],
+"answer": 1
+},
+
+{
+"question": "Synonym of Rapid:",
+"options": ["Slow", "Fast", "Late", "Soft"],
+"answer": 1
+},
+
+{
+"question": "Antonym of Honest:",
+"options": ["Truthful", "Sincere", "Dishonest", "Loyal"],
+"answer": 2
+},
+
+{
+"question": "Fill in the blank: She has been living here ___ 2015.",
+"options": ["since", "for", "from", "by"],
+"answer": 0
+},
+
+{
+"question": "Choose correct passive form: 'They completed the work.'",
+"options": [
+"The work is completed.",
+"The work was completed.",
+"The work completed.",
+"The work has completed."
+],
+"answer": 1
+},
+
+{
+"question": "Choose correct preposition: He is good ___ mathematics.",
+"options": ["at", "in", "on", "with"],
+"answer": 0
+},
+
+{
+"question": "Choose the correct article: She bought ___ umbrella.",
+"options": ["a", "an", "the", "no article"],
+"answer": 1
+},
+
+{
+"question": "Idiom meaning of 'Break the ice':",
+"options": [
+"Start conversation",
+"Break something",
+"Cold weather",
+"Stop talking"
+],
+"answer": 0
+},
+
+{
+"question": "Choose correct tense: I ___ finished my homework.",
+"options": ["has", "have", "had", "having"],
+"answer": 1
+},
+
+{
+"question": "Find the error: She do not like coffee.",
+"options": ["She", "do not", "like", "coffee"],
+"answer": 1
+}
+]
+}
