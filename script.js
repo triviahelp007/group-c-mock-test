@@ -1,16 +1,23 @@
-let questions = [];
 let current = 0;
 let answers = [];
 let score = 0;
 let TOTAL_QUESTIONS = 60;
+let questions = [];
 
 function shuffle(array) {
     return array.sort(() => 0.5 - Math.random());
 }
 
 function startTest() {
-    // Shuffle and take only 60 questions
-    questions = shuffle([...allQuestions]).slice(0, TOTAL_QUESTIONS);
+
+    // If session exists, load it
+    if (sessionStorage.getItem("mockQuestions")) {
+        questions = JSON.parse(sessionStorage.getItem("mockQuestions"));
+    } else {
+        questions = shuffle([...allQuestions]).slice(0, TOTAL_QUESTIONS);
+        sessionStorage.setItem("mockQuestions", JSON.stringify(questions));
+    }
+
     loadQuestion();
 }
 
@@ -64,10 +71,13 @@ function submitTest() {
         }
     });
 
+    sessionStorage.removeItem("mockQuestions");
+
     document.body.innerHTML = `
         <div style="text-align:center; margin-top:50px;">
             <h2>Test Completed</h2>
             <h3>Your Score: ${score}/${questions.length}</h3>
+            <button onclick="location.reload()">Start New Test</button>
         </div>
     `;
 }
