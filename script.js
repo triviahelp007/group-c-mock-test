@@ -2,20 +2,22 @@ let current = 0;
 let answers = [];
 let score = 0;
 let questions = [];
-let TEST_DURATION = 3600;
-let timeLeft = TEST_DURATION;
+let timeLeft = 3600;
+let fullDatabase = {};
 
 function shuffle(array) {
     return array.sort(() => 0.5 - Math.random());
 }
 
+async function loadDatabase() {
+    const response = await fetch("database.json");
+    fullDatabase = await response.json();
+    startTest();
+}
+
 function pickQuestions(sectionArray, count) {
     let shuffled = shuffle([...sectionArray]);
-    let result = [];
-    for (let i = 0; i < count; i++) {
-        result.push(shuffled[i % shuffled.length]);
-    }
-    return result;
+    return shuffled.slice(0, count);
 }
 
 function startTest() {
@@ -25,11 +27,11 @@ function startTest() {
     } else {
 
         questions = [
-            ...pickQuestions(gk, 15),
-            ...pickQuestions(currentAffairs, 15),
-            ...pickQuestions(english, 10),
-            ...pickQuestions(arithmetic, 15),
-            ...pickQuestions(reasoning, 5)
+            ...pickQuestions(fullDatabase.gk, 15),
+            ...pickQuestions(fullDatabase.currentAffairs, 15),
+            ...pickQuestions(fullDatabase.english, 10),
+            ...pickQuestions(fullDatabase.arithmetic, 15),
+            ...pickQuestions(fullDatabase.reasoning, 5)
         ];
 
         questions = shuffle(questions);
@@ -101,10 +103,7 @@ function submitTest() {
     `;
 }
 
-startTest();
-
-let timerInterval = setInterval(function () {
-
+setInterval(function () {
     let minutes = Math.floor(timeLeft / 60);
     let seconds = timeLeft % 60;
 
@@ -114,8 +113,9 @@ let timerInterval = setInterval(function () {
     timeLeft--;
 
     if (timeLeft < 0) {
-        clearInterval(timerInterval);
         submitTest();
     }
 
 }, 1000);
+
+loadDatabase();
