@@ -6,21 +6,29 @@
 </head>
 <body>
 
+<div class="overlay"></div>
+
 <div class="container">
 
     <div id="startSection">
+        <img src="logo.png" class="logo">
         <h2>WBSSC Group C Mock Test</h2>
         <p>Total Questions: 60 | Time: 1 Hour | No Negative Marking</p>
 
-        <label>Enter Your Name:</label><br><br>
-        <input type="text" id="candidateName" placeholder="Your Full Name" style="padding:8px; width:250px;">
+        <input type="text" id="candidateName" placeholder="Enter Full Name">
         <br><br>
         <button onclick="beginTest()">Start Test</button>
     </div>
 
     <div id="examSection" style="display:none;">
-        <h3 id="examHeader"></h3>
-        <div id="timer">Time Left: 60:00</div>
+        <div class="examHeader">
+            <img src="logo.png" class="logoSmall">
+            <div>
+                <h3 id="examHeader"></h3>
+                <div id="timer">Time Left: 60:00</div>
+            </div>
+        </div>
+
         <div id="questionBox"></div>
 
         <div class="buttons">
