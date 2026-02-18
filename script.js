@@ -1,212 +1,128 @@
-let current = 0;
-let answers = [];
-let score = 0;
-let questions = [];
-let timeLeft = 3600;
-let fullDatabase = {};
-let candidateName = "";
-let mockID = "";
+let questionBank = {};
+let selectedQuestions = [];
+let userAnswers = {};
+let timerInterval;
+let totalTime = 60 * 60;
 
-async function loadDatabase() {
-    const response = await fetch("database.json");
-    fullDatabase = await response.json();
+fetch("production_final_database.json")
+  .then(res => res.json())
+  .then(data => {
+    questionBank = data;
+    startTest();
+  });
+
+function getRandom(arr, count) {
+  return [...arr].sort(() => 0.5 - Math.random()).slice(0, count);
 }
 
-function shuffle(array) {
-    return array.sort(() => 0.5 - Math.random());
+function startTest() {
+  selectedQuestions = [];
+
+  selectedQuestions.push(...getRandom(questionBank.arithmetic, 15));
+  selectedQuestions.push(...getRandom(questionBank.gk, 15));
+  selectedQuestions.push(...getRandom(questionBank.english, 10));
+  selectedQuestions.push(...getRandom(questionBank.reasoning, 10));
+  selectedQuestions.push(...getRandom(questionBank.currentAffairs, 10));
+
+  selectedQuestions = selectedQuestions.sort(() => 0.5 - Math.random());
+
+  renderQuestions();
+  startTimer();
 }
 
-function generateMockID() {
-    return "WBSSC-" + Math.floor(Math.random() * 100000);
-}
+function renderQuestions() {
+  const container = document.getElementById("quiz-container");
+  container.innerHTML = "";
 
-function beginTest() {
+  selectedQuestions.forEach((q, index) => {
+    const div = document.createElement("div");
+    div.className = "question-block";
 
-    candidateName = document.getElementById("candidateName").value.trim();
+    const labels = ["A", "B", "C", "D"];
 
-    if (candidateName === "") {
-        alert("Enter your name first.");
-        return;
-    }
-
-    mockID = generateMockID();
-
-    document.getElementById("startSection").style.display = "none";
-    document.getElementById("examSection").style.display = "block";
-
-    document.getElementById("examHeader").innerHTML =
-        "Candidate: " + candidateName + " | Mock ID: " + mockID;
-
-    questions = [
-        ...shuffle(fullDatabase.gk).slice(0,15),
-        ...shuffle(fullDatabase.currentAffairs).slice(0,15),
-        ...shuffle(fullDatabase.english).slice(0,10),
-        ...shuffle(fullDatabase.arithmetic).slice(0,15),
-        ...shuffle(fullDatabase.reasoning).slice(0,5)
-    ];
-
-    questions = shuffle(questions);
-
-    loadQuestion();
-}
-
-function loadQuestion() {
-
-    let q = questions[current];
-    let letters = ["A", "B", "C", "D"];
-
-    let html = `
-        <div class="questionContainer">
-            <h4>Question ${current+1} of 60</h4>
-            <p class="questionText">${q.question}</p>
-            <div class="options">
-    `;
-
+    let optionsHTML = "";
     q.options.forEach((opt, i) => {
-        html += `
-            <div class="optionRow">
-                <input type="radio" name="option" value="${i}"
-                ${answers[current] === i ? "checked" : ""}>
-                <span class="optionLabel">${letters[i]}.</span>
-                <span>${opt}</span>
-            </div>
-        `;
+      optionsHTML += `
+        <label class="option">
+          <input type="radio" name="q${index}" value="${labels[i]}" 
+          onchange="saveAnswer(${index}, '${labels[i]}')">
+          <strong>${labels[i]}.</strong> ${opt}
+        </label>
+      `;
     });
 
-    html += `</div></div>`;
+    div.innerHTML = `
+      <p class="question-number">Q${index + 1}. ${q.question}</p>
+      ${optionsHTML}
+    `;
 
-    document.getElementById("questionBox").innerHTML = html;
+    container.appendChild(div);
+  });
 }
 
-function saveAnswer() {
-    let selected = document.querySelector('input[name="option"]:checked');
-    if (selected) {
-        answers[current] = parseInt(selected.value);
-    }
+function saveAnswer(index, value) {
+  userAnswers[index] = value;
 }
 
-function nextQuestion() {
-    saveAnswer();
-    if (current < questions.length - 1) {
-        current++;
-        loadQuestion();
-    }
-}
+function startTimer() {
+  const timerDisplay = document.getElementById("timer");
 
-function prevQuestion() {
-    saveAnswer();
-    if (current > 0) {
-        current--;
-        loadQuestion();
+  timerInterval = setInterval(() => {
+    totalTime--;
+
+    const minutes = Math.floor(totalTime / 60);
+    const seconds = totalTime % 60;
+
+    timerDisplay.textContent =
+      minutes.toString().padStart(2, "0") + ":" +
+      seconds.toString().padStart(2, "0");
+
+    if (totalTime <= 0) {
+      clearInterval(timerInterval);
+      submitTest();
     }
+  }, 1000);
 }
 
 function submitTest() {
+  clearInterval(timerInterval);
 
-    if (!confirm("Submit test?")) return;
+  let score = 0;
+  let attempted = 0;
+  let resultHTML = "<h2>Answer Review</h2>";
 
-    saveAnswer();
-    score = 0;
+  selectedQuestions.forEach((q, index) => {
+    const correctAnswer = q.answer || "N/A";
+    const userAnswer = userAnswers[index] || "Not Attempted";
 
-    let letters = ["A", "B", "C", "D"];
-    let reviewHTML = "";
+    if (userAnswer !== "Not Attempted") attempted++;
+    if (userAnswer === correctAnswer) score++;
 
-    answers.forEach((ans, i) => {
-
-        if (ans !== undefined) {
-
-            let correct = questions[i].answer;
-
-            if (ans === correct) score++;
-
-            reviewHTML += `
-                <div class="reviewItem">
-                    <p><strong>Question ${i+1}:</strong> ${questions[i].question}</p>
-                    <p>Your Answer: <strong>${letters[ans]}</strong></p>
-                    <p>Correct Answer: <strong>${letters[correct]}</strong></p>
-                    <p class="${ans === correct ? 'correctText' : 'wrongText'}">
-                        ${ans === correct ? 'Correct' : 'Wrong'}
-                    </p>
-                </div>
-                <hr>
-            `;
-        }
-    });
-
-    let today = new Date().toLocaleDateString();
-    let percentage = ((score / 60) * 100).toFixed(1);
-
-    let preparationMessage = "";
-
-    if (percentage >= 75) {
-        preparationMessage = "Excellent performance. Minor revision required.";
-    } else if (percentage >= 50) {
-        preparationMessage = "Good attempt. More practice needed to improve accuracy.";
-    } else {
-        preparationMessage = "Significant preparation required. Focus on weak sections.";
-    }
-
-    document.body.innerHTML = `
-        <div class="resultSection">
-
-            <h2>Test Result</h2>
-            <p><strong>Candidate:</strong> ${candidateName}</p>
-            <p><strong>Mock ID:</strong> ${mockID}</p>
-            <p><strong>Score:</strong> ${score} / 60 (${percentage}%)</p>
-            <p><strong>Preparation Analysis:</strong> ${preparationMessage}</p>
-
-            <hr>
-            <h3>Answer Review (Attempted Questions Only)</h3>
-            <div class="reviewSection">
-                ${reviewHTML}
-            </div>
-
-            <br>
-            <button onclick="window.print()">Print Certificate</button>
-            <button onclick="location.reload()">Start New Test</button>
-
-            <hr>
-
-            <div class="certificate">
-                <h1>Certificate of Completion</h1>
-                <h2>WBSSC Group C Mock Examination</h2>
-                <hr>
-
-                <p>This is to certify that</p>
-                <h2>${candidateName}</h2>
-                <p>Mock ID: ${mockID}</p>
-                <p>has completed the examination.</p>
-
-                <h2>Score: ${score} / 60 (${percentage}%)</h2>
-                <p>${preparationMessage}</p>
-
-                <p>Date: ${today}</p>
-
-                <div class="signatureBlock">
-                    <img src="authority.png" class="signatureImage">
-                    <p><strong>Examination Authority</strong></p>
-                </div>
-            </div>
-
-        </div>
+    resultHTML += `
+      <div class="review-block">
+        <p><strong>Q${index + 1}:</strong> ${q.question}</p>
+        <p>Your Answer: ${userAnswer}</p>
+        <p>Correct Answer: ${correctAnswer}</p>
+      </div>
     `;
+  });
+
+  let preparationAdvice = "";
+
+  if (score >= 50) {
+    preparationAdvice = "Excellent performance. You are exam ready.";
+  } else if (score >= 35) {
+    preparationAdvice = "Good attempt. Minor revision needed.";
+  } else {
+    preparationAdvice = "More preparation required. Focus on weak subjects.";
+  }
+
+  resultHTML += `
+    <h3>Total Score: ${score} / 60</h3>
+    <p>Attempted: ${attempted} / 60</p>
+    <p><strong>Preparation Advice:</strong> ${preparationAdvice}</p>
+  `;
+
+  document.getElementById("quiz-container").innerHTML = "";
+  document.getElementById("result-container").innerHTML = resultHTML;
 }
-
-setInterval(() => {
-
-    let minutes = Math.floor(timeLeft / 60);
-    let seconds = timeLeft % 60;
-
-    let timer = document.getElementById("timer");
-    if (timer) {
-        timer.innerText =
-            "Time Left: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-    }
-
-    timeLeft--;
-
-    if (timeLeft < 0) submitTest();
-
-}, 1000);
-
-loadDatabase();
