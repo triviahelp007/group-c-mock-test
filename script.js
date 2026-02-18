@@ -18,11 +18,11 @@ function shuffle(array) {
 
 function generateCertificateID() {
     let date = new Date();
-    let timestamp = date.getFullYear().toString().slice(2) +
-        (date.getMonth()+1) +
-        date.getDate() +
-        Math.floor(Math.random()*10000);
-    return "WBSSC-CERT-" + timestamp;
+    let id = date.getFullYear().toString().slice(2) +
+             (date.getMonth()+1) +
+             date.getDate() +
+             Math.floor(Math.random()*10000);
+    return "WBSSC-CERT-" + id;
 }
 
 function beginTest() {
@@ -96,6 +96,7 @@ function startTimer(){
 function submitTest(){
 
     if(!confirm("Submit Test?")) return;
+
     saveAnswer();
     clearInterval(timerInterval);
 
@@ -106,39 +107,43 @@ function submitTest(){
 
     questions.forEach((q,i)=>{
 
-        if(answers[i]!==undefined){
+        if(answers[i] !== undefined){
 
             attempted++;
 
-            let correctIndex=q.answer;
-            let userIndex=answers[i];
-            let isCorrect=userIndex===correctIndex;
+            let correctIndex = q.answer;
+            let userIndex = answers[i];
+            let isCorrect = userIndex === correctIndex;
 
             if(isCorrect) score++;
 
             if(!subjectStats[q.subject])
-                subjectStats[q.subject]={total:0,correct:0};
+                subjectStats[q.subject] = {total:0,correct:0};
 
             subjectStats[q.subject].total++;
             if(isCorrect) subjectStats[q.subject].correct++;
 
-            reviewHTML+=`
-                <div>
+            reviewHTML += `
+                <div style="margin-bottom:15px;">
                     <p><strong>Q${i+1}:</strong> ${q.question}</p>
-                    <p class="${isCorrect?"correct":"wrong"}">
-                        Your Answer: ${q.options[userIndex]}
+
+                    <p class="${isCorrect ? "correct" : "wrong"}">
+                        <strong>Your Answer:</strong> ${q.options[userIndex]}
                     </p>
-                    <p><strong>Correct Answer:</strong> ${q.options[correctIndex]}</p>
+
+                    <p>
+                        <strong>Correct Answer:</strong> ${q.options[correctIndex]}
+                    </p>
                 </div>
                 <hr>
             `;
         }
     });
 
-    let overallPercent=((score/60)*100).toFixed(1);
+    let overallPercent = ((score/60)*100).toFixed(1);
     let certificateID = generateCertificateID();
 
-    document.body.innerHTML=`
+    document.body.innerHTML = `
         <div class="container">
             <h2>Test Result</h2>
             <p><strong>Name:</strong> ${candidateName}</p>
