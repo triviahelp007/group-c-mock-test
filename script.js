@@ -217,7 +217,7 @@ function downloadCertificate(name,score,percent,certID){
             <p>This is to certify that</p>
             <h2>${name}</h2>
             <p>has successfully completed</p>
-            <h3>WBSSC Group C Mock Test</h3>
+            <h3>WBSSC Group C & D Mock Test</h3>
             <p>Score: <strong>${score}/60 (${percent}%)</strong></p>
             <p class="certID">Certificate ID: ${certID}</p>
             <p>Date: ${today}</p>
