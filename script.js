@@ -109,7 +109,7 @@ function submitTest() {
     score = 0;
 
     let letters = ["A", "B", "C", "D"];
-    let answerReview = "";
+    let reviewHTML = "";
 
     answers.forEach((ans, i) => {
 
@@ -119,14 +119,14 @@ function submitTest() {
 
             if (ans === correct) score++;
 
-            answerReview += `
+            reviewHTML += `
                 <div class="reviewItem">
-                    <strong>Question ${i+1}</strong><br>
-                    Your Answer: ${letters[ans]} <br>
-                    Correct Answer: ${letters[correct]} <br>
-                    <span class="${ans === correct ? 'correctText' : 'wrongText'}">
+                    <p><strong>Question ${i+1}:</strong> ${questions[i].question}</p>
+                    <p>Your Answer: <strong>${letters[ans]}</strong></p>
+                    <p>Correct Answer: <strong>${letters[correct]}</strong></p>
+                    <p class="${ans === correct ? 'correctText' : 'wrongText'}">
                         ${ans === correct ? 'Correct' : 'Wrong'}
-                    </span>
+                    </p>
                 </div>
                 <hr>
             `;
@@ -147,37 +147,47 @@ function submitTest() {
     }
 
     document.body.innerHTML = `
-        <div class="certificate">
-            <h1>Certificate of Completion</h1>
-            <h2>WBSSC Group C & D Mock Examination</h2>
+        <div class="resultSection">
+
+            <h2>Test Result</h2>
+            <p><strong>Candidate:</strong> ${candidateName}</p>
+            <p><strong>Mock ID:</strong> ${mockID}</p>
+            <p><strong>Score:</strong> ${score} / 60 (${percentage}%)</p>
+            <p><strong>Preparation Analysis:</strong> ${preparationMessage}</p>
+
             <hr>
-
-            <p>This is to certify that</p>
-            <h2>${candidateName}</h2>
-            <p>Mock ID: ${mockID}</p>
-
-            <p>has completed the examination.</p>
-
-            <h2>Score: ${score} / 60 (${percentage}%)</h2>
-            <p><strong>Preparation Analysis:</strong></p>
-            <p>${preparationMessage}</p>
-
-            <p>Date: ${today}</p>
-
-            <div class="signatureBlock">
-                <img src="authority.png" class="signatureImage">
-                <p><strong>Examination Authority</strong></p>
+            <h3>Answer Review (Attempted Questions Only)</h3>
+            <div class="reviewSection">
+                ${reviewHTML}
             </div>
 
-            <br><br>
+            <br>
             <button onclick="window.print()">Print Certificate</button>
             <button onclick="location.reload()">Start New Test</button>
 
             <hr>
-            <h3>Answer Key (Attempted Questions Only)</h3>
-            <div class="reviewSection">
-                ${answerReview}
+
+            <div class="certificate">
+                <h1>Certificate of Completion</h1>
+                <h2>WBSSC Group C Mock Examination</h2>
+                <hr>
+
+                <p>This is to certify that</p>
+                <h2>${candidateName}</h2>
+                <p>Mock ID: ${mockID}</p>
+                <p>has completed the examination.</p>
+
+                <h2>Score: ${score} / 60 (${percentage}%)</h2>
+                <p>${preparationMessage}</p>
+
+                <p>Date: ${today}</p>
+
+                <div class="signatureBlock">
+                    <img src="authority.png" class="signatureImage">
+                    <p><strong>Examination Authority</strong></p>
+                </div>
             </div>
+
         </div>
     `;
 }
