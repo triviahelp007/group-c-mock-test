@@ -1,139 +1,186 @@
-/* RESET */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+let questionBank = {};
+let selectedQuestions = [];
+let currentQuestionIndex = 0;
+let userAnswers = {};
+let timerInterval;
+let totalTime = 60 * 60; // 60 minutes
 
-body {
-  background: #f4f6f9;
-  min-height: 100vh;
-}
+// ---------------- LOAD DATABASE ----------------
+fetch("production_final_database.json")
+  .then(response => response.json())
+  .then(data => {
+    questionBank = data;
+  })
+  .catch(error => {
+    console.error("Error loading question database:", error);
+  });
 
-/* MAIN CONTAINER */
-.container {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 20px;
-}
 
-/* START SCREEN */
-.center {
-  text-align: center;
-}
+// ---------------- START TEST ----------------
+function beginTest() {
+  const name = document.getElementById("candidateName").value.trim();
 
-.logo {
-  width: 120px;
-  margin-bottom: 15px;
-}
-
-input {
-  padding: 10px;
-  width: 250px;
-  margin-top: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px 18px;
-  margin: 8px;
-  border-radius: 6px;
-  border: none;
-  background: #1e88e5;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #1565c0;
-}
-
-/* EXAM HEADER */
-.examHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-#timer {
-  font-weight: bold;
-  color: red;
-  font-size: 18px;
-}
-
-/* QUESTION BOX */
-#questionBox {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-/* QUESTION TEXT */
-#questionBox h4 {
-  margin-bottom: 10px;
-  color: #444;
-}
-
-#questionBox p {
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-/* OPTIONS */
-.option {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 8px;
-  border-radius: 6px;
-  transition: 0.2s;
-  margin-bottom: 6px;
-  cursor: pointer;
-}
-
-.option:hover {
-  background: #eef4ff;
-}
-
-.option input {
-  margin-top: 3px;
-}
-
-/* BUTTON AREA */
-.buttons {
-  margin-top: 15px;
-  text-align: center;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-
-  .container {
-    margin: 10px;
-    padding: 10px;
+  if (!name) {
+    alert("Please enter your full name.");
+    return;
   }
 
-  input {
-    width: 90%;
+  if (!questionBank.arithmetic) {
+    alert("Question database not loaded yet. Please refresh.");
+    return;
   }
 
-  .examHeader {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  document.getElementById("startSection").style.display = "none";
+  document.getElementById("examSection").style.display = "block";
+  document.getElementById("examHeader").innerText = "Candidate: " + name;
+
+  generateTest();
+  loadQuestion();
+  startTimer();
+}
+
+
+// ---------------- GENERATE STRICT 60 ----------------
+function getRandomQuestions(arr, count) {
+  return [...arr]
+    .sort(() => 0.5 - Math.random())
+    .slice(0, count);
+}
+
+function generateTest() {
+  selectedQuestions = [];
+
+  selectedQuestions.push(...getRandomQuestions(questionBank.arithmetic, 15));
+  selectedQuestions.push(...getRandomQuestions(questionBank.gk, 15));
+  selectedQuestions.push(...getRandomQuestions(questionBank.english, 10));
+  selectedQuestions.push(...getRandomQuestions(questionBank.reasoning, 10));
+  selectedQuestions.push(...getRandomQuestions(questionBank.currentAffairs, 10));
+
+  // Shuffle entire test
+  selectedQuestions = selectedQuestions.sort(() => 0.5 - Math.random());
+}
+
+
+// ---------------- LOAD QUESTION ----------------
+function loadQuestion() {
+  const container = document.getElementById("questionBox");
+  const q = selectedQuestions[currentQuestionIndex];
+
+  const labels = ["A", "B", "C", "D"];
+
+  let optionsHTML = "";
+
+  q.options.forEach((opt, i) => {
+    const checked =
+      userAnswers[currentQuestionIndex] === labels[i] ? "checked" : "";
+
+    optionsHTML += `
+      <label class="option">
+        <input type="radio" 
+               name="option" 
+               value="${labels[i]}" 
+               ${checked}
+               onchange="saveAnswer('${labels[i]}')">
+        <div>
+          <strong>${labels[i]}.</strong> ${opt}
+        </div>
+      </label>
+    `;
+  });
+
+  container.innerHTML = `
+    <h4>Question ${currentQuestionIndex + 1} of 60</h4>
+    <p>${q.question}</p>
+    ${optionsHTML}
+  `;
+}
+
+
+// ---------------- SAVE ANSWER ----------------
+function saveAnswer(value) {
+  userAnswers[currentQuestionIndex] = value;
+}
+
+
+// ---------------- NAVIGATION ----------------
+function nextQuestion() {
+  if (currentQuestionIndex < selectedQuestions.length - 1) {
+    currentQuestionIndex++;
+    loadQuestion();
+  }
+}
+
+function prevQuestion() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    loadQuestion();
+  }
+}
+
+
+// ---------------- TIMER ----------------
+function startTimer() {
+  const timerDisplay = document.getElementById("timer");
+
+  timerInterval = setInterval(() => {
+    totalTime--;
+
+    const minutes = Math.floor(totalTime / 60);
+    const seconds = totalTime % 60;
+
+    timerDisplay.innerText =
+      "Time Left: " +
+      minutes.toString().padStart(2, "0") +
+      ":" +
+      seconds.toString().padStart(2, "0");
+
+    if (totalTime <= 0) {
+      clearInterval(timerInterval);
+      submitTest();
+    }
+  }, 1000);
+}
+
+
+// ---------------- SUBMIT TEST ----------------
+function submitTest() {
+  clearInterval(timerInterval);
+
+  let score = 0;
+  let attempted = 0;
+  let reviewHTML = "<h2>Exam Result</h2>";
+
+  selectedQuestions.forEach((q, index) => {
+    const correctAnswer = q.answer || "N/A";
+    const userAnswer = userAnswers[index] || "Not Attempted";
+
+    if (userAnswer !== "Not Attempted") attempted++;
+    if (userAnswer === correctAnswer) score++;
+
+    reviewHTML += `
+      <div style="margin-bottom:15px; padding:10px; border-bottom:1px solid #ccc;">
+        <p><strong>Q${index + 1}:</strong> ${q.question}</p>
+        <p>Your Answer: ${userAnswer}</p>
+        <p>Correct Answer: ${correctAnswer}</p>
+      </div>
+    `;
+  });
+
+  let advice = "";
+
+  if (score >= 50) {
+    advice = "Excellent performance. You are exam ready.";
+  } else if (score >= 35) {
+    advice = "Good attempt. Some revision required.";
+  } else {
+    advice = "You need more preparation. Focus on weak subjects.";
   }
 
-  #questionBox {
-    padding: 15px;
-  }
+  reviewHTML += `
+    <h3>Total Score: ${score} / 60</h3>
+    <p>Attempted: ${attempted} / 60</p>
+    <p><strong>Preparation Advice:</strong> ${advice}</p>
+  `;
 
-  button {
-    width: 100%;
-    margin: 6px 0;
-  }
+  document.getElementById("examSection").innerHTML = reviewHTML;
 }
