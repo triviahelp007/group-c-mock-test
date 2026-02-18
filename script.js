@@ -42,7 +42,7 @@ function beginTest() {
     mockID = "WBSSC-" + Math.floor(Math.random()*100000);
 
     document.getElementById("examInfo").innerHTML = `
-        <p><strong>Exam Title:</strong> WBSSC Group C & D Mock Test</p>
+        <p><strong>Exam Name:</strong> WBSSC Group C & D Mock Test</p>
         <p><strong>Candidate Name:</strong> ${candidateName}</p>
         <p><strong>Mock ID:</strong> ${mockID}</p>
     `;
