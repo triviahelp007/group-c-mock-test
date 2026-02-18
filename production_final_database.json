@@ -1,0 +1,1442 @@
+{
+  "arithmetic": [
+    {
+      "id": 1,
+      "question": "An electric bulb of 100 watt is used for 4 hours. The unit of electric energy used is [UP Lower Sub. (Pre) 2009]",
+      "options": [
+        "400",
+        "25",
+        "4",
+        "0.4"
+      ],
+      "answer": null
+    },
+    {
+      "id": 13,
+      "question": "A, B and C can do a piece of work in 20, 30 and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?",
+      "options": [
+        "12 days",
+        "15 days",
+        "16 days",
+        "18 days"
+      ],
+      "answer": null
+    },
+    {
+      "id": 68,
+      "question": "A man covers the first 160 km at a speed of 64 km/h and the next 160 km at a speed of 80 km/h. What is the person's average speed?",
+      "options": [
+        "36 km/hr",
+        "71 km/hr",
+        "71.11 km/hr",
+        "35.55 km/hr"
+      ],
+      "answer": null
+    },
+    {
+      "id": 69,
+      "question": "In a partnership business A contributes Rs. 1,200 for 5 months and B Rs. 750 for 4 months. If there is a profit of Rs. 450, then ratio of the profit of A and B is",
+      "options": [
+        "3:2",
+        "5:3",
+        "2:1",
+        "4:3"
+      ],
+      "answer": null
+    },
+    {
+      "id": 70,
+      "question": "A boat travels 16 km downstream in 2 hours but takes 4 hours to travel the same distance upstream. What is the speed of the boat in still water?",
+      "options": [
+        "6 km/hr",
+        "10 km/hr",
+        "4 km/hr",
+        "4 km/hr"
+      ],
+      "answer": null
+    },
+    {
+      "id": 77,
+      "question": "According to the first leopard census report conducted in Odisha, how many leopards have been found?",
+      "options": [
+        "596",
+        "696",
+        "796",
+        "896"
+      ],
+      "answer": null
+    },
+    {
+      "id": 109,
+      "question": "If the number representing volume and surface area of a cube are equal, then the length of the edge of the cube in terms of the unit of measurement will be [IAS (Pre) 1997]",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": null
+    },
+    {
+      "id": 2,
+      "question": "The first page that you normally view at any website is known as [MPPCS (Pre) 2015]",
+      "options": [
+        "Home page",
+        "Master page",
+        "First page",
+        "Banner page"
+      ],
+      "answer": null
+    },
+    {
+      "id": 3,
+      "question": "Which one of the following is correctly matched? [UP Lower Sub. (Spl)(Pre) 2003 .UP Lower Sub. (Pre) 2002]",
+      "options": [
+        "Valentine Chirol - Indian Struggle",
+        "Rafiq Zakaria - The Man Who Divided India",
+        "Subhash Chandra Bose - Indian Unrest",
+        "V.D. Savarkar - Unhappy India"
+      ],
+      "answer": null
+    },
+    {
+      "id": 10,
+      "question": "When light passes from one medium to another medium, which one of the following does not change? [UPPCS (Mains) 2003]",
+      "options": [
+        "Intensity",
+        "Velocity",
+        "Wavelength",
+        "Frequency"
+      ],
+      "answer": null
+    },
+    {
+      "id": 11,
+      "question": "Which one of the following is not correctly matched? [Uttarakhand Lower Sub. (Pre) 2010]",
+      "options": [
+        "Y2K - Computer",
+        "Arthritis - Uric Acid",
+        "Noise Pollution - Decibel",
+        "Adobe - Hardware"
+      ],
+      "answer": null
+    },
+    {
+      "id": 12,
+      "question": "First President of United States of America was [Uttarakhand UDA/LDA (Pre) 2007]",
+      "options": [
+        "George Washington",
+        "John Adams",
+        "Abraham Lincoln",
+        "J.F. Kennedy"
+      ],
+      "answer": null
+    },
+    {
+      "id": 14,
+      "question": "Brass is a combination of what metals? [Chhattisgarh PCS (Pre) 2011 Uttarakhand PCS (Pre) 2002 UPPCS (Pre) 1993]",
+      "options": [
+        "Copper and Nickel",
+        "Copper and Tin",
+        "Copper and Zinc",
+        "Copper + Zinc and Nickel"
+      ],
+      "answer": null
+    },
+    {
+      "id": 15,
+      "question": "What is the mass number of an element, the atom of which contains two protons, two neutrons and two electrons? [43rd BPSC (Pre) 1999]",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": null
+    },
+    {
+      "id": 16,
+      "question": "Dynamo is a machine which is used for [UPPCS (Mains) 2012 RAS/RTS (Pre) 2012 ,UPPCS (Pre) 2016]",
+      "options": [
+        "Conversion of high voltage to low voltage",
+        "Conversion of electrical energy to mechanical energy",
+        "Conversion of mechanical energy to electrical energy",
+        "Conversion of low voltage to high voltage"
+      ],
+      "answer": null
+    },
+    {
+      "id": 17,
+      "question": "In which place Kumbh Mela is held every twelfth years? [MPPCS (Pre) 1995]",
+      "options": [
+        "Prayag - Haridwar - Ujjain - Nashik",
+        "Chitrakoot - Ujjain - Prayag - Haridwar",
+        "Rameshwaram - Puri - Badrinath - Dwarika",
+        "Ujjain - Puri - Prayag - Haridwar"
+      ],
+      "answer": null
+    },
+    {
+      "id": 18,
+      "question": "The last Mauryan emperor was [48th to 52nd BPSC (Pre) 2008]",
+      "options": [
+        "Jaloka",
+        "Avanti Verma",
+        "Nandi Vardhana",
+        "Brihadratha"
+      ],
+      "answer": null
+    },
+    {
+      "id": 19,
+      "question": "On the surface of the Moon, two persons cannot listen each other as [UPPCS (Pre) 2003]",
+      "options": [
+        "Their ears stops working at the Moon",
+        "There is no atmosphere on the Moon",
+        "They wear special types of space suits on the Moon",
+        "Sound travels very slow on the Moon"
+      ],
+      "answer": null
+    },
+    {
+      "id": 20,
+      "question": "Which of the following cups/trophies is not associated with Lawn Tennis? [Haryana PSC (Pre) 2015]",
+      "options": [
+        "Davis Cup",
+        "Nations’ Cup",
+        "Asian Cup",
+        "Dr. Rajendra Prasad Cup"
+      ],
+      "answer": null
+    },
+    {
+      "id": 21,
+      "question": "Who one of the following is the biographer of Jawaharlal Nehru? [UPPCS (Mains) 2014]",
+      "options": [
+        "Frank Moraes",
+        "Dom Moraes",
+        "Louis Fischer",
+        "Webb Mille"
+      ],
+      "answer": null
+    },
+    {
+      "id": 22,
+      "question": "The first lady Prime Minister in the world, was [UP Lower Sub. (Spl)(Pre) 2004]",
+      "options": [
+        "Golda Meir",
+        "Sirmao Bhandarnaike",
+        "Indira Gandhi",
+        "Margarett Thatcher"
+      ],
+      "answer": null
+    },
+    {
+      "id": 23,
+      "question": "Minerals are [53rd to 55th BPSC (Pre) 2011]",
+      "options": [
+        "Liquids",
+        "Inorganic solids",
+        "Gases",
+        "All of the above"
+      ],
+      "answer": null
+    },
+    {
+      "id": 24,
+      "question": "By which year will India increase its nuclear power generation to 1 lakh MW?",
+      "options": [
+        "2050",
+        "2035",
+        "2040",
+        "2047"
+      ],
+      "answer": null
+    },
+    {
+      "id": 32,
+      "question": "Who inaugurated the 7th Khelo India Youth Games held in Bihar?",
+      "options": [
+        "Jagdeep Dhankhar",
+        "Draupadi Murmu",
+        "Narendra Modi",
+        "Amit Shah"
+      ],
+      "answer": null
+    },
+    {
+      "id": 45,
+      "question": "Which one of the following is an unmatched pair? [UPPCS (Mains) 2004]",
+      "options": [
+        "Central Drug Research Institute - Lucknow",
+        "Central Electrochemical Research Institute - Kolkata",
+        "Centre for Cellular and Molecular Biology - Hyderabad",
+        "Central Salt Research Institute - Bhavnagar"
+      ],
+      "answer": null
+    },
+    {
+      "id": 46,
+      "question": "The bear commonly performing on streets is [UPPCS (Mains) 2008]",
+      "options": [
+        "Sloth bear",
+        "Sun bear",
+        "Brown bear",
+        "Cat bear"
+      ],
+      "answer": null
+    },
+    {
+      "id": 47,
+      "question": "A small pouch containing silica gel is often found in bottles of medicine in tablet or powder form because of silica gel [Sikkim PSC (Pre) 2017 IAS (Pre) 2000]",
+      "options": [
+        "Kills bacteria",
+        "Kills germs and spores",
+        "Absorbs moisture",
+        "Absorbs all gases present inside the bottle"
+      ],
+      "answer": null
+    },
+    {
+      "id": 48,
+      "question": "The first heart transplant was performed by [UP Lower Sub. (Pre) 2004 MPPCS (Pre) 1994]",
+      "options": [
+        "Dr. William Harvey",
+        "Str. F.G. Hopkins",
+        "Dr. Louis Pasteur",
+        "Dr. Christian Bernard"
+      ],
+      "answer": null
+    },
+    {
+      "id": 52,
+      "question": "A girl is swinging on a swing in sitting position. When the girl stands up, the period of the swing will [IAS (Pre) 1997]",
+      "options": [
+        "Be shorter",
+        "Be longer",
+        "Depends on the height of the girl",
+        "Not change"
+      ],
+      "answer": null
+    },
+    {
+      "id": 53,
+      "question": "Which one of the following is correctly matched? [UP Lower Sub. (Pre) 2013 ,UP UDA/LDA (Pre) 2010]",
+      "options": [
+        "Lajpat Rai - Poverty and Un British Rule in India",
+        "Dadabhai Naoroji - Unhappy India",
+        "Rafiq Zakaria - The Man who Divided India",
+        "Subhash Chandra Bose - Guilty Men of India’s Partition"
+      ],
+      "answer": null
+    },
+    {
+      "id": 54,
+      "question": "A batsman scored 110 runs which included 3 boundaries and 8 sixes. What percent of his total score did he make by running between the wickets?",
+      "options": [
+        "45%",
+        "45 %",
+        "54 %",
+        "55%"
+      ],
+      "answer": null
+    },
+    {
+      "id": 55,
+      "question": "A ball is dropped from the top of a high building with a constant acceleration of 9.8 m/s . What will be its velocity after 3 s? [IAS (Pre) 1998]",
+      "options": [
+        "9.8 m/s",
+        "19.6 m/s",
+        "29.4 m/s",
+        "39.2 m/s"
+      ],
+      "answer": null
+    },
+    {
+      "id": 88,
+      "question": "Which one of the following pairs is correctly matched? [UPPCS (Mains) 2011]",
+      "options": [
+        "D.P. Mishra - Living an Era",
+        "Jawaharlal Nehru - India Divided",
+        "Rajendra Prasad - Discovery of India",
+        "Subhash Chandra Bose - Freedom at Midnight"
+      ],
+      "answer": null
+    },
+    {
+      "id": 89,
+      "question": "The photoelectric effect was discovered by [UPPCS (Mains) 2003]",
+      "options": [
+        "Hertz",
+        "Einstein",
+        "Plank",
+        "Bohr"
+      ],
+      "answer": null
+    },
+    {
+      "id": 90,
+      "question": "The Project Director of Chandrayaan-II was [Himachal Pradesh PSC (Pre) 2016 ,UPPSC (GIC) 2010]",
+      "options": [
+        "C. Rangarajan",
+        "A.P.J. Kalam",
+        "P. Chidambaram",
+        "Dr. M. Annadurai"
+      ],
+      "answer": null
+    },
+    {
+      "id": 91,
+      "question": "In which State is the Buddhist site Tabo Monastery located? [Uttarakhand PCS (Pre) 2010]",
+      "options": [
+        "Arunachal Pradesh",
+        "Himachal Pradesh",
+        "Sikkim",
+        "Uttarakhand"
+      ],
+      "answer": null
+    },
+    {
+      "id": 92,
+      "question": "Which of the following is not a vector quantity? [Arunachal Pradesh PSC (Pre) 2017 ,45th BPSC (Pre) 2001]",
+      "options": [
+        "Displacement",
+        "Velocity",
+        "Force",
+        "Volume"
+      ],
+      "answer": null
+    },
+    {
+      "id": 97,
+      "question": "Energy conservation means [MPPCS (Pre) 2000]",
+      "options": [
+        "Generation and destruction of energy",
+        "Energy could be created",
+        "Energy could not be created but destroyed",
+        "Energy can neither be created nor destroyed"
+      ],
+      "answer": null
+    },
+    {
+      "id": 103,
+      "question": "Identify a mismatch among the following pairs. [UPPCS (Mains) 2005]",
+      "options": [
+        "NBRI - Kolkata",
+        "IISR - Lucknow",
+        "NPL - New Delhi",
+        "IISc - Bangalore"
+      ],
+      "answer": null
+    },
+    {
+      "id": 104,
+      "question": "Which one of the following pairs is not correctly matched? [UPPCS (Mains) 2003]",
+      "options": [
+        "Control centre of cell - Nucleus",
+        "Natural Rubber - Poly-isoprene",
+        "Cryolite - Ore of Aluminium",
+        "Antiseptic - Phenolphthalin"
+      ],
+      "answer": null
+    },
+    {
+      "id": 105,
+      "question": "When doctor tells a person that he/she has been affected with tetraplagia, it means that he/she is suffering from paralysis of [UPPCS (Pre)(Re. Exam) 2015]",
+      "options": [
+        "Right hand only",
+        "Left hand only",
+        "His both legs only",
+        "Both hands and both legs"
+      ],
+      "answer": null
+    },
+    {
+      "id": 106,
+      "question": "Who wrote the book entitled ‘Romancing with Life : An Autobiography’? [Uttarakhand PCS (Pre) 2006]",
+      "options": [
+        "Devanand",
+        "Kalpana Chawla",
+        "Amitabh Bachchan",
+        "Anupam Kher"
+      ],
+      "answer": null
+    },
+    {
+      "id": 107,
+      "question": "Merdeka Cup is associated with [UP RO/ARO (Pre) 2016]",
+      "options": [
+        "Football",
+        "Tennis",
+        "Hockey",
+        "Badminton"
+      ],
+      "answer": null
+    },
+    {
+      "id": 110,
+      "question": "An electric bulb is connected to 220 V generator. The current is 0.5A. The power of the bulb is [Chhattisgarh PCS (Pre) 2016]",
+      "options": [
+        "110 W",
+        "110 V",
+        "440 W",
+        "220 W"
+      ],
+      "answer": null
+    },
+    {
+      "id": 121,
+      "question": "Which one of the following is not correctly matched? [UPPCS (Pre) 2017] Nitrogen fixing agent Crop",
+      "options": [
+        "Blue-green algae - Paddy",
+        "Rhizobium Leguminisarum- Pea",
+        "Azotobacter - Wheat",
+        "Azolla - Maize"
+      ],
+      "answer": null
+    },
+    {
+      "id": 122,
+      "question": "The viscous nature of human blood is due to [Jharkhand PCS (Pre) 2013]",
+      "options": [
+        "Proteins in blood",
+        "Platelets in plasma",
+        "RBC and WBC in blood",
+        "All of the above"
+      ],
+      "answer": null
+    },
+    {
+      "id": 124,
+      "question": "Alfred buys an old scooter for Rs. 4700 and spends Rs. 800 on its repairs. If he sells the scooter for Rs. 5800, his gain percent is: 𝟒",
+      "options": [
+        "4 %",
+        "5 %",
+        "10%",
+        "12%"
+      ],
+      "answer": null
+    },
+    {
+      "id": 125,
+      "question": "A person met with an accident and there is no time to check his blood group, which of the following blood should be given to him? [RAS/RTS (Pre) 2013]",
+      "options": [
+        "AB, Rh+",
+        "O, Rh+",
+        "O, Rh–",
+        "AB, Rh-"
+      ],
+      "answer": null
+    },
+    {
+      "id": 126,
+      "question": "Which of the following is not a characteristic of Indian Agriculture? [Karnataka PSC (Pre) 2019 Uttarakhand PCS (Pre) 2010]",
+      "options": [
+        "Over-dependence on nature",
+        "Low level of productivity",
+        "Diversity of crops",
+        "Predominance of large farms"
+      ],
+      "answer": null
+    },
+    {
+      "id": 127,
+      "question": "One micron is equal to [39th BPSC (Pre) 1994]",
+      "options": [
+        "1/10 mm",
+        "1/100 mm",
+        "1/1000 mm",
+        "1/10,000 mm"
+      ],
+      "answer": null
+    },
+    {
+      "id": 128,
+      "question": "Two balls A and B are of 10 kg and 1 kg, respectively. They are dropped simultaneously from a height of 20 m. Which of the following is correct? [Goa PSC (Pre) 2018 UP Lower Sub. (Pre) 2015]",
+      "options": [
+        "A will reach the ground first",
+        "B will reach the ground first",
+        "Both A and B will reach the ground at the same time",
+        "None of the above"
+      ],
+      "answer": null
+    },
+    {
+      "id": 129,
+      "question": "Which of the following countries was readmitted to the Olympics after her suspension for about 21 years ago? [Haryana PSC (Pre) 2014]",
+      "options": [
+        "Iran",
+        "Iraq",
+        "Burma",
+        "South Africa"
+      ],
+      "answer": null
+    },
+    {
+      "id": 130,
+      "question": "The Indian Famine Code, 1883 was prepared by [UPPCS (Mains) 2015]",
+      "options": [
+        "Hunter Commission",
+        "Hartog Commission",
+        "Strachey Commission",
+        "Indigo Commission"
+      ],
+      "answer": null
+    },
+    {
+      "id": 131,
+      "question": "When is ‘National Press Day’ celebrated? [Sikkim PSC (Pre) 2019 UPPCS (Mains) 2005]",
+      "options": [
+        "16 November",
+        "17 November",
+        "26 November",
+        "16 December"
+      ],
+      "answer": null
+    }
+  ],
+  "reasoning": [
+    {
+      "id": 49,
+      "question": "A is B's sister, C is B's mother, D is C's father, E is D's mother, then how A is related to D?",
+      "options": [
+        "Grandfather",
+        "Daughter",
+        "Grandmother",
+        "Grand daughter"
+      ],
+      "answer": null
+    },
+    {
+      "id": 50,
+      "question": "Amit walked 10 Kms. towards North. From there he turned back and walked 6 Kms. towards South. Then he walked 3 km. towards East. How far was he from the starting point?",
+      "options": [
+        "8 Km.",
+        "5 Km.",
+        "7 Km.",
+        "6 Km."
+      ],
+      "answer": null
+    },
+    {
+      "id": 51,
+      "question": "Seema walks 1 Km. to east and turns right and walks another 1 Km. and then turns left and walks 2 Km. and again turning to her left travels 5 Km. How far is Seema from her starting point?",
+      "options": [
+        "8 Km.",
+        "5 Km.",
+        "7 Km.",
+        "6 Km."
+      ],
+      "answer": null
+    },
+    {
+      "id": 79,
+      "question": "A is B's daughter. B is C's mother. D is C's brother. How is D related to A?",
+      "options": [
+        "Father",
+        "Grandfather",
+        "Brother",
+        "Son"
+      ],
+      "answer": null
+    },
+    {
+      "id": 80,
+      "question": "P is Q's brother. R is Q's mother. S is R's father. T is S's mother. How is P related to T?",
+      "options": [
+        "Granddaughter",
+        "Great grandson",
+        "Grandson",
+        "Grandmother"
+      ],
+      "answer": null
+    },
+    {
+      "id": 81,
+      "question": "Ashok went 8 kms. South and turned west and walked 3 Kms, again he turned north and walked 5 Kms. He took a final turn to cast and walked 3 Kms. In which direction was Ashok from the starting point?",
+      "options": [
+        "East",
+        "North",
+        "West",
+        "South"
+      ],
+      "answer": null
+    },
+    {
+      "id": 82,
+      "question": "Starting from a point P, Sachin walked 20 m towards South, he turned left and walked 30 m. He then turned left and walked 20 m. He again turned left and walked 40m and reached a point Q. How far and in which direction is the point P from the point Q?",
+      "options": [
+        "20 m West",
+        "10 m West",
+        "10 m East",
+        "10 m North"
+      ],
+      "answer": null
+    },
+    {
+      "id": 112,
+      "question": "A is the sister of B.B is the brother of C, C is the son of D. How is D related to A?",
+      "options": [
+        "Mother",
+        "Daughter",
+        "Son",
+        "Uncle"
+      ],
+      "answer": null
+    },
+    {
+      "id": 113,
+      "question": "B is the brother of A, whose only sister is mother of C.D is maternal grandmother of C. How is A related to D?",
+      "options": [
+        "Daughter-in-law",
+        "Daughter",
+        "Aunt",
+        "Nephew"
+      ],
+      "answer": null
+    },
+    {
+      "id": 114,
+      "question": "Roy walked 2 km. to East, then turns North-west and walks 3 Km. Then he turned South and walked 5 Km. Then again he turns west and walked 2 Km. Finally he turned North and walked 6 Km. In which direction. is he from the starting point?",
+      "options": [
+        "South-West",
+        "South-East",
+        "North-West",
+        "North-East"
+      ],
+      "answer": null
+    },
+    {
+      "id": 115,
+      "question": "Vimal faces towards north and turning to his right, he walked 25 meters. He then turns to his left and walks 30 meter. Next, he moves 25 meters after turning to his right. He then turns to his right again and walks 55 meters. Finally he turns to the right and moves 40 meters. In which direction is he now from his starting point?",
+      "options": [
+        "South-West",
+        "South",
+        "North-West",
+        "South-East"
+      ],
+      "answer": null
+    }
+  ],
+  "english": [
+    {
+      "id": 4,
+      "question": "He flew into a _______when I refused to listen to him.",
+      "options": [
+        "anger;",
+        "rage;",
+        "annoyance;",
+        "vexation"
+      ],
+      "answer": null
+    },
+    {
+      "id": 84,
+      "question": "The headmaster of our school is a ________ gentleman.",
+      "options": [
+        "Lovely",
+        "Lively",
+        "Lovable",
+        "Lowly on"
+      ],
+      "answer": null
+    },
+    {
+      "id": 93,
+      "question": "The sick units are detached ________ the main group of companies.",
+      "options": [
+        "off",
+        "from",
+        "with",
+        "by"
+      ],
+      "answer": null
+    },
+    {
+      "id": 94,
+      "question": "Let me congratulate you _________ your success.",
+      "options": [
+        "at",
+        "for",
+        "with",
+        "on"
+      ],
+      "answer": null
+    },
+    {
+      "id": 95,
+      "question": "She had always hoped that her daughter would become ________ doctor.",
+      "options": [
+        "an",
+        "the",
+        "a",
+        "none of the above"
+      ],
+      "answer": null
+    },
+    {
+      "id": 100,
+      "question": "The rich man ________ a nice garden in front of his house.",
+      "options": [
+        "Laid off",
+        "Laid out",
+        "Laid by",
+        "Laid up"
+      ],
+      "answer": null
+    },
+    {
+      "id": 117,
+      "question": "Select the correct option : I need a ________ note.",
+      "options": [
+        "Five hundred rupees",
+        "Five hundred rupee",
+        "Five hundreds rupees",
+        "Five hundreds rupee"
+      ],
+      "answer": null
+    },
+    {
+      "id": 119,
+      "question": "The idiomatic expression ‘’pull yourself together’’ ____________",
+      "options": [
+        "Drag oneself",
+        "help one",
+        "get angry",
+        "calm down by oneself"
+      ],
+      "answer": null
+    },
+    {
+      "id": 120,
+      "question": "Use the correct expression : I _________the patient will die.",
+      "options": [
+        "hope",
+        "think",
+        "see",
+        "am afraid"
+      ],
+      "answer": null
+    },
+    {
+      "id": 7,
+      "question": "Expression of sorrow and sympathy.",
+      "options": [
+        "rites;",
+        "sequel;",
+        "condolence;",
+        "dolefulness"
+      ],
+      "answer": null
+    },
+    {
+      "id": 108,
+      "question": "Given below are four jumbled sentences. Select the option that gives their correct order.",
+      "options": [
+        "The first of these states that the only way to have a friend is to be one.",
+        "Like all relationships, it is also governed by some well-defined principles.",
+        "Friendship is one of the most coveted relationships on earth.",
+        "Thus, one must be reliable as a friend to expect reliability in others."
+      ],
+      "answer": null
+    }
+  ],
+  "currentAffairs": [
+    {
+      "id": 27,
+      "question": "Who has been appointed as the new brand ambassador of Slice company?",
+      "options": [
+        "Katrina Kaif",
+        "Nayantara",
+        "Alia Bhatt",
+        "Kiara Advani"
+      ],
+      "answer": null
+    },
+    {
+      "id": 28,
+      "question": "Indian shooter Anua Prasad won which medal in World Deaf Shooting Championship 2024?",
+      "options": [
+        "Gold",
+        "Silver",
+        "Bronze",
+        "None"
+      ],
+      "answer": null
+    },
+    {
+      "id": 29,
+      "question": "Which Union Minister launched two projects 'Sashakt Beti' and 'e-Drishti' to empower girls and promote digital education?",
+      "options": [
+        "Nirmala Sitharaman",
+        "Piyush Goyal",
+        "Virendra Kumar",
+        "Dharmendra Pradhan"
+      ],
+      "answer": null
+    },
+    {
+      "id": 34,
+      "question": "Steve Smith who recently announced his retirement from ODI cricket is a player of which country?",
+      "options": [
+        "Sri Lanka",
+        "New Zealand",
+        "Afghanistan",
+        "Australia"
+      ],
+      "answer": null
+    },
+    {
+      "id": 35,
+      "question": "Which country will host the 57th ASEAN Foreign Ministers' Meeting?",
+      "options": [
+        "Laos",
+        "Jordan",
+        "Egypt",
+        "India"
+      ],
+      "answer": null
+    },
+    {
+      "id": 38,
+      "question": "3rd MAHASAGAR Summit on Maritime Security hosted by-",
+      "options": [
+        "Indian Army",
+        "Indian Navy",
+        "Indian Air Force",
+        "Indian Coast Guard"
+      ],
+      "answer": null
+    },
+    {
+      "id": 64,
+      "question": "Where is \"operation kamdhenu\" launched by the police?",
+      "options": [
+        "Sikkim",
+        "Rajasthan",
+        "Jammu and kashmir",
+        "Ladakh"
+      ],
+      "answer": null
+    },
+    {
+      "id": 67,
+      "question": "Who recently crossed the English Channel as the oldest Indian?",
+      "options": [
+        "Mihir Sen",
+        "Silver repale",
+        "Siddharth Aggarwal",
+        "Aarti Saha"
+      ],
+      "answer": null
+    },
+    {
+      "id": 72,
+      "question": "Late Yoga Guru Baba Sivananda was awarded which award recently?",
+      "options": [
+        "Padmashri",
+        "Padma Bhushan",
+        "Padma Vibhushan",
+        "None"
+      ],
+      "answer": null
+    },
+    {
+      "id": 73,
+      "question": "Prime Minister Narendra Modi was awarded the highest civilian award of which country recently?",
+      "options": [
+        "Afghanistan",
+        "Sri Lanka",
+        "Bangladesh",
+        "Fiji"
+      ],
+      "answer": null
+    },
+    {
+      "id": 78,
+      "question": "Which mission of the European Space Agency is going to be launched by India in December?",
+      "options": [
+        "PORBOT-3",
+        "TROBA-3",
+        "PROBA-3",
+        "SORGO-3"
+      ],
+      "answer": null
+    },
+    {
+      "id": 25,
+      "question": "Which country is officially the 32nd member of NATO?",
+      "options": [
+        "Sweden",
+        "Serbia",
+        "Lebanon",
+        "Jordan"
+      ],
+      "answer": null
+    },
+    {
+      "id": 26,
+      "question": "When is World Human Rights Day celebrated?",
+      "options": [
+        "December 10th",
+        "11th December",
+        "12th December",
+        "13th December"
+      ],
+      "answer": null
+    },
+    {
+      "id": 31,
+      "question": "Where was the 8th Kautik International Film Festival (KIFF) held?",
+      "options": [
+        "Almora",
+        "Nainital",
+        "Dehradun",
+        "Chamoli"
+      ],
+      "answer": null
+    },
+    {
+      "id": 33,
+      "question": "When is World Health Day celebrated?",
+      "options": [
+        "April 7th",
+        "8th April",
+        "9th April",
+        "10th April"
+      ],
+      "answer": null
+    },
+    {
+      "id": 36,
+      "question": "Which Hollywood actresses are getting Palme d'Or honors at the Cannes Film Festival?",
+      "options": [
+        "Michelle Pfeiffer",
+        "Julia Roberts",
+        "Meryl Streep",
+        "None of them"
+      ],
+      "answer": null
+    },
+    {
+      "id": 37,
+      "question": "When is Indian Air Force Day celebrated?",
+      "options": [
+        "October 8th",
+        "8th June",
+        "8th May",
+        "8th July"
+      ],
+      "answer": null
+    },
+    {
+      "id": 63,
+      "question": "According to EIU's report, which country was named the best place in the world to do business?",
+      "options": [
+        "Singapore",
+        "India",
+        "America",
+        "Japan"
+      ],
+      "answer": null
+    },
+    {
+      "id": 74,
+      "question": "Where did Andhra Pradesh Chief Minister N. Chandrababu Naidu inaugurate a Rs 1,000 crore green hydrogen plant?",
+      "options": [
+        "Vijaywada",
+        "Tirupati",
+        "Visakhapatnam",
+        "Nellore"
+      ],
+      "answer": null
+    }
+  ],
+  "gk": [
+    {
+      "id": 5,
+      "question": "A person who is excessively polite and obedient.",
+      "options": [
+        "slavish;",
+        "obsequious;",
+        "servile;",
+        "dutiful"
+      ],
+      "answer": null
+    },
+    {
+      "id": 6,
+      "question": "Courtesy and attention to women.",
+      "options": [
+        "dolefulness;",
+        "sequence;",
+        "feminism;",
+        "chivalry"
+      ],
+      "answer": null
+    },
+    {
+      "id": 8,
+      "question": "A procession of persons on horseback.",
+      "options": [
+        "cavalcade;",
+        "cavalry;",
+        "equestrian;",
+        "jockying"
+      ],
+      "answer": null
+    },
+    {
+      "id": 9,
+      "question": "An occurrence that follows another.",
+      "options": [
+        "sequence;",
+        "sequel;",
+        "subsequent;",
+        "substitute"
+      ],
+      "answer": null
+    },
+    {
+      "id": 30,
+      "question": "Who beat Pune United to win the inaugural World Pickleball League?",
+      "options": [
+        "Chennai Super Champs",
+        "Mumbai Pickle Power",
+        "Dilli Dilwale",
+        "Bengaluru Jawans"
+      ],
+      "answer": null
+    },
+    {
+      "id": 39,
+      "question": "'Concern' can mean 'anxiety' and also",
+      "options": [
+        "To mean nothing",
+        "To have connection with",
+        "To seek redress",
+        "To become angry"
+      ],
+      "answer": null
+    },
+    {
+      "id": 40,
+      "question": "'Look for' can mean 'to search' and also",
+      "options": [
+        "To expect",
+        "To overlook",
+        "To attend to",
+        "To examine"
+      ],
+      "answer": null
+    },
+    {
+      "id": 41,
+      "question": "There was inordinate delay in completing the project.",
+      "options": [
+        "Exorbitant",
+        "Extravagant",
+        "Excessive",
+        "Little"
+      ],
+      "answer": null
+    },
+    {
+      "id": 42,
+      "question": "The astronauts brought back specimens of moon rock.",
+      "options": [
+        "portion",
+        "symbol",
+        "model",
+        "sample"
+      ],
+      "answer": null
+    },
+    {
+      "id": 43,
+      "question": "He was jailed for making obscene phone calls.",
+      "options": [
+        "indecent",
+        "obsolete",
+        "improper",
+        "amoral"
+      ],
+      "answer": null
+    },
+    {
+      "id": 44,
+      "question": "The president said that they would not yield to pressure under any circumstances.",
+      "options": [
+        "capitulate",
+        "comply with",
+        "resist",
+        "thwart"
+      ],
+      "answer": null
+    },
+    {
+      "id": 56,
+      "question": "Hitler was an absolute potentate.",
+      "options": [
+        "dictator",
+        "militant",
+        "ruler",
+        "No improvement"
+      ],
+      "answer": null
+    },
+    {
+      "id": 57,
+      "question": "Having completion of the course, the students left college.",
+      "options": [
+        "On completion of",
+        "In order to complete",
+        "Down the completion",
+        "No improvement"
+      ],
+      "answer": null
+    },
+    {
+      "id": 58,
+      "question": "Will you please give me a warm glass of water?",
+      "options": [
+        "Will you please give me a glass of warm water?",
+        "Will you please give I a warm glass of water?",
+        "Would you please give I a warm glass of water?",
+        "No improvement"
+      ],
+      "answer": null
+    },
+    {
+      "id": 59,
+      "question": "Boil the potatoes and then crush it until soft.",
+      "options": [
+        "smash it",
+        "knead it",
+        "mash it",
+        "No improvement"
+      ],
+      "answer": null
+    },
+    {
+      "id": 60,
+      "question": "Animals which suckle their young",
+      "options": [
+        "Herbivores",
+        "Mammals",
+        "Carnivores",
+        "Omnivores"
+      ],
+      "answer": null
+    },
+    {
+      "id": 61,
+      "question": "A drug or other substance that induces sleep",
+      "options": [
+        "Reviver",
+        "Energic",
+        "Stimulant",
+        "Sedative"
+      ],
+      "answer": null
+    },
+    {
+      "id": 62,
+      "question": "Animals that eat flesh",
+      "options": [
+        "Herbivorous",
+        "Carnivorous",
+        "Omnivorous",
+        "Insectivorous"
+      ],
+      "answer": null
+    },
+    {
+      "id": 65,
+      "question": "Which state government will introduce natural farming maize flour called 'Himbhog'?",
+      "options": [
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "Uttarakhand",
+        "Himachal Pradesh"
+      ],
+      "answer": null
+    },
+    {
+      "id": 66,
+      "question": "Who won the first UEFA Women's Nations League?",
+      "options": [
+        "Argentina",
+        "Brazil",
+        "Spain",
+        "France"
+      ],
+      "answer": null
+    },
+    {
+      "id": 71,
+      "question": "Nationwide campaign to stop child marriage started where?",
+      "options": [
+        "In Bhutan",
+        "In Nepal",
+        "In Myanmar",
+        "In Sri Lanka"
+      ],
+      "answer": null
+    },
+    {
+      "id": 75,
+      "question": "Who is the author of the book Manoj Bajpayee: The Definitive Biography?",
+      "options": [
+        "Piyush Pandey",
+        "Manoj Bajpayee",
+        "Satish Chandra",
+        "Pritam Goswami"
+      ],
+      "answer": null
+    },
+    {
+      "id": 76,
+      "question": "Who will represent India at the United Nations Food Programme (UNFPA) meeting?",
+      "options": [
+        "Neeru Yadav",
+        "Soumitra Da",
+        "hima kumari",
+        "Somnath Sharma"
+      ],
+      "answer": null
+    },
+    {
+      "id": 83,
+      "question": "The company was in the red due to prolonged strikes.",
+      "options": [
+        "Suffered losses",
+        "Incurred heavy debts",
+        "Closed down",
+        "Shifted elsewhere"
+      ],
+      "answer": null
+    },
+    {
+      "id": 85,
+      "question": "A galaxy of talent will not arise in a morally depraved society.",
+      "options": [
+        "Constallation",
+        "Collection",
+        "Crowd",
+        "Bevy"
+      ],
+      "answer": null
+    },
+    {
+      "id": 86,
+      "question": "I do not know why he fights shy of me.",
+      "options": [
+        "Avoids",
+        "Praises",
+        "Welcomes",
+        "Rebukes"
+      ],
+      "answer": null
+    },
+    {
+      "id": 87,
+      "question": "In many schools, traditional didactic teaching has been replaced by a new approach.",
+      "options": [
+        "democratic",
+        "moral",
+        "classical",
+        "religious"
+      ],
+      "answer": null
+    },
+    {
+      "id": 96,
+      "question": "Deepak did not care for his family, he wanted to gather roses only.",
+      "options": [
+        "to save money miserly",
+        "to paint a rosy picture of the past",
+        "to seek all enjoyments of life",
+        "to obtain fame by hardwork"
+      ],
+      "answer": null
+    },
+    {
+      "id": 98,
+      "question": "The enemy showed the white feather at the sight of our army.",
+      "options": [
+        "Fought bravely",
+        "Retreated in fear",
+        "Advanced menacingly",
+        "Admitted defeat"
+      ],
+      "answer": null
+    },
+    {
+      "id": 99,
+      "question": "He insulted his neighbour to pay off old scores.",
+      "options": [
+        "Take revenge",
+        "Pay old debts",
+        "Force an apology",
+        "Make him suffer"
+      ],
+      "answer": null
+    },
+    {
+      "id": 101,
+      "question": "The political party organised a mammoth gathering in the Maidan.",
+      "options": [
+        "Small",
+        "Little",
+        "Tiny",
+        "Disciplined"
+      ],
+      "answer": null
+    },
+    {
+      "id": 102,
+      "question": "India won a decisive victory over Pakistan in the Kargil war.",
+      "options": [
+        "formidable",
+        "one-sided",
+        "difficult",
+        "crucial"
+      ],
+      "answer": null
+    },
+    {
+      "id": 111,
+      "question": "The Ghoomar dance is-",
+      "options": [
+        "of gujarat",
+        "of rajasthan",
+        "of punjab",
+        "of tamil nadu"
+      ],
+      "answer": null
+    },
+    {
+      "id": 116,
+      "question": "Which complex form is correct for the following sentence ? “Everyone is happy during Christmas celebration”",
+      "options": [
+        "When Christmas celebrations occur everyone is happy.",
+        "During Christmas celebration everyone is happy.",
+        "Everyone during Christmas celebration is happy.",
+        "Happy is everyone when Christmas celebration occur."
+      ],
+      "answer": null
+    },
+    {
+      "id": 118,
+      "question": "It is nine o clock in Darjeeling in the morning and ____",
+      "options": [
+        "there is snow",
+        "It is snowing",
+        "It snows",
+        "It snowed"
+      ],
+      "answer": null
+    }
+  ]
+}
