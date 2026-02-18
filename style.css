@@ -8,23 +8,14 @@
 body {
     background-color: #f4f6f9;
     min-height: 100vh;
-    position: relative;
 }
 
-/* WATERMARK */
-body::before {
-    content: "";
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 500px;
-    background: url("logo.png") no-repeat center center;
-    background-size: contain;
-    opacity: 0.04;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    pointer-events: none;
+/* THIN GOVT BLUE BAR */
+.topBar {
+    background: #003366;
+    color: white;
+    padding: 6px 20px;
+    font-size: 14px;
 }
 
 .container {
@@ -33,10 +24,8 @@ body::before {
     margin: 40px auto;
     padding: 30px;
     background: white;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 1;
 }
 
 .center {
@@ -58,8 +47,8 @@ input[type="text"] {
 }
 
 button {
-    padding: 10px 18px;
-    margin: 5px;
+    padding: 10px 16px;
+    margin: 6px;
     cursor: pointer;
     background: #004aad;
     color: white;
@@ -74,19 +63,24 @@ button:hover {
 .examHeader {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
+}
+
+#examInfo p {
+    margin: 3px 0;
+    font-size: 14px;
 }
 
 #timer {
     color: red;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .questionText {
     font-size: 18px;
     margin-bottom: 15px;
-    line-height: 1.6;
 }
 
 .options {
@@ -99,10 +93,9 @@ button:hover {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    cursor: pointer;
     padding: 8px;
     border-radius: 6px;
-    transition: 0.2s;
+    cursor: pointer;
 }
 
 .optionRow:hover {
@@ -111,10 +104,12 @@ button:hover {
 
 .correct {
     background-color: #d4edda;
+    padding: 6px;
 }
 
 .wrong {
     background-color: #f8d7da;
+    padding: 6px;
 }
 
 .buttons {
@@ -122,17 +117,13 @@ button:hover {
     margin-top: 20px;
 }
 
-.analysisBox {
-    margin-top: 20px;
-    padding: 15px;
-    background: #f9f9f9;
-    border-radius: 6px;
-}
-
 /* MOBILE */
 @media (max-width: 600px) {
-    .container { padding: 20px; }
-    .examHeader { flex-direction: column; gap: 10px; align-items: flex-start; }
-    button { width: 100%; margin: 8px 0; }
-    body::before { width: 250px; height: 250px; }
+    .examHeader {
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+        width: 100%;
+    }
 }
