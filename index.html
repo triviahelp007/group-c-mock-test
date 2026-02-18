@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WBSSC Group C Mock Test</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WBSSC Group C Mock Test</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<div class="overlay"></div>
+<body>
 
 <div class="container">
 
-    <!-- START SECTION -->
+    <!-- START SCREEN -->
     <div id="startSection" class="center">
-        <img src="logo.png" class="logo">
+        <img src="logo.png" class="logo" alt="WBSSC Logo">
         <h2>WBSSC Group C Mock Test</h2>
         <p>Total Questions: 60 | Time: 1 Hour | No Negative Marking</p>
 
         <input type="text" id="candidateName" placeholder="Enter Full Name">
+        <br>
         <button onclick="beginTest()">Start Test</button>
     </div>
 
     <!-- EXAM SECTION -->
     <div id="examSection" style="display:none;">
+
         <div class="examHeader">
             <h3 id="examHeader"></h3>
             <div id="timer">Time Left: 60:00</div>
@@ -36,6 +37,7 @@
             <button onclick="nextQuestion()">Next</button>
             <button onclick="submitTest()">Submit</button>
         </div>
+
     </div>
 
 </div>
