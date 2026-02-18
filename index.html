@@ -8,9 +8,14 @@
 </head>
 <body>
 
+<!-- TOP BLUE BAR -->
+<div class="topBar">
+    Government Examination Practice Portal
+</div>
+
 <div class="container">
 
-<!-- START -->
+<!-- START SECTION -->
 <div id="startSection" class="center">
     <img src="logo.png" class="logo">
     <h2>WBSSC Group C & D Mock Test</h2>
@@ -20,10 +25,11 @@
     <button onclick="beginTest()">Start Test</button>
 </div>
 
-<!-- EXAM -->
+<!-- EXAM SECTION -->
 <div id="examSection" style="display:none;">
+
     <div class="examHeader">
-        <h3 id="examHeader"></h3>
+        <div id="examInfo"></div>
         <div id="timer">Time Left: 60:00</div>
     </div>
 
@@ -33,7 +39,9 @@
         <button onclick="prevQuestion()">Previous</button>
         <button onclick="nextQuestion()">Next</button>
         <button onclick="submitTest()">Submit</button>
+        <button onclick="toggleFullScreen()">Full Screen</button>
     </div>
+
 </div>
 
 </div>
