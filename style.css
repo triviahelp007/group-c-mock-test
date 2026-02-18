@@ -49,7 +49,6 @@ button {
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 14px;
 }
 
 button:hover {
@@ -106,12 +105,41 @@ button:hover {
     min-width: 22px;
 }
 
-/* CERTIFICATE */
+/* RESULT SECTION */
 
-.certificate {
+.resultSection {
     max-width: 900px;
     width: 90%;
     margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.reviewSection {
+    text-align: left;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.reviewItem {
+    margin-bottom: 15px;
+}
+
+.correctText {
+    color: green;
+    font-weight: bold;
+}
+
+.wrongText {
+    color: red;
+    font-weight: bold;
+}
+
+/* CERTIFICATE */
+
+.certificate {
+    margin-top: 40px;
     padding: 40px;
     border: 6px solid #000;
     background: white;
@@ -127,27 +155,6 @@ button:hover {
     width: 120px;
     display: block;
     margin-left: auto;
-}
-
-.reviewSection {
-    text-align: left;
-    margin-top: 20px;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.reviewItem {
-    padding: 10px 0;
-}
-
-.correctText {
-    color: green;
-    font-weight: bold;
-}
-
-.wrongText {
-    color: red;
-    font-weight: bold;
 }
 
 /* PRINT */
