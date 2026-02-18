@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-/* THIN GOVT BLUE BAR */
+/* TOP BLUE BAR */
 .topBar {
     background: #003366;
     color: white;
@@ -18,6 +18,7 @@ body {
     font-size: 14px;
 }
 
+/* MAIN CONTAINER */
 .container {
     max-width: 900px;
     width: 90%;
@@ -60,6 +61,7 @@ button:hover {
     background: #003580;
 }
 
+/* EXAM HEADER */
 .examHeader {
     display: flex;
     justify-content: space-between;
@@ -83,6 +85,7 @@ button:hover {
     margin-bottom: 15px;
 }
 
+/* OPTIONS */
 .options {
     display: flex;
     flex-direction: column;
@@ -117,12 +120,17 @@ button:hover {
     margin-top: 20px;
 }
 
-/* MOBILE */
-@media (max-width: 600px) {
+/* Hide Fullscreen button on mobile */
+@media (max-width: 768px) {
+    button[onclick="toggleFullScreen()"] {
+        display: none;
+    }
+
     .examHeader {
         flex-direction: column;
         gap: 10px;
     }
+
     button {
         width: 100%;
     }
