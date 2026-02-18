@@ -3,20 +3,27 @@ let selectedQuestions = [];
 let currentQuestionIndex = 0;
 let userAnswers = {};
 let timerInterval;
-let totalTime = 60 * 60; // 1 hour
+let totalTime = 60 * 60;
 
 // Load JSON
 fetch("production_final_database.json")
   .then(res => res.json())
   .then(data => {
     questionBank = data;
-  });
+  })
+  .catch(err => console.error("Database load error:", err));
 
-// -------- START TEST --------
+// Start Test
 function beginTest() {
   const name = document.getElementById("candidateName").value.trim();
+
   if (!name) {
     alert("Please enter your full name.");
+    return;
+  }
+
+  if (!questionBank.arithmetic) {
+    alert("Question database not loaded yet. Refresh page.");
     return;
   }
 
@@ -29,7 +36,7 @@ function beginTest() {
   startTimer();
 }
 
-// -------- STRICT 60 GENERATION --------
+// Strict 60 Generator
 function getRandom(arr, count) {
   return [...arr].sort(() => 0.5 - Math.random()).slice(0, count);
 }
@@ -46,11 +53,10 @@ function generateTest() {
   selectedQuestions = selectedQuestions.sort(() => 0.5 - Math.random());
 }
 
-// -------- LOAD SINGLE QUESTION --------
+// Load Question
 function loadQuestion() {
   const q = selectedQuestions[currentQuestionIndex];
   const container = document.getElementById("questionBox");
-
   const labels = ["A", "B", "C", "D"];
 
   let optionsHTML = "";
@@ -61,9 +67,10 @@ function loadQuestion() {
 
     optionsHTML += `
       <label class="option">
-        <input type="radio" name="option" value="${labels[i]}" ${checked}
-        onchange="saveAnswer('${labels[i]}')">
-        <strong>${labels[i]}.</strong> ${opt}
+        <input type="radio" name="option"
+          value="${labels[i]}" ${checked}
+          onchange="saveAnswer('${labels[i]}')">
+        <div><strong>${labels[i]}.</strong> ${opt}</div>
       </label>
     `;
   });
@@ -75,12 +82,12 @@ function loadQuestion() {
   `;
 }
 
-// -------- SAVE ANSWER --------
+// Save Answer
 function saveAnswer(value) {
   userAnswers[currentQuestionIndex] = value;
 }
 
-// -------- NAVIGATION --------
+// Navigation
 function nextQuestion() {
   if (currentQuestionIndex < 59) {
     currentQuestionIndex++;
@@ -95,7 +102,7 @@ function prevQuestion() {
   }
 }
 
-// -------- TIMER --------
+// Timer
 function startTimer() {
   const timerDisplay = document.getElementById("timer");
 
@@ -107,7 +114,8 @@ function startTimer() {
 
     timerDisplay.innerText =
       "Time Left: " +
-      minutes.toString().padStart(2, "0") + ":" +
+      minutes.toString().padStart(2, "0") +
+      ":" +
       seconds.toString().padStart(2, "0");
 
     if (totalTime <= 0) {
@@ -117,44 +125,41 @@ function startTimer() {
   }, 1000);
 }
 
-// -------- SUBMIT --------
+// Submit
 function submitTest() {
   clearInterval(timerInterval);
 
   let score = 0;
   let attempted = 0;
-  let reviewHTML = "<h2>Exam Result</h2>";
+  let resultHTML = "<h2>Exam Result</h2>";
 
   selectedQuestions.forEach((q, index) => {
-    const correctAnswer = q.answer || "N/A";
-    const userAnswer = userAnswers[index] || "Not Attempted";
+    const correct = q.answer || "N/A";
+    const user = userAnswers[index] || "Not Attempted";
 
-    if (userAnswer !== "Not Attempted") attempted++;
-    if (userAnswer === correctAnswer) score++;
+    if (user !== "Not Attempted") attempted++;
+    if (user === correct) score++;
 
-    reviewHTML += `
-      <div style="margin-bottom:15px;">
+    resultHTML += `
+      <div style="margin-bottom:15px; padding:10px; border-bottom:1px solid #ccc;">
         <p><strong>Q${index + 1}:</strong> ${q.question}</p>
-        <p>Your Answer: ${userAnswer}</p>
-        <p>Correct Answer: ${correctAnswer}</p>
+        <p>Your Answer: ${user}</p>
+        <p>Correct Answer: ${correct}</p>
       </div>
     `;
   });
 
-  let advice = "";
-  if (score >= 50) {
-    advice = "Excellent performance. You are exam ready.";
-  } else if (score >= 35) {
-    advice = "Good attempt. Some revision required.";
-  } else {
-    advice = "You need more preparation. Focus on weak subjects.";
-  }
+  let advice = score >= 50
+    ? "Excellent performance. You are exam ready."
+    : score >= 35
+    ? "Good attempt. Some revision required."
+    : "More preparation required. Focus on weak subjects.";
 
-  reviewHTML += `
+  resultHTML += `
     <h3>Total Score: ${score} / 60</h3>
     <p>Attempted: ${attempted} / 60</p>
     <p><strong>Preparation Advice:</strong> ${advice}</p>
   `;
 
-  document.getElementById("examSection").innerHTML = reviewHTML;
+  document.getElementById("examSection").innerHTML = resultHTML;
 }
