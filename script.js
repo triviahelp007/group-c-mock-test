@@ -1,165 +1,168 @@
-let questionBank = {};
-let selectedQuestions = [];
-let currentQuestionIndex = 0;
-let userAnswers = {};
-let timerInterval;
-let totalTime = 60 * 60;
+let current = 0;
+let answers = [];
+let score = 0;
+let questions = [];
+let timeLeft = 3600;
+let fullDatabase = {};
+let candidateName = "";
+let mockID = "";
+let timerInterval = null;
 
-// Load JSON
-fetch("production_final_database.json")
-  .then(res => res.json())
-  .then(data => {
-    questionBank = data;
-  })
-  .catch(err => console.error("Database load error:", err));
+async function loadDatabase() {
+    const response = await fetch("database.json");
+    fullDatabase = await response.json();
+}
 
-// Start Test
+function shuffle(array) {
+    return array.sort(() => 0.5 - Math.random());
+}
+
+function generateMockID() {
+    return "WBSSC-" + Math.floor(Math.random() * 100000);
+}
+
 function beginTest() {
-  const name = document.getElementById("candidateName").value.trim();
 
-  if (!name) {
-    alert("Please enter your full name.");
-    return;
-  }
+    candidateName = document.getElementById("candidateName").value.trim();
+    if (candidateName === "") {
+        alert("Enter your name first.");
+        return;
+    }
 
-  if (!questionBank.arithmetic) {
-    alert("Question database not loaded yet. Refresh page.");
-    return;
-  }
+    mockID = generateMockID();
 
-  document.getElementById("startSection").style.display = "none";
-  document.getElementById("examSection").style.display = "block";
-  document.getElementById("examHeader").innerText = "Candidate: " + name;
+    document.getElementById("startSection").style.display = "none";
+    document.getElementById("examSection").style.display = "block";
 
-  generateTest();
-  loadQuestion();
-  startTimer();
-}
+    document.getElementById("examHeader").innerHTML =
+        "Candidate: " + candidateName + " | Mock ID: " + mockID;
 
-// Strict 60 Generator
-function getRandom(arr, count) {
-  return [...arr].sort(() => 0.5 - Math.random()).slice(0, count);
-}
+    questions = [
+        ...shuffle(fullDatabase.arithmetic).slice(0,15),
+        ...shuffle(fullDatabase.gk).slice(0,15),
+        ...shuffle(fullDatabase.english).slice(0,10),
+        ...shuffle(fullDatabase.reasoning).slice(0,10),
+        ...shuffle(fullDatabase.currentAffairs).slice(0,10)
+    ];
 
-function generateTest() {
-  selectedQuestions = [];
+    questions = shuffle(questions);
 
-  selectedQuestions.push(...getRandom(questionBank.arithmetic, 15));
-  selectedQuestions.push(...getRandom(questionBank.gk, 15));
-  selectedQuestions.push(...getRandom(questionBank.english, 10));
-  selectedQuestions.push(...getRandom(questionBank.reasoning, 10));
-  selectedQuestions.push(...getRandom(questionBank.currentAffairs, 10));
-
-  selectedQuestions = selectedQuestions.sort(() => 0.5 - Math.random());
-}
-
-// Load Question
-function loadQuestion() {
-  const q = selectedQuestions[currentQuestionIndex];
-  const container = document.getElementById("questionBox");
-  const labels = ["A", "B", "C", "D"];
-
-  let optionsHTML = "";
-
-  q.options.forEach((opt, i) => {
-    const checked =
-      userAnswers[currentQuestionIndex] === labels[i] ? "checked" : "";
-
-    optionsHTML += `
-      <label class="option">
-        <input type="radio" name="option"
-          value="${labels[i]}" ${checked}
-          onchange="saveAnswer('${labels[i]}')">
-        <div><strong>${labels[i]}.</strong> ${opt}</div>
-      </label>
-    `;
-  });
-
-  container.innerHTML = `
-    <h4>Question ${currentQuestionIndex + 1} of 60</h4>
-    <p>${q.question}</p>
-    ${optionsHTML}
-  `;
-}
-
-// Save Answer
-function saveAnswer(value) {
-  userAnswers[currentQuestionIndex] = value;
-}
-
-// Navigation
-function nextQuestion() {
-  if (currentQuestionIndex < 59) {
-    currentQuestionIndex++;
+    startTimer();
     loadQuestion();
-  }
+}
+
+function loadQuestion() {
+
+    let q = questions[current];
+    let letters = ["A", "B", "C", "D"];
+
+    let html = `
+        <div class="questionContainer">
+            <h4>Question ${current+1} of 60</h4>
+            <p class="questionText">${q.question}</p>
+            <div class="options">
+    `;
+
+    q.options.forEach((opt, i) => {
+        html += `
+            <div class="optionRow">
+                <input type="radio" name="option" value="${i}"
+                ${answers[current] === i ? "checked" : ""}>
+                <span class="optionLabel">${letters[i]}.</span>
+                <span>${opt}</span>
+            </div>
+        `;
+    });
+
+    html += `</div></div>`;
+
+    document.getElementById("questionBox").innerHTML = html;
+}
+
+function saveAnswer() {
+    let selected = document.querySelector('input[name="option"]:checked');
+    if (selected) {
+        answers[current] = parseInt(selected.value);
+    }
+}
+
+function nextQuestion() {
+    saveAnswer();
+    if (current < questions.length - 1) {
+        current++;
+        loadQuestion();
+    }
 }
 
 function prevQuestion() {
-  if (currentQuestionIndex > 0) {
-    currentQuestionIndex--;
-    loadQuestion();
-  }
-}
-
-// Timer
-function startTimer() {
-  const timerDisplay = document.getElementById("timer");
-
-  timerInterval = setInterval(() => {
-    totalTime--;
-
-    const minutes = Math.floor(totalTime / 60);
-    const seconds = totalTime % 60;
-
-    timerDisplay.innerText =
-      "Time Left: " +
-      minutes.toString().padStart(2, "0") +
-      ":" +
-      seconds.toString().padStart(2, "0");
-
-    if (totalTime <= 0) {
-      clearInterval(timerInterval);
-      submitTest();
+    saveAnswer();
+    if (current > 0) {
+        current--;
+        loadQuestion();
     }
-  }, 1000);
 }
 
-// Submit
+function startTimer() {
+    timerInterval = setInterval(() => {
+
+        let minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+
+        document.getElementById("timer").innerText =
+            "Time Left: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+        timeLeft--;
+
+        if (timeLeft < 0) {
+            clearInterval(timerInterval);
+            submitTest();
+        }
+
+    }, 1000);
+}
+
 function submitTest() {
-  clearInterval(timerInterval);
 
-  let score = 0;
-  let attempted = 0;
-  let resultHTML = "<h2>Exam Result</h2>";
+    if (!confirm("Submit test?")) return;
 
-  selectedQuestions.forEach((q, index) => {
-    const correct = q.answer || "N/A";
-    const user = userAnswers[index] || "Not Attempted";
+    saveAnswer();
+    clearInterval(timerInterval);
 
-    if (user !== "Not Attempted") attempted++;
-    if (user === correct) score++;
+    score = 0;
+    let letters = ["A", "B", "C", "D"];
+    let reviewHTML = "";
 
-    resultHTML += `
-      <div style="margin-bottom:15px; padding:10px; border-bottom:1px solid #ccc;">
-        <p><strong>Q${index + 1}:</strong> ${q.question}</p>
-        <p>Your Answer: ${user}</p>
-        <p>Correct Answer: ${correct}</p>
-      </div>
+    answers.forEach((ans, i) => {
+
+        if (ans !== undefined) {
+
+            let correct = questions[i].answer;
+
+            if (ans === correct) score++;
+
+            reviewHTML += `
+                <div>
+                    <p><strong>Question ${i+1}:</strong> ${questions[i].question}</p>
+                    <p>Your Answer: ${letters[ans]}</p>
+                    <p>Correct Answer: ${letters[correct]}</p>
+                </div>
+                <hr>
+            `;
+        }
+    });
+
+    let percentage = ((score / 60) * 100).toFixed(1);
+
+    document.body.innerHTML = `
+        <div class="container">
+            <h2>Test Result</h2>
+            <p><strong>Candidate:</strong> ${candidateName}</p>
+            <p><strong>Score:</strong> ${score} / 60 (${percentage}%)</p>
+            <hr>
+            ${reviewHTML}
+            <button onclick="location.reload()">Start New Test</button>
+        </div>
     `;
-  });
-
-  let advice = score >= 50
-    ? "Excellent performance. You are exam ready."
-    : score >= 35
-    ? "Good attempt. Some revision required."
-    : "More preparation required. Focus on weak subjects.";
-
-  resultHTML += `
-    <h3>Total Score: ${score} / 60</h3>
-    <p>Attempted: ${attempted} / 60</p>
-    <p><strong>Preparation Advice:</strong> ${advice}</p>
-  `;
-
-  document.getElementById("examSection").innerHTML = resultHTML;
 }
+
+loadDatabase();
