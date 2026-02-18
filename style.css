@@ -1,155 +1,146 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: #f4f6f9;
-  min-height: 100vh;
-  position: relative;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    position: relative;
 }
 
-/* WATERMARK */
+/* LIGHT WATERMARK */
 body::before {
-  content: "";
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 600px;
-  height: 600px;
-  background: url("logo.png") no-repeat center center;
-  background-size: contain;
-  opacity: 0.05;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background: url("logo.png") no-repeat center center;
+    background-size: contain;
+    opacity: 0.04;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
 }
 
-/* MAIN CONTAINER */
 .container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
 }
 
-/* START SECTION */
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 15px;
+    width: 120px;
+    margin-bottom: 15px;
 }
 
-input {
-  padding: 10px;
-  width: 250px;
-  margin-top: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
-  padding: 10px 18px;
-  margin: 8px;
-  border-radius: 6px;
-  border: none;
-  background: #1e88e5;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
+    padding: 10px 18px;
+    margin: 5px;
+    cursor: pointer;
+    background: #004aad;
+    color: white;
+    border: none;
+    border-radius: 4px;
 }
 
 button:hover {
-  background: #1565c0;
+    background: #003580;
 }
 
-/* EXAM HEADER */
 .examHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 #timer {
-  font-weight: bold;
-  color: red;
-  font-size: 18px;
+    color: red;
+    font-weight: bold;
 }
 
-/* QUESTION CARD */
-#questionBox {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-  margin-bottom: 15px;
+.questionContainer {
+    text-align: left;
 }
 
-#questionBox h4 {
-  margin-bottom: 10px;
-  color: #444;
+.questionText {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
-#questionBox p {
-  margin-bottom: 15px;
-  font-weight: 600;
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-/* OPTIONS */
-.option {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 8px;
-  border-radius: 6px;
-  transition: 0.2s;
-  margin-bottom: 6px;
-  cursor: pointer;
+.optionRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 6px 0;
 }
 
-.option:hover {
-  background: #eef4ff;
+.optionRow input {
+    transform: scale(1.2);
+    margin-top: 3px;
 }
 
-.option input {
-  margin-top: 3px;
+.optionLabel {
+    font-weight: bold;
+    min-width: 22px;
 }
 
 .buttons {
-  text-align: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-  .container {
-    margin: 10px;
-    padding: 10px;
-  }
+    .container {
+        padding: 20px;
+    }
 
-  input {
-    width: 90%;
-  }
+    .examHeader {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 
-  .examHeader {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
 
-  button {
-    width: 100%;
-    margin: 6px 0;
-  }
-
-  body::before {
-    width: 300px;
-    height: 300px;
-  }
+    body::before {
+        width: 250px;
+        height: 250px;
+    }
 }
