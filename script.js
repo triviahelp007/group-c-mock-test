@@ -142,11 +142,25 @@ function submitTest(){
     `;
 }
 
-/* FULL SCREEN FUNCTION */
-function toggleFullScreen(){
+/* DESKTOP ONLY FULLSCREEN */
+function toggleFullScreen() {
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        alert("Full screen mode available only on Desktop / Laptop.");
+        return;
+    }
+
+    let doc = document.documentElement;
+
     if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
+        if (doc.requestFullscreen) {
+            doc.requestFullscreen();
+        }
     } else {
-        document.exitFullscreen();
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
     }
 }
