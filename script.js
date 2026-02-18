@@ -145,7 +145,7 @@ function submitTest(){
 
     document.body.innerHTML = `
         <div class="container">
-            <h2>Test Result</h2>
+            <h2>WBSSC Group C & D Test Result</h2>
             <p><strong>Name:</strong> ${candidateName}</p>
             <p><strong>Score:</strong> ${score}/60 (${overallPercent}%)</p>
             <p><strong>Attempted:</strong> ${attempted}/60</p>
