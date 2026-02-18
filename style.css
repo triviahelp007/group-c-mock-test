@@ -11,7 +11,7 @@ body {
     position: relative;
 }
 
-/* LIGHT WATERMARK */
+/* WATERMARK */
 body::before {
     content: "";
     position: fixed;
@@ -23,8 +23,8 @@ body::before {
     background-size: contain;
     opacity: 0.04;
     transform: translate(-50%, -50%);
-    pointer-events: none;
     z-index: 0;
+    pointer-events: none;
 }
 
 .container {
@@ -83,10 +83,6 @@ button:hover {
     font-weight: bold;
 }
 
-.questionContainer {
-    text-align: left;
-}
-
 .questionText {
     font-size: 18px;
     margin-bottom: 15px;
@@ -102,18 +98,23 @@ button:hover {
 .optionRow {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
-    padding: 6px 0;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.2s;
 }
 
-.optionRow input {
-    transform: scale(1.2);
-    margin-top: 3px;
+.optionRow:hover {
+    background-color: #f1f5ff;
 }
 
-.optionLabel {
-    font-weight: bold;
-    min-width: 22px;
+.correct {
+    background-color: #d4edda;
+}
+
+.wrong {
+    background-color: #f8d7da;
 }
 
 .buttons {
@@ -121,26 +122,17 @@ button:hover {
     margin-top: 20px;
 }
 
+.analysisBox {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
 /* MOBILE */
 @media (max-width: 600px) {
-
-    .container {
-        padding: 20px;
-    }
-
-    .examHeader {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-
-    button {
-        width: 100%;
-        margin: 8px 0;
-    }
-
-    body::before {
-        width: 250px;
-        height: 250px;
-    }
+    .container { padding: 20px; }
+    .examHeader { flex-direction: column; gap: 10px; align-items: flex-start; }
+    button { width: 100%; margin: 8px 0; }
+    body::before { width: 250px; height: 250px; }
 }
