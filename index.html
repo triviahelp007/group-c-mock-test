@@ -1,45 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WBSSC Group C Mock Test</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WBSSC Group C Mock Test</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="overlay"></div>
-
-<div class="container">
-
-    <!-- START SECTION -->
-    <div id="startSection" class="center">
-        <img src="logo.png" class="logo">
-        <h2>WBSSC Group C Mock Test</h2>
-        <p>Total Questions: 60 | Time: 1 Hour | No Negative Marking</p>
-
-        <input type="text" id="candidateName" placeholder="Enter Full Name">
-        <button onclick="beginTest()">Start Test</button>
-    </div>
-
-    <!-- EXAM SECTION -->
-    <div id="examSection" style="display:none;">
-        <div class="examHeader">
-            <h3 id="examHeader"></h3>
-            <div id="timer">Time Left: 60:00</div>
-        </div>
-
-        <div id="questionBox"></div>
-
-        <div class="buttons">
-            <button onclick="prevQuestion()">Previous</button>
-            <button onclick="nextQuestion()">Next</button>
-            <button onclick="submitTest()">Submit</button>
-        </div>
-    </div>
-
+<div class="header">
+  <h1>WBSSC Group C Mock Test</h1>
+  <div id="timer">60:00</div>
 </div>
 
+<div id="quiz-container"></div>
+
+<div class="submit-area">
+  <button onclick="submitTest()">Submit Test</button>
+</div>
+
+<div id="result-container"></div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
