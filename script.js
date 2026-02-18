@@ -4,6 +4,7 @@ let questions = [];
 let timeLeft = 3600;
 let candidateName = "";
 let timerInterval = null;
+let fullDatabase = {};
 
 async function loadDatabase() {
     const response = await fetch("database.json");
@@ -13,6 +14,15 @@ loadDatabase();
 
 function shuffle(array) {
     return array.sort(() => 0.5 - Math.random());
+}
+
+function generateCertificateID() {
+    let date = new Date();
+    let timestamp = date.getFullYear().toString().slice(2) +
+        (date.getMonth()+1) +
+        date.getDate() +
+        Math.floor(Math.random()*10000);
+    return "WBSSC-CERT-" + timestamp;
 }
 
 function beginTest() {
@@ -91,15 +101,19 @@ function submitTest(){
 
     let score=0;
     let attempted=0;
-    let letters=["A","B","C","D"];
     let reviewHTML="";
     let subjectStats={};
 
     questions.forEach((q,i)=>{
+
         if(answers[i]!==undefined){
+
             attempted++;
-            let correct=q.answer;
-            let isCorrect=answers[i]===correct;
+
+            let correctIndex=q.answer;
+            let userIndex=answers[i];
+            let isCorrect=userIndex===correctIndex;
+
             if(isCorrect) score++;
 
             if(!subjectStats[q.subject])
@@ -112,77 +126,109 @@ function submitTest(){
                 <div>
                     <p><strong>Q${i+1}:</strong> ${q.question}</p>
                     <p class="${isCorrect?"correct":"wrong"}">
-                        Your Answer: ${letters[answers[i]]} |
-                        Correct: ${letters[correct]}
+                        Your Answer: ${q.options[userIndex]}
                     </p>
-                </div><hr>
+                    <p><strong>Correct Answer:</strong> ${q.options[correctIndex]}</p>
+                </div>
+                <hr>
             `;
         }
     });
 
-    let analysisHTML="";
-    for(let sub in subjectStats){
-        let percent=((subjectStats[sub].correct/subjectStats[sub].total)*100).toFixed(0);
-        let level=percent>=70?"Strong":
-                  percent>=40?"Moderate":"Weak";
-        analysisHTML+=`<p><strong>${sub}:</strong> ${percent}% (${level})</p>`;
-    }
-
     let overallPercent=((score/60)*100).toFixed(1);
-    let improvement=60-score;
+    let certificateID = generateCertificateID();
 
     document.body.innerHTML=`
-    <div class="container">
-        <h2>Test Result</h2>
-        <p><strong>Name:</strong> ${candidateName}</p>
-        <p><strong>Score:</strong> ${score}/60 (${overallPercent}%)</p>
-        <p><strong>Attempted:</strong> ${attempted}/60</p>
+        <div class="container">
+            <h2>Test Result</h2>
+            <p><strong>Name:</strong> ${candidateName}</p>
+            <p><strong>Score:</strong> ${score}/60 (${overallPercent}%)</p>
+            <p><strong>Attempted:</strong> ${attempted}/60</p>
 
-        <div class="analysisBox">
-            <h3>Performance Analysis</h3>
-            ${analysisHTML}
-            <p><strong>Preparation Needed:</strong> Improve ${improvement} more marks to reach full score.</p>
+            <br>
+            <button onclick="downloadCertificate('${candidateName}',${score},'${overallPercent}','${certificateID}')">
+                Download Official Certificate
+            </button>
+
+            <br><br>
+            <h3>Answer Review (Attempted Only)</h3>
+            ${reviewHTML}
+
+            <br>
+            <button onclick="location.reload()">Start New Test</button>
         </div>
-
-        <br>
-        <button onclick="printCertificate('${candidateName}',${score},'${overallPercent}')">
-            Print Certificate
-        </button>
-
-        <hr>
-        <h3>Answer Review (Attempted Only)</h3>
-        ${reviewHTML}
-
-        <br>
-        <button onclick="location.reload()">Start New Test</button>
-    </div>
     `;
 }
 
-function printCertificate(name,score,percent){
+function downloadCertificate(name,score,percent,certID){
 
-    let win=window.open('','_blank');
-    win.document.write(`
-        <html>
-        <head>
-        <title>Certificate</title>
-        <style>
-        body{text-align:center;font-family:Arial;padding:40px;}
-        h1{margin-top:40px;}
-        </style>
-        </head>
-        <body>
+    let today = new Date().toLocaleDateString();
+
+    let certificateHTML = `
+    <html>
+    <head>
+    <title>Certificate</title>
+    <style>
+        body{
+            font-family: Georgia, serif;
+            text-align:center;
+            padding:40px;
+            background:white;
+        }
+        .certificate{
+            border:12px solid gold;
+            padding:50px;
+            border-radius:15px;
+            position:relative;
+        }
+        .certificate::before{
+            content:"";
+            position:absolute;
+            top:10px;
+            left:10px;
+            right:10px;
+            bottom:10px;
+            border:3px solid #c9a227;
+            border-radius:10px;
+        }
+        h1{
+            margin-top:30px;
+            font-size:32px;
+            color:#004aad;
+        }
+        .certID{
+            margin-top:10px;
+            font-size:14px;
+        }
+        .signature{
+            margin-top:60px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="certificate">
             <img src="logo.png" width="120">
             <h1>Certificate of Achievement</h1>
-            <p>This certifies that</p>
+            <p>This is to certify that</p>
             <h2>${name}</h2>
-            <p>has successfully completed WBSSC Group C Mock Test</p>
-            <h3>Score: ${score}/60 (${percent}%)</h3>
-            <br><br>
-            <p>Examination Authority</p>
-            <img src="logo.png" width="80">
-        </body>
-        </html>
-    `);
-    win.print();
+            <p>has successfully completed</p>
+            <h3>WBSSC Group C Mock Test</h3>
+            <p>Score: <strong>${score}/60 (${percent}%)</strong></p>
+            <p class="certID">Certificate ID: ${certID}</p>
+            <p>Date: ${today}</p>
+
+            <div class="signature">
+                <p>Examination Authority</p>
+                <img src="logo.png" width="80">
+            </div>
+        </div>
+    </body>
+    </html>
+    `;
+
+    let newWin = window.open("", "_blank");
+    newWin.document.write(certificateHTML);
+    newWin.document.close();
+    newWin.focus();
+    newWin.print();
 }
