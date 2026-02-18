@@ -1,21 +1,40 @@
 let questionBank = {};
 let selectedQuestions = [];
+let currentQuestionIndex = 0;
 let userAnswers = {};
 let timerInterval;
-let totalTime = 60 * 60;
+let totalTime = 60 * 60; // 1 hour
 
+// Load JSON
 fetch("production_final_database.json")
   .then(res => res.json())
   .then(data => {
     questionBank = data;
-    startTest();
   });
 
+// -------- START TEST --------
+function beginTest() {
+  const name = document.getElementById("candidateName").value.trim();
+  if (!name) {
+    alert("Please enter your full name.");
+    return;
+  }
+
+  document.getElementById("startSection").style.display = "none";
+  document.getElementById("examSection").style.display = "block";
+  document.getElementById("examHeader").innerText = "Candidate: " + name;
+
+  generateTest();
+  loadQuestion();
+  startTimer();
+}
+
+// -------- STRICT 60 GENERATION --------
 function getRandom(arr, count) {
   return [...arr].sort(() => 0.5 - Math.random()).slice(0, count);
 }
 
-function startTest() {
+function generateTest() {
   selectedQuestions = [];
 
   selectedQuestions.push(...getRandom(questionBank.arithmetic, 15));
@@ -25,45 +44,58 @@ function startTest() {
   selectedQuestions.push(...getRandom(questionBank.currentAffairs, 10));
 
   selectedQuestions = selectedQuestions.sort(() => 0.5 - Math.random());
-
-  renderQuestions();
-  startTimer();
 }
 
-function renderQuestions() {
-  const container = document.getElementById("quiz-container");
-  container.innerHTML = "";
+// -------- LOAD SINGLE QUESTION --------
+function loadQuestion() {
+  const q = selectedQuestions[currentQuestionIndex];
+  const container = document.getElementById("questionBox");
 
-  selectedQuestions.forEach((q, index) => {
-    const div = document.createElement("div");
-    div.className = "question-block";
+  const labels = ["A", "B", "C", "D"];
 
-    const labels = ["A", "B", "C", "D"];
+  let optionsHTML = "";
 
-    let optionsHTML = "";
-    q.options.forEach((opt, i) => {
-      optionsHTML += `
-        <label class="option">
-          <input type="radio" name="q${index}" value="${labels[i]}" 
-          onchange="saveAnswer(${index}, '${labels[i]}')">
-          <strong>${labels[i]}.</strong> ${opt}
-        </label>
-      `;
-    });
+  q.options.forEach((opt, i) => {
+    const checked =
+      userAnswers[currentQuestionIndex] === labels[i] ? "checked" : "";
 
-    div.innerHTML = `
-      <p class="question-number">Q${index + 1}. ${q.question}</p>
-      ${optionsHTML}
+    optionsHTML += `
+      <label class="option">
+        <input type="radio" name="option" value="${labels[i]}" ${checked}
+        onchange="saveAnswer('${labels[i]}')">
+        <strong>${labels[i]}.</strong> ${opt}
+      </label>
     `;
-
-    container.appendChild(div);
   });
+
+  container.innerHTML = `
+    <h4>Question ${currentQuestionIndex + 1} of 60</h4>
+    <p>${q.question}</p>
+    ${optionsHTML}
+  `;
 }
 
-function saveAnswer(index, value) {
-  userAnswers[index] = value;
+// -------- SAVE ANSWER --------
+function saveAnswer(value) {
+  userAnswers[currentQuestionIndex] = value;
 }
 
+// -------- NAVIGATION --------
+function nextQuestion() {
+  if (currentQuestionIndex < 59) {
+    currentQuestionIndex++;
+    loadQuestion();
+  }
+}
+
+function prevQuestion() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    loadQuestion();
+  }
+}
+
+// -------- TIMER --------
 function startTimer() {
   const timerDisplay = document.getElementById("timer");
 
@@ -73,7 +105,8 @@ function startTimer() {
     const minutes = Math.floor(totalTime / 60);
     const seconds = totalTime % 60;
 
-    timerDisplay.textContent =
+    timerDisplay.innerText =
+      "Time Left: " +
       minutes.toString().padStart(2, "0") + ":" +
       seconds.toString().padStart(2, "0");
 
@@ -84,12 +117,13 @@ function startTimer() {
   }, 1000);
 }
 
+// -------- SUBMIT --------
 function submitTest() {
   clearInterval(timerInterval);
 
   let score = 0;
   let attempted = 0;
-  let resultHTML = "<h2>Answer Review</h2>";
+  let reviewHTML = "<h2>Exam Result</h2>";
 
   selectedQuestions.forEach((q, index) => {
     const correctAnswer = q.answer || "N/A";
@@ -98,8 +132,8 @@ function submitTest() {
     if (userAnswer !== "Not Attempted") attempted++;
     if (userAnswer === correctAnswer) score++;
 
-    resultHTML += `
-      <div class="review-block">
+    reviewHTML += `
+      <div style="margin-bottom:15px;">
         <p><strong>Q${index + 1}:</strong> ${q.question}</p>
         <p>Your Answer: ${userAnswer}</p>
         <p>Correct Answer: ${correctAnswer}</p>
@@ -107,22 +141,20 @@ function submitTest() {
     `;
   });
 
-  let preparationAdvice = "";
-
+  let advice = "";
   if (score >= 50) {
-    preparationAdvice = "Excellent performance. You are exam ready.";
+    advice = "Excellent performance. You are exam ready.";
   } else if (score >= 35) {
-    preparationAdvice = "Good attempt. Minor revision needed.";
+    advice = "Good attempt. Some revision required.";
   } else {
-    preparationAdvice = "More preparation required. Focus on weak subjects.";
+    advice = "You need more preparation. Focus on weak subjects.";
   }
 
-  resultHTML += `
+  reviewHTML += `
     <h3>Total Score: ${score} / 60</h3>
     <p>Attempted: ${attempted} / 60</p>
-    <p><strong>Preparation Advice:</strong> ${preparationAdvice}</p>
+    <p><strong>Preparation Advice:</strong> ${advice}</p>
   `;
 
-  document.getElementById("quiz-container").innerHTML = "";
-  document.getElementById("result-container").innerHTML = resultHTML;
+  document.getElementById("examSection").innerHTML = reviewHTML;
 }
