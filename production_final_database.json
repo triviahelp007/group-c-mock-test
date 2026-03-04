@@ -2,7 +2,7 @@
   "arithmetic": [
     {
       "id": 1,
-      "question": "An electric bulb of 100 watt is used for 4 hours. The unit of electric energy used is [UP Lower Sub. (Pre) 2009]",
+      "question": "An electric bulb of 100 watt is used for 4 hours. The unit of electric energy used is ",
       "options": [
         "400",
         "25",
@@ -68,7 +68,7 @@
     },
     {
       "id": 109,
-      "question": "If the number representing volume and surface area of a cube are equal, then the length of the edge of the cube in terms of the unit of measurement will be [IAS (Pre) 1997]",
+      "question": "If the number representing volume and surface area of a cube are equal, then the length of the edge of the cube in terms of the unit of measurement will be ",
       "options": [
         "3",
         "4",
@@ -79,7 +79,7 @@
     },
     {
       "id": 2,
-      "question": "The first page that you normally view at any website is known as [MPPCS (Pre) 2015]",
+      "question": "The first page that you normally view at any website is known as ",
       "options": [
         "Home page",
         "Master page",
@@ -90,7 +90,7 @@
     },
     {
       "id": 3,
-      "question": "Which one of the following is correctly matched? [UP Lower Sub. (Spl)(Pre) 2003 .UP Lower Sub. (Pre) 2002]",
+      "question": "Which one of the following is correctly matched? ",
       "options": [
         "Valentine Chirol - Indian Struggle",
         "Rafiq Zakaria - The Man Who Divided India",
@@ -101,7 +101,7 @@
     },
     {
       "id": 10,
-      "question": "When light passes from one medium to another medium, which one of the following does not change? [UPPCS (Mains) 2003]",
+      "question": "When light passes from one medium to another medium, which one of the following does not change? ",
       "options": [
         "Intensity",
         "Velocity",
@@ -112,7 +112,7 @@
     },
     {
       "id": 11,
-      "question": "Which one of the following is not correctly matched? [Uttarakhand Lower Sub. (Pre) 2010]",
+      "question": "Which one of the following is not correctly matched? ",
       "options": [
         "Y2K - Computer",
         "Arthritis - Uric Acid",
@@ -123,7 +123,7 @@
     },
     {
       "id": 12,
-      "question": "First President of United States of America was [Uttarakhand UDA/LDA (Pre) 2007]",
+      "question": "First President of United States of America was ",
       "options": [
         "George Washington",
         "John Adams",
@@ -134,7 +134,7 @@
     },
     {
       "id": 14,
-      "question": "Brass is a combination of what metals? [Chhattisgarh PCS (Pre) 2011 Uttarakhand PCS (Pre) 2002 UPPCS (Pre) 1993]",
+      "question": "Brass is a combination of what metals? ",
       "options": [
         "Copper and Nickel",
         "Copper and Tin",
@@ -145,7 +145,7 @@
     },
     {
       "id": 15,
-      "question": "What is the mass number of an element, the atom of which contains two protons, two neutrons and two electrons? [43rd BPSC (Pre) 1999]",
+      "question": "What is the mass number of an element, the atom of which contains two protons, two neutrons and two electrons? ",
       "options": [
         "2",
         "4",
@@ -156,7 +156,7 @@
     },
     {
       "id": 16,
-      "question": "Dynamo is a machine which is used for [UPPCS (Mains) 2012 RAS/RTS (Pre) 2012 ,UPPCS (Pre) 2016]",
+      "question": "Dynamo is a machine which is used for ",
       "options": [
         "Conversion of high voltage to low voltage",
         "Conversion of electrical energy to mechanical energy",
@@ -167,7 +167,7 @@
     },
     {
       "id": 17,
-      "question": "In which place Kumbh Mela is held every twelfth years? [MPPCS (Pre) 1995]",
+      "question": "In which place Kumbh Mela is held every twelfth years? ",
       "options": [
         "Prayag - Haridwar - Ujjain - Nashik",
         "Chitrakoot - Ujjain - Prayag - Haridwar",
@@ -178,7 +178,7 @@
     },
     {
       "id": 18,
-      "question": "The last Mauryan emperor was [48th to 52nd BPSC (Pre) 2008]",
+      "question": "The last Mauryan emperor was ",
       "options": [
         "Jaloka",
         "Avanti Verma",
@@ -189,7 +189,7 @@
     },
     {
       "id": 19,
-      "question": "On the surface of the Moon, two persons cannot listen each other as [UPPCS (Pre) 2003]",
+      "question": "On the surface of the Moon, two persons cannot listen each other as ",
       "options": [
         "Their ears stops working at the Moon",
         "There is no atmosphere on the Moon",
@@ -200,7 +200,7 @@
     },
     {
       "id": 20,
-      "question": "Which of the following cups/trophies is not associated with Lawn Tennis? [Haryana PSC (Pre) 2015]",
+      "question": "Which of the following cups/trophies is not associated with Lawn Tennis? ",
       "options": [
         "Davis Cup",
         "Nations’ Cup",
@@ -211,7 +211,7 @@
     },
     {
       "id": 21,
-      "question": "Who one of the following is the biographer of Jawaharlal Nehru? [UPPCS (Mains) 2014]",
+      "question": "Who one of the following is the biographer of Jawaharlal Nehru? ",
       "options": [
         "Frank Moraes",
         "Dom Moraes",
@@ -222,7 +222,7 @@
     },
     {
       "id": 22,
-      "question": "The first lady Prime Minister in the world, was [UP Lower Sub. (Spl)(Pre) 2004]",
+      "question": "The first lady Prime Minister in the world, was ",
       "options": [
         "Golda Meir",
         "Sirmao Bhandarnaike",
@@ -233,7 +233,7 @@
     },
     {
       "id": 23,
-      "question": "Minerals are [53rd to 55th BPSC (Pre) 2011]",
+      "question": "Minerals are ",
       "options": [
         "Liquids",
         "Inorganic solids",
@@ -266,7 +266,7 @@
     },
     {
       "id": 45,
-      "question": "Which one of the following is an unmatched pair? [UPPCS (Mains) 2004]",
+      "question": "Which one of the following is an unmatched pair? ",
       "options": [
         "Central Drug Research Institute - Lucknow",
         "Central Electrochemical Research Institute - Kolkata",
@@ -277,7 +277,7 @@
     },
     {
       "id": 46,
-      "question": "The bear commonly performing on streets is [UPPCS (Mains) 2008]",
+      "question": "The bear commonly performing on streets is ",
       "options": [
         "Sloth bear",
         "Sun bear",
@@ -288,7 +288,7 @@
     },
     {
       "id": 47,
-      "question": "A small pouch containing silica gel is often found in bottles of medicine in tablet or powder form because of silica gel [Sikkim PSC (Pre) 2017 IAS (Pre) 2000]",
+      "question": "A small pouch containing silica gel is often found in bottles of medicine in tablet or powder form because of silica gel ",
       "options": [
         "Kills bacteria",
         "Kills germs and spores",
@@ -299,7 +299,7 @@
     },
     {
       "id": 48,
-      "question": "The first heart transplant was performed by [UP Lower Sub. (Pre) 2004 MPPCS (Pre) 1994]",
+      "question": "The first heart transplant was performed by ",
       "options": [
         "Dr. William Harvey",
         "Str. F.G. Hopkins",
@@ -310,7 +310,7 @@
     },
     {
       "id": 52,
-      "question": "A girl is swinging on a swing in sitting position. When the girl stands up, the period of the swing will [IAS (Pre) 1997]",
+      "question": "A girl is swinging on a swing in sitting position. When the girl stands up, the period of the swing will ",
       "options": [
         "Be shorter",
         "Be longer",
@@ -321,7 +321,7 @@
     },
     {
       "id": 53,
-      "question": "Which one of the following is correctly matched? [UP Lower Sub. (Pre) 2013 ,UP UDA/LDA (Pre) 2010]",
+      "question": "Which one of the following is correctly matched? ",
       "options": [
         "Lajpat Rai - Poverty and Un British Rule in India",
         "Dadabhai Naoroji - Unhappy India",
@@ -343,7 +343,7 @@
     },
     {
       "id": 55,
-      "question": "A ball is dropped from the top of a high building with a constant acceleration of 9.8 m/s . What will be its velocity after 3 s? [IAS (Pre) 1998]",
+      "question": "A ball is dropped from the top of a high building with a constant acceleration of 9.8 m/s . What will be its velocity after 3s? ",
       "options": [
         "9.8 m/s",
         "19.6 m/s",
@@ -354,7 +354,7 @@
     },
     {
       "id": 88,
-      "question": "Which one of the following pairs is correctly matched? [UPPCS (Mains) 2011]",
+      "question": "Which one of the following pairs is correctly matched? ",
       "options": [
         "D.P. Mishra - Living an Era",
         "Jawaharlal Nehru - India Divided",
@@ -365,7 +365,7 @@
     },
     {
       "id": 89,
-      "question": "The photoelectric effect was discovered by [UPPCS (Mains) 2003]",
+      "question": "The photoelectric effect was discovered by ",
       "options": [
         "Hertz",
         "Einstein",
@@ -376,7 +376,7 @@
     },
     {
       "id": 90,
-      "question": "The Project Director of Chandrayaan-II was [Himachal Pradesh PSC (Pre) 2016 ,UPPSC (GIC) 2010]",
+      "question": "The Project Director of Chandrayaan-II was ",
       "options": [
         "C. Rangarajan",
         "A.P.J. Kalam",
@@ -387,7 +387,7 @@
     },
     {
       "id": 91,
-      "question": "In which State is the Buddhist site Tabo Monastery located? [Uttarakhand PCS (Pre) 2010]",
+      "question": "In which State is the Buddhist site Tabo Monastery located? ",
       "options": [
         "Arunachal Pradesh",
         "Himachal Pradesh",
@@ -398,7 +398,7 @@
     },
     {
       "id": 92,
-      "question": "Which of the following is not a vector quantity? [Arunachal Pradesh PSC (Pre) 2017 ,45th BPSC (Pre) 2001]",
+      "question": "Which of the following is not a vector quantity? ",
       "options": [
         "Displacement",
         "Velocity",
@@ -409,7 +409,7 @@
     },
     {
       "id": 97,
-      "question": "Energy conservation means [MPPCS (Pre) 2000]",
+      "question": "Energy conservation means ",
       "options": [
         "Generation and destruction of energy",
         "Energy could be created",
@@ -420,7 +420,7 @@
     },
     {
       "id": 103,
-      "question": "Identify a mismatch among the following pairs. [UPPCS (Mains) 2005]",
+      "question": "Identify a mismatch among the following pairs. ",
       "options": [
         "NBRI - Kolkata",
         "IISR - Lucknow",
@@ -431,7 +431,7 @@
     },
     {
       "id": 104,
-      "question": "Which one of the following pairs is not correctly matched? [UPPCS (Mains) 2003]",
+      "question": "Which one of the following pairs is not correctly matched? ",
       "options": [
         "Control centre of cell - Nucleus",
         "Natural Rubber - Poly-isoprene",
@@ -442,7 +442,7 @@
     },
     {
       "id": 105,
-      "question": "When doctor tells a person that he/she has been affected with tetraplagia, it means that he/she is suffering from paralysis of [UPPCS (Pre)(Re. Exam) 2015]",
+      "question": "When doctor tells a person that he/she has been affected with tetraplagia, it means that he/she is suffering from paralysis of ",
       "options": [
         "Right hand only",
         "Left hand only",
@@ -453,7 +453,7 @@
     },
     {
       "id": 106,
-      "question": "Who wrote the book entitled ‘Romancing with Life : An Autobiography’? [Uttarakhand PCS (Pre) 2006]",
+      "question": "Who wrote the book entitled ‘Romancing with Life : An Autobiography’? ",
       "options": [
         "Devanand",
         "Kalpana Chawla",
@@ -464,7 +464,7 @@
     },
     {
       "id": 107,
-      "question": "Merdeka Cup is associated with [UP RO/ARO (Pre) 2016]",
+      "question": "Merdeka Cup is associated with ",
       "options": [
         "Football",
         "Tennis",
@@ -475,7 +475,7 @@
     },
     {
       "id": 110,
-      "question": "An electric bulb is connected to 220 V generator. The current is 0.5A. The power of the bulb is [Chhattisgarh PCS (Pre) 2016]",
+      "question": "An electric bulb is connected to 220 V generator. The current is 0.5A. The power of the bulb is ",
       "options": [
         "110 W",
         "110 V",
@@ -497,7 +497,7 @@
     },
     {
       "id": 122,
-      "question": "The viscous nature of human blood is due to [Jharkhand PCS (Pre) 2013]",
+      "question": "The viscous nature of human blood is due to ",
       "options": [
         "Proteins in blood",
         "Platelets in plasma",
@@ -519,7 +519,7 @@
     },
     {
       "id": 125,
-      "question": "A person met with an accident and there is no time to check his blood group, which of the following blood should be given to him? [RAS/RTS (Pre) 2013]",
+      "question": "A person met with an accident and there is no time to check his blood group, which of the following blood should be given to him? ",
       "options": [
         "AB, Rh+",
         "O, Rh+",
@@ -530,7 +530,7 @@
     },
     {
       "id": 126,
-      "question": "Which of the following is not a characteristic of Indian Agriculture? [Karnataka PSC (Pre) 2019 Uttarakhand PCS (Pre) 2010]",
+      "question": "Which of the following is not a characteristic of Indian Agriculture? ",
       "options": [
         "Over-dependence on nature",
         "Low level of productivity",
@@ -541,7 +541,7 @@
     },
     {
       "id": 127,
-      "question": "One micron is equal to [39th BPSC (Pre) 1994]",
+      "question": "One micron is equal to ",
       "options": [
         "1/10 mm",
         "1/100 mm",
@@ -552,7 +552,7 @@
     },
     {
       "id": 128,
-      "question": "Two balls A and B are of 10 kg and 1 kg, respectively. They are dropped simultaneously from a height of 20 m. Which of the following is correct? [Goa PSC (Pre) 2018 UP Lower Sub. (Pre) 2015]",
+      "question": "Two balls A and B are of 10 kg and 1 kg, respectively. They are dropped simultaneously from a height of 20 m. Which of the following is correct? ",
       "options": [
         "A will reach the ground first",
         "B will reach the ground first",
@@ -563,7 +563,7 @@
     },
     {
       "id": 129,
-      "question": "Which of the following countries was readmitted to the Olympics after her suspension for about 21 years ago? [Haryana PSC (Pre) 2014]",
+      "question": "Which of the following countries was readmitted to the Olympics after her suspension for about 21 years ago? ",
       "options": [
         "Iran",
         "Iraq",
@@ -574,7 +574,7 @@
     },
     {
       "id": 130,
-      "question": "The Indian Famine Code, 1883 was prepared by [UPPCS (Mains) 2015]",
+      "question": "The Indian Famine Code, 1883 was prepared by ",
       "options": [
         "Hunter Commission",
         "Hartog Commission",
@@ -585,7 +585,7 @@
     },
     {
       "id": 131,
-      "question": "When is ‘National Press Day’ celebrated? [Sikkim PSC (Pre) 2019 UPPCS (Mains) 2005]",
+      "question": "When is ‘National Press Day’ celebrated? ",
       "options": [
         "16 November",
         "17 November",
