@@ -9,7 +9,7 @@ let mockID = "";
 
 /* LOAD DATABASE */
 async function loadDatabase() {
-    const response = await fetch("database.json");
+    const response = await fetch("production_final_database.json");
     fullDatabase = await response.json();
 }
 loadDatabase();
