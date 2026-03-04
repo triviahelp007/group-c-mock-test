@@ -2650,14 +2650,14 @@
     },
     {
       "id": 101,
-      "question": "The political party organised a mammoth gathering in the Maidan.",
+      "question": "The political party organised a *mammoth* gathering in the Maidan. Opposite of Marked Word",
       "options": [
         "Small",
         "Little",
         "Tiny",
         "Disciplined"
       ],
-      "answer": 3
+      "answer": 2
     },
     {
       "id": 102,
