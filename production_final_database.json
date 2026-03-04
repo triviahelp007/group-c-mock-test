@@ -3252,6 +3252,1810 @@
       ],
       "answer": 1,
       "id": 168
+    },
+    {
+      "question": "Which scheme launched by the West Bengal Government provides financial assistance to women aged 25-60?",
+      "options": [
+        "Kanyashree",
+        "Lakshmir Bhandar",
+        "Rupashree",
+        "Sabuj Sathi"
+      ],
+      "answer": 1,
+      "id": 169
+    },
+    {
+      "question": "Kanyashree scheme was launched in which year?",
+      "options": [
+        "2011",
+        "2012",
+        "2013",
+        "2014"
+      ],
+      "answer": 2,
+      "id": 170
+    },
+    {
+      "question": "Rupashree scheme provides financial assistance for?",
+      "options": [
+        "Marriage of poor girls",
+        "Education of girls",
+        "Widow pension",
+        "Health insurance"
+      ],
+      "answer": 0,
+      "id": 171
+    },
+    {
+      "question": "Sabuj Sathi scheme provides what to students?",
+      "options": [
+        "Books",
+        "Cycles",
+        "Scholarships",
+        "Uniforms"
+      ],
+      "answer": 1,
+      "id": 172
+    },
+    {
+      "question": "Krishak Bandhu scheme is meant for?",
+      "options": [
+        "Students",
+        "Farmers",
+        "Teachers",
+        "Workers"
+      ],
+      "answer": 1,
+      "id": 173
+    },
+    {
+      "question": "Duare Sarkar program was launched by which Chief Minister?",
+      "options": [
+        "Mamata Banerjee",
+        "Buddhadeb Bhattacharjee",
+        "Jyoti Basu",
+        "Prafulla Chandra Sen"
+      ],
+      "answer": 0,
+      "id": 174
+    },
+    {
+      "question": "Student Credit Card scheme in West Bengal provides loans up to?",
+      "options": [
+        "₹5 lakh",
+        "₹10 lakh",
+        "₹15 lakh",
+        "₹20 lakh"
+      ],
+      "answer": 1,
+      "id": 175
+    },
+    {
+      "question": "Which scheme provides free bicycles to students in West Bengal?",
+      "options": [
+        "Sabuj Sathi",
+        "Kanyashree",
+        "Rupashree",
+        "Swasthya Sathi"
+      ],
+      "answer": 0,
+      "id": 176
+    },
+    {
+      "question": "Swasthya Sathi scheme is related to?",
+      "options": [
+        "Health insurance",
+        "Education",
+        "Agriculture",
+        "Employment"
+      ],
+      "answer": 0,
+      "id": 177
+    },
+    {
+      "question": "Lakshmir Bhandar scheme is for?",
+      "options": [
+        "Women financial support",
+        "Farmers subsidy",
+        "Teachers pension",
+        "Students stipend"
+      ],
+      "answer": 0,
+      "id": 178
+    },
+    {
+      "question": "Who wrote the national anthem of India?",
+      "options": [
+        "Bankim Chandra Chatterjee",
+        "Rabindranath Tagore",
+        "Kazi Nazrul Islam",
+        "Sarojini Naidu"
+      ],
+      "answer": 1,
+      "id": 179
+    },
+    {
+      "question": "Rabindranath Tagore won the Nobel Prize for which work?",
+      "options": [
+        "Gora",
+        "Gitanjali",
+        "Ghare Baire",
+        "Chokher Bali"
+      ],
+      "answer": 1,
+      "id": 180
+    },
+    {
+      "question": "Who wrote the novel 'Anandamath'?",
+      "options": [
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Sarat Chandra Chattopadhyay",
+        "Sunil Gangopadhyay"
+      ],
+      "answer": 1,
+      "id": 181
+    },
+    {
+      "question": "The song 'Vande Mataram' was written by?",
+      "options": [
+        "Rabindranath Tagore",
+        "Bankim Chandra Chatterjee",
+        "Nazrul Islam",
+        "Sarojini Naidu"
+      ],
+      "answer": 1,
+      "id": 182
+    },
+    {
+      "question": "Sunil Gangopadhyay is famous for writing?",
+      "options": [
+        "Poetry",
+        "Novels",
+        "Short stories",
+        "All of these"
+      ],
+      "answer": 3,
+      "id": 183
+    },
+    {
+      "question": "Which Bengali author wrote 'Devdas'?",
+      "options": [
+        "Rabindranath Tagore",
+        "Sarat Chandra Chattopadhyay",
+        "Sunil Gangopadhyay",
+        "Bankim Chandra"
+      ],
+      "answer": 1,
+      "id": 184
+    },
+    {
+      "question": "Who wrote 'Pather Panchali'?",
+      "options": [
+        "Bibhutibhushan Bandopadhyay",
+        "Tarashankar Bandyopadhyay",
+        "Sunil Gangopadhyay",
+        "Manik Bandopadhyay"
+      ],
+      "answer": 0,
+      "id": 185
+    },
+    {
+      "question": "The famous poem 'Bidrohi' was written by?",
+      "options": [
+        "Rabindranath Tagore",
+        "Kazi Nazrul Islam",
+        "Sunil Gangopadhyay",
+        "Jibanananda Das"
+      ],
+      "answer": 1,
+      "id": 186
+    },
+    {
+      "question": "Which Article of the Indian Constitution deals with Right to Equality?",
+      "options": [
+        "Article 14",
+        "Article 19",
+        "Article 21",
+        "Article 32"
+      ],
+      "answer": 0,
+      "id": 187
+    },
+    {
+      "question": "Right to Freedom is given under which Article?",
+      "options": [
+        "Article 14",
+        "Article 19",
+        "Article 21",
+        "Article 25"
+      ],
+      "answer": 1,
+      "id": 188
+    },
+    {
+      "question": "Right to Constitutional Remedies is under?",
+      "options": [
+        "Article 19",
+        "Article 32",
+        "Article 21",
+        "Article 14"
+      ],
+      "answer": 1,
+      "id": 189
+    },
+    {
+      "question": "Which Article abolished untouchability?",
+      "options": [
+        "Article 15",
+        "Article 16",
+        "Article 17",
+        "Article 18"
+      ],
+      "answer": 2,
+      "id": 190
+    },
+    {
+      "question": "Which Article guarantees protection of life and personal liberty?",
+      "options": [
+        "Article 19",
+        "Article 21",
+        "Article 25",
+        "Article 14"
+      ],
+      "answer": 1,
+      "id": 191
+    },
+    {
+      "question": "The Battle of Plassey was fought in?",
+      "options": [
+        "1757",
+        "1764",
+        "1857",
+        "1773"
+      ],
+      "answer": 0,
+      "id": 192
+    },
+    {
+      "question": "The Battle of Buxar took place in?",
+      "options": [
+        "1757",
+        "1764",
+        "1857",
+        "1780"
+      ],
+      "answer": 1,
+      "id": 193
+    },
+    {
+      "question": "Who introduced the Permanent Settlement in Bengal?",
+      "options": [
+        "Lord Cornwallis",
+        "Lord Wellesley",
+        "Lord Dalhousie",
+        "Lord Hastings"
+      ],
+      "answer": 0,
+      "id": 194
+    },
+    {
+      "question": "The Revolt of 1857 began in?",
+      "options": [
+        "Meerut",
+        "Delhi",
+        "Kanpur",
+        "Lucknow"
+      ],
+      "answer": 0,
+      "id": 195
+    },
+    {
+      "question": "Who was the last Mughal Emperor?",
+      "options": [
+        "Bahadur Shah Zafar",
+        "Akbar II",
+        "Shah Alam II",
+        "Aurangzeb"
+      ],
+      "answer": 0,
+      "id": 196
+    },
+    {
+      "question": "Which river is known as the 'Sorrow of Bengal'?",
+      "options": [
+        "Damodar",
+        "Hooghly",
+        "Teesta",
+        "Ganga"
+      ],
+      "answer": 0,
+      "id": 197
+    },
+    {
+      "question": "The longest river in India is?",
+      "options": [
+        "Yamuna",
+        "Godavari",
+        "Ganga",
+        "Brahmaputra"
+      ],
+      "answer": 2,
+      "id": 198
+    },
+    {
+      "question": "Which dam is the longest dam in India?",
+      "options": [
+        "Bhakra Nangal",
+        "Hirakud",
+        "Tehri",
+        "Sardar Sarovar"
+      ],
+      "answer": 1,
+      "id": 199
+    },
+    {
+      "question": "Tehri Dam is built on which river?",
+      "options": [
+        "Ganga",
+        "Bhagirathi",
+        "Yamuna",
+        "Alaknanda"
+      ],
+      "answer": 1,
+      "id": 200
+    },
+    {
+      "question": "Bhakra Nangal Dam is on which river?",
+      "options": [
+        "Sutlej",
+        "Beas",
+        "Ravi",
+        "Chenab"
+      ],
+      "answer": 0,
+      "id": 201
+    },
+    {
+      "question": "Which lake is the largest freshwater lake in India?",
+      "options": [
+        "Dal Lake",
+        "Wular Lake",
+        "Chilika Lake",
+        "Loktak Lake"
+      ],
+      "answer": 1,
+      "id": 202
+    },
+    {
+      "question": "Chilika Lake is located in which state?",
+      "options": [
+        "West Bengal",
+        "Odisha",
+        "Assam",
+        "Andhra Pradesh"
+      ],
+      "answer": 1,
+      "id": 203
+    },
+    {
+      "question": "Loktak Lake is located in?",
+      "options": [
+        "Manipur",
+        "Assam",
+        "Meghalaya",
+        "Tripura"
+      ],
+      "answer": 0,
+      "id": 204
+    },
+    {
+      "question": "Dal Lake is located in?",
+      "options": [
+        "Himachal Pradesh",
+        "Jammu and Kashmir",
+        "Uttarakhand",
+        "Punjab"
+      ],
+      "answer": 1,
+      "id": 205
+    },
+    {
+      "question": "Which is the largest river island in the world?",
+      "options": [
+        "Majuli",
+        "Srirangam",
+        "Bhavani",
+        "Umananda"
+      ],
+      "answer": 0,
+      "id": 206
+    },
+    {
+      "question": "Which dam is located on the Narmada river?",
+      "options": [
+        "Hirakud",
+        "Sardar Sarovar",
+        "Bhakra Nangal",
+        "Tehri"
+      ],
+      "answer": 1,
+      "id": 207
+    },
+    {
+      "question": "Which river flows through Kolkata?",
+      "options": [
+        "Damodar",
+        "Hooghly",
+        "Teesta",
+        "Subarnarekha"
+      ],
+      "answer": 1,
+      "id": 208
+    },
+    {
+      "question": "Teesta river flows through which state?",
+      "options": [
+        "West Bengal",
+        "Sikkim",
+        "Both A and B",
+        "Assam"
+      ],
+      "answer": 2,
+      "id": 209
+    },
+    {
+      "question": "Which river is called the lifeline of West Bengal?",
+      "options": [
+        "Hooghly",
+        "Teesta",
+        "Damodar",
+        "Ganga"
+      ],
+      "answer": 0,
+      "id": 210
+    },
+    {
+      "question": "Which river originates from Gangotri glacier?",
+      "options": [
+        "Yamuna",
+        "Ganga",
+        "Brahmaputra",
+        "Godavari"
+      ],
+      "answer": 1,
+      "id": 211
+    },
+    {
+      "question": "Which West Bengal scheme provides financial assistance to farmers in case of death?",
+      "options": [
+        "Krishak Bandhu",
+        "Sabuj Sathi",
+        "Kanyashree",
+        "Swasthya Sathi"
+      ],
+      "answer": 0,
+      "id": 212
+    },
+    {
+      "question": "Duare Ration scheme in West Bengal is related to?",
+      "options": [
+        "Food distribution",
+        "Health insurance",
+        "Education loans",
+        "Agriculture subsidy"
+      ],
+      "answer": 0,
+      "id": 213
+    },
+    {
+      "question": "Which West Bengal scheme supports girl child education?",
+      "options": [
+        "Rupashree",
+        "Lakshmir Bhandar",
+        "Kanyashree",
+        "Sabuj Sathi"
+      ],
+      "answer": 2,
+      "id": 214
+    },
+    {
+      "question": "The scheme 'Swasthya Sathi' provides health coverage up to?",
+      "options": [
+        "₹2 lakh",
+        "₹5 lakh",
+        "₹10 lakh",
+        "₹3 lakh"
+      ],
+      "answer": 1,
+      "id": 215
+    },
+    {
+      "question": "Who wrote the novel 'Gora'?",
+      "options": [
+        "Rabindranath Tagore",
+        "Bankim Chandra",
+        "Sarat Chandra",
+        "Sunil Gangopadhyay"
+      ],
+      "answer": 0,
+      "id": 216
+    },
+    {
+      "question": "Who wrote 'Aranyak'?",
+      "options": [
+        "Bibhutibhushan Bandopadhyay",
+        "Tarashankar Bandyopadhyay",
+        "Manik Bandopadhyay",
+        "Sarat Chandra"
+      ],
+      "answer": 0,
+      "id": 217
+    },
+    {
+      "question": "Who wrote the famous novel 'Sei Somoy'?",
+      "options": [
+        "Sunil Gangopadhyay",
+        "Sarat Chandra",
+        "Tagore",
+        "Bankim Chandra"
+      ],
+      "answer": 0,
+      "id": 218
+    },
+    {
+      "question": "Which Bengali writer wrote 'Pather Dabi'?",
+      "options": [
+        "Sarat Chandra",
+        "Bankim Chandra",
+        "Sunil Gangopadhyay",
+        "Tagore"
+      ],
+      "answer": 0,
+      "id": 219
+    },
+    {
+      "question": "Which Bengali poet wrote 'Banalata Sen'?",
+      "options": [
+        "Jibanananda Das",
+        "Nazrul Islam",
+        "Tagore",
+        "Sunil Gangopadhyay"
+      ],
+      "answer": 0,
+      "id": 220
+    },
+    {
+      "question": "Which Article deals with freedom of religion?",
+      "options": [
+        "Article 19",
+        "Article 25",
+        "Article 21",
+        "Article 32"
+      ],
+      "answer": 1,
+      "id": 221
+    },
+    {
+      "question": "Which Article abolished titles in India?",
+      "options": [
+        "Article 17",
+        "Article 18",
+        "Article 19",
+        "Article 20"
+      ],
+      "answer": 1,
+      "id": 222
+    },
+    {
+      "question": "Which Article deals with equality before law?",
+      "options": [
+        "Article 14",
+        "Article 15",
+        "Article 16",
+        "Article 17"
+      ],
+      "answer": 0,
+      "id": 223
+    },
+    {
+      "question": "Which Article prohibits discrimination on grounds of religion, race, caste or sex?",
+      "options": [
+        "Article 15",
+        "Article 16",
+        "Article 18",
+        "Article 19"
+      ],
+      "answer": 0,
+      "id": 224
+    },
+    {
+      "question": "Who introduced the Doctrine of Lapse?",
+      "options": [
+        "Lord Dalhousie",
+        "Lord Cornwallis",
+        "Lord Curzon",
+        "Lord Hastings"
+      ],
+      "answer": 0,
+      "id": 225
+    },
+    {
+      "question": "Who founded the Indian National Congress?",
+      "options": [
+        "A.O. Hume",
+        "Gandhi",
+        "Tilak",
+        "Nehru"
+      ],
+      "answer": 0,
+      "id": 226
+    },
+    {
+      "question": "In which year was the Indian National Congress founded?",
+      "options": [
+        "1885",
+        "1890",
+        "1905",
+        "1875"
+      ],
+      "answer": 0,
+      "id": 227
+    },
+    {
+      "question": "Who led the Indigo Revolt in Bengal?",
+      "options": [
+        "Digambar Biswas",
+        "Mahatma Gandhi",
+        "Tilak",
+        "Tagore"
+      ],
+      "answer": 0,
+      "id": 228
+    },
+    {
+      "question": "The Permanent Settlement was introduced in which year?",
+      "options": [
+        "1793",
+        "1773",
+        "1784",
+        "1813"
+      ],
+      "answer": 0,
+      "id": 229
+    },
+    {
+      "question": "Which lake is the largest saltwater lake in India?",
+      "options": [
+        "Chilika Lake",
+        "Dal Lake",
+        "Loktak Lake",
+        "Wular Lake"
+      ],
+      "answer": 0,
+      "id": 230
+    },
+    {
+      "question": "Which river is known as the 'Dakshin Ganga'?",
+      "options": [
+        "Godavari",
+        "Krishna",
+        "Kaveri",
+        "Narmada"
+      ],
+      "answer": 0,
+      "id": 231
+    },
+    {
+      "question": "The Brahmaputra river originates from?",
+      "options": [
+        "Tibet",
+        "Nepal",
+        "India",
+        "Bhutan"
+      ],
+      "answer": 0,
+      "id": 232
+    },
+    {
+      "question": "Which dam is built on the Krishna River?",
+      "options": [
+        "Nagarjuna Sagar",
+        "Bhakra",
+        "Tehri",
+        "Hirakud"
+      ],
+      "answer": 0,
+      "id": 233
+    },
+    {
+      "question": "Sardar Sarovar Dam is built on which river?",
+      "options": [
+        "Narmada",
+        "Tapti",
+        "Godavari",
+        "Krishna"
+      ],
+      "answer": 0,
+      "id": 234
+    },
+    {
+      "question": "Which is the largest freshwater lake in Northeast India?",
+      "options": [
+        "Loktak",
+        "Dal",
+        "Wular",
+        "Chilika"
+      ],
+      "answer": 0,
+      "id": 235
+    },
+    {
+      "question": "Which river is known as the 'Yellow River of Bengal'?",
+      "options": [
+        "Damodar",
+        "Hooghly",
+        "Teesta",
+        "Subarnarekha"
+      ],
+      "answer": 0,
+      "id": 236
+    },
+    {
+      "question": "The Hooghly River is a distributary of which river?",
+      "options": [
+        "Ganga",
+        "Yamuna",
+        "Brahmaputra",
+        "Teesta"
+      ],
+      "answer": 0,
+      "id": 237
+    },
+    {
+      "question": "Which Indian river flows through the city of Varanasi?",
+      "options": [
+        "Ganga",
+        "Yamuna",
+        "Godavari",
+        "Krishna"
+      ],
+      "answer": 0,
+      "id": 238
+    },
+    {
+      "question": "Which dam is located in Odisha?",
+      "options": [
+        "Hirakud Dam",
+        "Tehri Dam",
+        "Bhakra Dam",
+        "Nagarjuna Sagar"
+      ],
+      "answer": 0,
+      "id": 239
+    },
+    {
+      "question": "Which Indian lake is famous for floating islands?",
+      "options": [
+        "Loktak Lake",
+        "Dal Lake",
+        "Chilika Lake",
+        "Wular Lake"
+      ],
+      "answer": 0,
+      "id": 240
+    },
+    {
+      "question": "Which scheme gives free rice to poor people in West Bengal?",
+      "options": [
+        "Duare Ration",
+        "Kanyashree",
+        "Sabuj Sathi",
+        "Rupashree"
+      ],
+      "answer": 0,
+      "id": 241
+    },
+    {
+      "question": "Which West Bengal scheme supports marriage of girls?",
+      "options": [
+        "Rupashree",
+        "Sabuj Sathi",
+        "Lakshmir Bhandar",
+        "Swasthya Sathi"
+      ],
+      "answer": 0,
+      "id": 242
+    },
+    {
+      "question": "Which famous Bengali writer wrote 'Chokher Bali'?",
+      "options": [
+        "Rabindranath Tagore",
+        "Sarat Chandra",
+        "Sunil Gangopadhyay",
+        "Bankim Chandra"
+      ],
+      "answer": 0,
+      "id": 243
+    },
+    {
+      "question": "Which Bengali writer wrote 'Kapalkundala'?",
+      "options": [
+        "Bankim Chandra",
+        "Tagore",
+        "Sarat Chandra",
+        "Sunil Gangopadhyay"
+      ],
+      "answer": 0,
+      "id": 244
+    },
+    {
+      "question": "Who wrote 'Pather Panchali'?",
+      "options": [
+        "Bibhutibhushan Bandopadhyay",
+        "Sunil Gangopadhyay",
+        "Tagore",
+        "Nazrul"
+      ],
+      "answer": 0,
+      "id": 245
+    },
+    {
+      "question": "Which Article of the Constitution deals with freedom of speech?",
+      "options": [
+        "Article 19",
+        "Article 21",
+        "Article 32",
+        "Article 14"
+      ],
+      "answer": 0,
+      "id": 246
+    },
+    {
+      "question": "Which movement was launched by Mahatma Gandhi in 1942?",
+      "options": [
+        "Quit India Movement",
+        "Non-Cooperation Movement",
+        "Civil Disobedience",
+        "Swadeshi Movement"
+      ],
+      "answer": 0,
+      "id": 247
+    },
+    {
+      "question": "The Jallianwala Bagh massacre happened in?",
+      "options": [
+        "1919",
+        "1920",
+        "1930",
+        "1942"
+      ],
+      "answer": 0,
+      "id": 248
+    },
+    {
+      "question": "Which British Act introduced provincial autonomy in India?",
+      "options": [
+        "Government of India Act 1935",
+        "Regulating Act 1773",
+        "Charter Act 1833",
+        "Indian Councils Act 1892"
+      ],
+      "answer": 0,
+      "id": 249
+    },
+    {
+      "question": "Which Indian river flows through Assam?",
+      "options": [
+        "Brahmaputra",
+        "Godavari",
+        "Narmada",
+        "Krishna"
+      ],
+      "answer": 0,
+      "id": 250
+    },
+    {
+      "question": "Which lake is located in Rajasthan?",
+      "options": [
+        "Sambhar Lake",
+        "Dal Lake",
+        "Loktak Lake",
+        "Chilika Lake"
+      ],
+      "answer": 0,
+      "id": 251
+    },
+    {
+      "question": "How many districts are there in West Bengal (2024)?",
+      "options": [
+        "21",
+        "23",
+        "25",
+        "30"
+      ],
+      "answer": 1,
+      "id": 252
+    },
+    {
+      "question": "Which district of West Bengal is known for tea gardens?",
+      "options": [
+        "Darjeeling",
+        "Bankura",
+        "Howrah",
+        "Purulia"
+      ],
+      "answer": 0,
+      "id": 253
+    },
+    {
+      "question": "The capital of West Bengal is?",
+      "options": [
+        "Kolkata",
+        "Darjeeling",
+        "Howrah",
+        "Asansol"
+      ],
+      "answer": 0,
+      "id": 254
+    },
+    {
+      "question": "Which festival is most famous in West Bengal?",
+      "options": [
+        "Durga Puja",
+        "Diwali",
+        "Onam",
+        "Baisakhi"
+      ],
+      "answer": 0,
+      "id": 255
+    },
+    {
+      "question": "Which river flows through Murshidabad?",
+      "options": [
+        "Bhagirathi",
+        "Teesta",
+        "Damodar",
+        "Subarnarekha"
+      ],
+      "answer": 0,
+      "id": 256
+    },
+    {
+      "question": "The Sundarbans is famous for?",
+      "options": [
+        "Mangrove forests",
+        "Tea gardens",
+        "Deserts",
+        "Mountains"
+      ],
+      "answer": 0,
+      "id": 257
+    },
+    {
+      "question": "Which animal is famous in Sundarbans?",
+      "options": [
+        "Royal Bengal Tiger",
+        "Lion",
+        "Elephant",
+        "Leopard"
+      ],
+      "answer": 0,
+      "id": 258
+    },
+    {
+      "question": "Which city is called the 'City of Joy'?",
+      "options": [
+        "Kolkata",
+        "Mumbai",
+        "Delhi",
+        "Chennai"
+      ],
+      "answer": 0,
+      "id": 259
+    },
+    {
+      "question": "Who founded Visva-Bharati University?",
+      "options": [
+        "Rabindranath Tagore",
+        "Bankim Chandra",
+        "Vivekananda",
+        "Nazrul Islam"
+      ],
+      "answer": 0,
+      "id": 260
+    },
+    {
+      "question": "Visva-Bharati University is located at?",
+      "options": [
+        "Santiniketan",
+        "Kolkata",
+        "Darjeeling",
+        "Howrah"
+      ],
+      "answer": 0,
+      "id": 261
+    },
+    {
+      "question": "Who founded the Ramakrishna Mission?",
+      "options": [
+        "Swami Vivekananda",
+        "Rabindranath Tagore",
+        "Bankim Chandra",
+        "Subhash Bose"
+      ],
+      "answer": 0,
+      "id": 262
+    },
+    {
+      "question": "Swami Vivekananda was born in which city?",
+      "options": [
+        "Kolkata",
+        "Delhi",
+        "Mumbai",
+        "Chennai"
+      ],
+      "answer": 0,
+      "id": 263
+    },
+    {
+      "question": "Netaji Subhash Chandra Bose was born in?",
+      "options": [
+        "Cuttack",
+        "Kolkata",
+        "Delhi",
+        "Patna"
+      ],
+      "answer": 0,
+      "id": 264
+    },
+    {
+      "question": "Which Bengali scientist won Nobel Prize in Physics (1930)?",
+      "options": [
+        "C.V. Raman",
+        "Jagadish Chandra Bose",
+        "Satyendra Nath Bose",
+        "Meghnad Saha"
+      ],
+      "answer": 0,
+      "id": 265
+    },
+    {
+      "question": "Which famous scientist is known for Bose-Einstein statistics?",
+      "options": [
+        "Satyendra Nath Bose",
+        "Jagadish Chandra Bose",
+        "Meghnad Saha",
+        "C.V. Raman"
+      ],
+      "answer": 0,
+      "id": 266
+    },
+    {
+      "question": "Jagadish Chandra Bose is famous for research in?",
+      "options": [
+        "Plant physiology",
+        "Mathematics",
+        "Astronomy",
+        "Medicine"
+      ],
+      "answer": 0,
+      "id": 267
+    },
+    {
+      "question": "Which Article deals with abolition of untouchability?",
+      "options": [
+        "Article 17",
+        "Article 15",
+        "Article 16",
+        "Article 18"
+      ],
+      "answer": 0,
+      "id": 268
+    },
+    {
+      "question": "Which Article deals with protection against arrest and detention?",
+      "options": [
+        "Article 22",
+        "Article 21",
+        "Article 19",
+        "Article 14"
+      ],
+      "answer": 0,
+      "id": 269
+    },
+    {
+      "question": "Which Article deals with cultural and educational rights?",
+      "options": [
+        "Article 29",
+        "Article 30",
+        "Article 25",
+        "Article 32"
+      ],
+      "answer": 0,
+      "id": 270
+    },
+    {
+      "question": "Which Article deals with minorities establishing educational institutions?",
+      "options": [
+        "Article 30",
+        "Article 29",
+        "Article 32",
+        "Article 21"
+      ],
+      "answer": 0,
+      "id": 271
+    },
+    {
+      "question": "Which Article provides the right to constitutional remedies?",
+      "options": [
+        "Article 32",
+        "Article 19",
+        "Article 25",
+        "Article 21"
+      ],
+      "answer": 0,
+      "id": 272
+    },
+    {
+      "question": "Who was the first Governor-General of India?",
+      "options": [
+        "Lord William Bentinck",
+        "Lord Cornwallis",
+        "Lord Dalhousie",
+        "Lord Hastings"
+      ],
+      "answer": 0,
+      "id": 273
+    },
+    {
+      "question": "The Regulating Act was passed in?",
+      "options": [
+        "1773",
+        "1784",
+        "1813",
+        "1833"
+      ],
+      "answer": 0,
+      "id": 274
+    },
+    {
+      "question": "The Charter Act of 1833 made which city the capital of British India?",
+      "options": [
+        "Calcutta",
+        "Bombay",
+        "Delhi",
+        "Madras"
+      ],
+      "answer": 0,
+      "id": 275
+    },
+    {
+      "question": "The first war of Indian independence is also called?",
+      "options": [
+        "Revolt of 1857",
+        "Battle of Plassey",
+        "Non-Cooperation Movement",
+        "Civil Disobedience"
+      ],
+      "answer": 0,
+      "id": 276
+    },
+    {
+      "question": "Who was the leader of the Revolt of 1857 in Jhansi?",
+      "options": [
+        "Rani Lakshmibai",
+        "Begum Hazrat Mahal",
+        "Tantia Tope",
+        "Bahadur Shah Zafar"
+      ],
+      "answer": 0,
+      "id": 277
+    },
+    {
+      "question": "Which river is called the 'Ganga of the South'?",
+      "options": [
+        "Godavari",
+        "Krishna",
+        "Kaveri",
+        "Narmada"
+      ],
+      "answer": 0,
+      "id": 278
+    },
+    {
+      "question": "The Narmada river flows into which sea?",
+      "options": [
+        "Arabian Sea",
+        "Bay of Bengal",
+        "Indian Ocean",
+        "None"
+      ],
+      "answer": 0,
+      "id": 279
+    },
+    {
+      "question": "Which river flows through Delhi?",
+      "options": [
+        "Yamuna",
+        "Ganga",
+        "Godavari",
+        "Brahmaputra"
+      ],
+      "answer": 0,
+      "id": 280
+    },
+    {
+      "question": "The Hirakud Dam is built across which river?",
+      "options": [
+        "Mahanadi",
+        "Godavari",
+        "Krishna",
+        "Kaveri"
+      ],
+      "answer": 0,
+      "id": 281
+    },
+    {
+      "question": "Which is the largest river island in India?",
+      "options": [
+        "Majuli",
+        "Srirangam",
+        "Umananda",
+        "Bhavani"
+      ],
+      "answer": 0,
+      "id": 282
+    },
+    {
+      "question": "Which river originates from Yamunotri glacier?",
+      "options": [
+        "Yamuna",
+        "Ganga",
+        "Brahmaputra",
+        "Narmada"
+      ],
+      "answer": 0,
+      "id": 283
+    },
+    {
+      "question": "Which river is known as the lifeline of Madhya Pradesh?",
+      "options": [
+        "Narmada",
+        "Ganga",
+        "Yamuna",
+        "Godavari"
+      ],
+      "answer": 0,
+      "id": 284
+    },
+    {
+      "question": "Which dam is located in Uttarakhand?",
+      "options": [
+        "Tehri Dam",
+        "Bhakra Dam",
+        "Hirakud Dam",
+        "Sardar Sarovar"
+      ],
+      "answer": 0,
+      "id": 285
+    },
+    {
+      "question": "Which river forms the India-Bangladesh border in many places?",
+      "options": [
+        "Ganga",
+        "Teesta",
+        "Brahmaputra",
+        "Damodar"
+      ],
+      "answer": 0,
+      "id": 286
+    },
+    {
+      "question": "Which Indian lake is famous for houseboats?",
+      "options": [
+        "Dal Lake",
+        "Chilika Lake",
+        "Loktak Lake",
+        "Wular Lake"
+      ],
+      "answer": 0,
+      "id": 287
+    },
+    {
+      "question": "Which Indian dam is located on the Sutlej river?",
+      "options": [
+        "Bhakra Nangal",
+        "Tehri",
+        "Hirakud",
+        "Nagarjuna Sagar"
+      ],
+      "answer": 0,
+      "id": 288
+    },
+    {
+      "question": "Which West Bengal district borders Bangladesh?",
+      "options": [
+        "North 24 Parganas",
+        "Bankura",
+        "Purulia",
+        "Paschim Medinipur"
+      ],
+      "answer": 0,
+      "id": 289
+    },
+    {
+      "question": "Which port is located in West Bengal?",
+      "options": [
+        "Kolkata Port",
+        "Chennai Port",
+        "Mumbai Port",
+        "Cochin Port"
+      ],
+      "answer": 0,
+      "id": 290
+    },
+    {
+      "question": "Which airport serves Kolkata?",
+      "options": [
+        "Netaji Subhash Chandra Bose International Airport",
+        "Indira Gandhi Airport",
+        "Chhatrapati Shivaji Airport",
+        "Kempegowda Airport"
+      ],
+      "answer": 0,
+      "id": 291
+    },
+    {
+      "question": "Which crop is famous in Darjeeling hills?",
+      "options": [
+        "Tea",
+        "Rice",
+        "Wheat",
+        "Cotton"
+      ],
+      "answer": 0,
+      "id": 292
+    },
+    {
+      "question": "Which district of West Bengal is famous for the Sundarbans mangrove forest?",
+      "options": [
+        "South 24 Parganas",
+        "Nadia",
+        "Murshidabad",
+        "Bankura"
+      ],
+      "answer": 0,
+      "id": 293
+    },
+    {
+      "question": "Darjeeling district is famous for which product?",
+      "options": [
+        "Tea",
+        "Jute",
+        "Cotton",
+        "Coffee"
+      ],
+      "answer": 0,
+      "id": 294
+    },
+    {
+      "question": "Malda district is famous for production of?",
+      "options": [
+        "Mango",
+        "Apple",
+        "Tea",
+        "Rubber"
+      ],
+      "answer": 0,
+      "id": 295
+    },
+    {
+      "question": "Which district of West Bengal is famous for silk industry?",
+      "options": [
+        "Murshidabad",
+        "Purulia",
+        "Darjeeling",
+        "Jalpaiguri"
+      ],
+      "answer": 0,
+      "id": 296
+    },
+    {
+      "question": "Which district of West Bengal shares border with Bhutan?",
+      "options": [
+        "Alipurduar",
+        "Bankura",
+        "Nadia",
+        "Howrah"
+      ],
+      "answer": 0,
+      "id": 297
+    },
+    {
+      "question": "Which district is known as the cultural capital of West Bengal?",
+      "options": [
+        "Kolkata",
+        "Bankura",
+        "Birbhum",
+        "Malda"
+      ],
+      "answer": 0,
+      "id": 298
+    },
+    {
+      "question": "Shantiniketan is located in which district?",
+      "options": [
+        "Birbhum",
+        "Bankura",
+        "Purulia",
+        "Nadia"
+      ],
+      "answer": 0,
+      "id": 299
+    },
+    {
+      "question": "Which district is famous for Bishnupur terracotta temples?",
+      "options": [
+        "Bankura",
+        "Purulia",
+        "Nadia",
+        "Hooghly"
+      ],
+      "answer": 0,
+      "id": 300
+    },
+    {
+      "question": "Which district of West Bengal borders Nepal?",
+      "options": [
+        "Darjeeling",
+        "Bankura",
+        "Purulia",
+        "Howrah"
+      ],
+      "answer": 0,
+      "id": 301
+    },
+    {
+      "question": "Which district is known for tea gardens in Dooars region?",
+      "options": [
+        "Jalpaiguri",
+        "Nadia",
+        "Murshidabad",
+        "Howrah"
+      ],
+      "answer": 0,
+      "id": 302
+    },
+    {
+      "question": "Ishwar Chandra Vidyasagar was famous for his contribution in?",
+      "options": [
+        "Education reforms",
+        "Science",
+        "Politics",
+        "Sports"
+      ],
+      "answer": 0,
+      "id": 303
+    },
+    {
+      "question": "Kazi Nazrul Islam is popularly known as?",
+      "options": [
+        "Rebel Poet",
+        "Poet of Nature",
+        "National Poet",
+        "Poet of Love"
+      ],
+      "answer": 0,
+      "id": 304
+    },
+    {
+      "question": "Satyajit Ray was famous for?",
+      "options": [
+        "Film direction",
+        "Science",
+        "Politics",
+        "Mathematics"
+      ],
+      "answer": 0,
+      "id": 305
+    },
+    {
+      "question": "Amartya Sen won Nobel Prize in which field?",
+      "options": [
+        "Economics",
+        "Physics",
+        "Chemistry",
+        "Medicine"
+      ],
+      "answer": 0,
+      "id": 306
+    },
+    {
+      "question": "Mother Teresa received Nobel Peace Prize in which year?",
+      "options": [
+        "1979",
+        "1985",
+        "1990",
+        "1970"
+      ],
+      "answer": 0,
+      "id": 307
+    },
+    {
+      "question": "Who founded the Brahmo Samaj?",
+      "options": [
+        "Raja Ram Mohan Roy",
+        "Tagore",
+        "Vivekananda",
+        "Nazrul"
+      ],
+      "answer": 0,
+      "id": 308
+    },
+    {
+      "question": "Raja Ram Mohan Roy is known as?",
+      "options": [
+        "Father of Indian Renaissance",
+        "Father of Constitution",
+        "Father of Nation",
+        "Iron Man"
+      ],
+      "answer": 0,
+      "id": 309
+    },
+    {
+      "question": "Who founded the Ramakrishna Mission?",
+      "options": [
+        "Swami Vivekananda",
+        "Tagore",
+        "Nazrul",
+        "Bankim Chandra"
+      ],
+      "answer": 0,
+      "id": 310
+    },
+    {
+      "question": "Swami Vivekananda delivered famous speech at?",
+      "options": [
+        "Chicago",
+        "London",
+        "Paris",
+        "Tokyo"
+      ],
+      "answer": 0,
+      "id": 311
+    },
+    {
+      "question": "Which river is the longest river in India?",
+      "options": [
+        "Ganga",
+        "Godavari",
+        "Yamuna",
+        "Krishna"
+      ],
+      "answer": 0,
+      "id": 312
+    },
+    {
+      "question": "Which river is known as the 'Dakshin Ganga'?",
+      "options": [
+        "Godavari",
+        "Krishna",
+        "Narmada",
+        "Kaveri"
+      ],
+      "answer": 0,
+      "id": 313
+    },
+    {
+      "question": "Which plateau is known as the mineral storehouse of India?",
+      "options": [
+        "Chota Nagpur Plateau",
+        "Deccan Plateau",
+        "Malwa Plateau",
+        "Shillong Plateau"
+      ],
+      "answer": 0,
+      "id": 314
+    },
+    {
+      "question": "The Thar Desert is located in which state?",
+      "options": [
+        "Rajasthan",
+        "Punjab",
+        "Haryana",
+        "Gujarat"
+      ],
+      "answer": 0,
+      "id": 315
+    },
+    {
+      "question": "Which is the highest mountain peak in India?",
+      "options": [
+        "K2",
+        "Everest",
+        "Kanchenjunga",
+        "Nanda Devi"
+      ],
+      "answer": 2,
+      "id": 316
+    },
+    {
+      "question": "Which river flows through Delhi?",
+      "options": [
+        "Yamuna",
+        "Ganga",
+        "Godavari",
+        "Krishna"
+      ],
+      "answer": 0,
+      "id": 317
+    },
+    {
+      "question": "Which Indian state is known as the Land of Five Rivers?",
+      "options": [
+        "Punjab",
+        "Haryana",
+        "Rajasthan",
+        "Uttar Pradesh"
+      ],
+      "answer": 0,
+      "id": 318
+    },
+    {
+      "question": "Which lake is the largest salt water lake in India?",
+      "options": [
+        "Chilika Lake",
+        "Dal Lake",
+        "Loktak Lake",
+        "Wular Lake"
+      ],
+      "answer": 0,
+      "id": 319
+    },
+    {
+      "question": "Which river originates from Gangotri glacier?",
+      "options": [
+        "Ganga",
+        "Yamuna",
+        "Godavari",
+        "Krishna"
+      ],
+      "answer": 0,
+      "id": 320
+    },
+    {
+      "question": "Which dam is built across river Sutlej?",
+      "options": [
+        "Bhakra Nangal",
+        "Tehri",
+        "Hirakud",
+        "Nagarjuna Sagar"
+      ],
+      "answer": 0,
+      "id": 321
+    },
+    {
+      "question": "Which river flows through Assam?",
+      "options": [
+        "Brahmaputra",
+        "Ganga",
+        "Godavari",
+        "Krishna"
+      ],
+      "answer": 0,
+      "id": 322
+    },
+    {
+      "question": "Which part of the Constitution contains Fundamental Rights?",
+      "options": [
+        "Part III",
+        "Part II",
+        "Part IV",
+        "Part V"
+      ],
+      "answer": 0,
+      "id": 323
+    },
+    {
+      "question": "How many Fundamental Rights are there in India?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "5"
+      ],
+      "answer": 0,
+      "id": 324
+    },
+    {
+      "question": "How many Fundamental Duties are there in Indian Constitution?",
+      "options": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ],
+      "answer": 0,
+      "id": 325
+    },
+    {
+      "question": "Which Article deals with Right to Freedom?",
+      "options": [
+        "Article 19",
+        "Article 14",
+        "Article 21",
+        "Article 25"
+      ],
+      "answer": 0,
+      "id": 326
+    },
+    {
+      "question": "Which Article abolished untouchability?",
+      "options": [
+        "Article 17",
+        "Article 16",
+        "Article 18",
+        "Article 15"
+      ],
+      "answer": 0,
+      "id": 327
+    },
+    {
+      "question": "Who is the head of the Indian State?",
+      "options": [
+        "President",
+        "Prime Minister",
+        "Governor",
+        "Chief Justice"
+      ],
+      "answer": 0,
+      "id": 328
+    },
+    {
+      "question": "Who appoints the Prime Minister of India?",
+      "options": [
+        "President",
+        "Governor",
+        "Speaker",
+        "Chief Justice"
+      ],
+      "answer": 0,
+      "id": 329
+    },
+    {
+      "question": "The Lok Sabha is also known as?",
+      "options": [
+        "House of the People",
+        "Upper House",
+        "Council of States",
+        "Assembly"
+      ],
+      "answer": 0,
+      "id": 330
+    },
+    {
+      "question": "Rajya Sabha is also called?",
+      "options": [
+        "Council of States",
+        "Lower House",
+        "People's House",
+        "Assembly"
+      ],
+      "answer": 0,
+      "id": 331
+    },
+    {
+      "question": "The tenure of Lok Sabha is?",
+      "options": [
+        "5 years",
+        "6 years",
+        "4 years",
+        "3 years"
+      ],
+      "answer": 0,
+      "id": 332
     }
   ]
 }
